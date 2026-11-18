@@ -1,0 +1,523 @@
+{
+  "version": "2",
+  "topics": [
+    {
+      "id": "housing",
+      "name": "Housing",
+      "description": "Residential housing development, affordability programs, rental relationships, eviction, and homelessness services.",
+      "terms": [
+        "housing",
+        "tenant",
+        "tenants",
+        "landlord",
+        "landlords",
+        "homelessness",
+        "eviction",
+        "rent control",
+        "affordable homes",
+        "residential zoning"
+      ],
+      "semantic_examples": [
+        "Regulates rental agreements, tenancy, eviction procedures, and landlord obligations.",
+        "Funds construction of affordable homes and addresses homelessness."
+      ],
+      "hypothesis": "This text changes policy concerning Residential housing development, affordability programs, rental relationships, eviction, and homelessness services.",
+      "include": [
+        "Residential zoning and accessory dwelling units",
+        "Rental advertising, tenancy, eviction and residential landlord duties",
+        "Housing assistance and homelessness shelter programs"
+      ],
+      "exclude": [
+        "Industrial-only zoning or data-center siting",
+        "Real-estate professional licensing without a residential housing provision",
+        "A reference to residents or buildings alone"
+      ]
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "description": "Medical care, insurance coverage, provider practice, patient rights, and population-health programs.",
+      "terms": [
+        "healthcare",
+        "health care",
+        "medicaid",
+        "medicare",
+        "hospital",
+        "hospitals",
+        "public health",
+        "health insurance",
+        "mental health",
+        "prescription drug",
+        "prescription drugs"
+      ],
+      "semantic_examples": [
+        "Expands access to medical treatment, health insurance, or mental health services."
+      ],
+      "hypothesis": "This text changes policy concerning Medical care, insurance coverage, provider practice, patient rights, and population-health programs.",
+      "include": [
+        "Mental-health treatment and patient services",
+        "Medical-provider practice, licensure and clinical training requirements",
+        "Disease prevention and governance of operational public-health programs"
+      ],
+      "exclude": [
+        "A Health Code citation alone",
+        "Wages or pensions for healthcare employees without a care/practice provision",
+        "A sector-specific tax exemption without a healthcare-service or practice provision"
+      ]
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "description": "School and higher-education instruction, educational services, governance, staffing duties, access, and funding.",
+      "terms": [
+        "education",
+        "teacher",
+        "teachers",
+        "tuition",
+        "university",
+        "universities",
+        "school district"
+      ],
+      "semantic_examples": [
+        "Changes school funding, classroom instruction, teacher duties, or university tuition."
+      ],
+      "hypothesis": "This text changes policy concerning School and higher-education instruction, educational services, governance, staffing duties, access, and funding.",
+      "include": [
+        "School curriculum, tuition and teacher duties",
+        "Operational duties of schools delivering services",
+        "Studies explicitly examining educational participation or outcomes"
+      ],
+      "exclude": [
+        "Student eligibility to work as election officials",
+        "School-tax exemptions without a school resource or funding allocation provision",
+        "Continuing professional training outside educational institutions"
+      ]
+    },
+    {
+      "id": "transportation",
+      "name": "Transportation",
+      "description": "Transport networks, mobility, vehicle regulation, driver administration and transport safety.",
+      "terms": [
+        "transportation",
+        "public transit",
+        "highway",
+        "highways",
+        "railway",
+        "railroads",
+        "motor vehicle",
+        "motor vehicles",
+        "driver license",
+        "bicycle",
+        "bicycles"
+      ],
+      "semantic_examples": [
+        "Funds and operates bus networks, rail service, road improvements, or transportation safety."
+      ],
+      "hypothesis": "This text changes policy concerning Transport networks, mobility, vehicle regulation, driver administration and transport safety.",
+      "include": [
+        "Road, rail, bus and freight operations",
+        "Abandoned or impounded vehicles",
+        "Driver/vehicle licensing and transport-administration records"
+      ],
+      "exclude": [
+        "Ceremonial airport or bridge renaming",
+        "Housing near transit without a separate transport provision",
+        "Generic equipment that happens to be a vehicle"
+      ]
+    },
+    {
+      "id": "environment",
+      "name": "Environment",
+      "description": "Pollution, waste, conservation, wildlife and environmental protection.",
+      "terms": [
+        "climate",
+        "pollution",
+        "emissions",
+        "conservation",
+        "environmental protection",
+        "recycling",
+        "water quality",
+        "air quality",
+        "wetlands",
+        "wildlife"
+      ],
+      "semantic_examples": [
+        "Controls pollution and protects water, air, ecosystems, and wildlife."
+      ],
+      "hypothesis": "This text changes policy concerning Pollution, waste, conservation, wildlife and environmental protection.",
+      "include": [
+        "Waste disposal, recycling and illegal dumping",
+        "Air/water pollution controls",
+        "Wildlife conservation and management"
+      ],
+      "exclude": [
+        "Industrial siting without a stated environmental provision",
+        "A Public Resources Code citation alone",
+        "A district with a natural-sounding name without environmental duties"
+      ]
+    },
+    {
+      "id": "energy",
+      "name": "Energy",
+      "description": "Energy generation, distribution, fuels, energy utility services and energy efficiency.",
+      "terms": [
+        "renewable energy",
+        "electricity",
+        "solar",
+        "wind energy",
+        "natural gas",
+        "electric utility",
+        "electric utilities",
+        "energy efficiency",
+        "power grid"
+      ],
+      "semantic_examples": [
+        "Regulates electricity generation, energy efficiency, and utility infrastructure."
+      ],
+      "hypothesis": "This text changes policy concerning Energy generation, distribution, fuels, energy utility services and energy efficiency.",
+      "include": [
+        "Renewable generation and electricity networks",
+        "Building energy efficiency",
+        "Energy-service regulation"
+      ],
+      "exclude": [
+        "Water-only district governance",
+        "General investment without an energy provision",
+        "A reference to an electric appliance alone"
+      ]
+    },
+    {
+      "id": "taxation",
+      "name": "Taxation",
+      "description": "Tax rates, bases, credits, exemptions, assessment and tax administration.",
+      "terms": [
+        "tax",
+        "taxes",
+        "taxation",
+        "tax credit",
+        "tax credits",
+        "tax exemption",
+        "tax exemptions",
+        "taxpayer",
+        "taxpayers"
+      ],
+      "semantic_examples": [
+        "Changes taxes, deductions, exemptions, credits, or tax collection."
+      ],
+      "hypothesis": "This text changes policy concerning Tax rates, bases, credits, exemptions, assessment and tax administration.",
+      "include": [
+        "Creates or repeals a tax credit or exemption",
+        "Express property-tax assessment provisions",
+        "Tax powers of local districts"
+      ],
+      "exclude": [
+        "Debt administration, bonds, appropriations or fees without tax changes",
+        "A statement that tax provisions are unchanged",
+        "Assuming an appraisal is a tax assessment without enough context"
+      ]
+    },
+    {
+      "id": "public_safety",
+      "name": "Public safety and justice",
+      "description": "Criminal justice, criminal procedure, policing, corrections, firearms and emergency response.",
+      "terms": [
+        "criminal",
+        "police",
+        "policing",
+        "firearm",
+        "firearms",
+        "sentencing",
+        "prison",
+        "prisons",
+        "corrections",
+        "emergency response",
+        "law enforcement"
+      ],
+      "semantic_examples": [
+        "Changes criminal offenses, sentencing, policing, firearms laws, or emergency response."
+      ],
+      "hypothesis": "This text changes policy concerning Criminal justice, criminal procedure, policing, corrections, firearms and emergency response.",
+      "include": [
+        "Juvenile criminal records and appointed criminal counsel",
+        "Grand-jury evidence, forensic case review and sentencing",
+        "Operational policing and emergency-response duties"
+      ],
+      "exclude": [
+        "Civil eviction, civil liability or civil court procedure alone",
+        "Police officer pensions without policing provisions",
+        "Employment background-check acceptance without a criminal-process or public-safety provision",
+        "Unspecified jury or investigator procedures when criminal/civil scope is unknown"
+      ]
+    },
+    {
+      "id": "labor",
+      "name": "Labor and employment",
+      "description": "Employment conditions, worker rights, wages, pensions, hiring access and workforce development.",
+      "terms": [
+        "employment",
+        "unemployment",
+        "minimum wage",
+        "worker",
+        "workers",
+        "workplace",
+        "collective bargaining",
+        "paid leave",
+        "occupational safety"
+      ],
+      "semantic_examples": [
+        "Regulates wages, collective bargaining, employment rights, and workplace conditions."
+      ],
+      "hypothesis": "This text changes policy concerning Employment conditions, worker rights, wages, pensions, hiring access and workforce development.",
+      "include": [
+        "Severance, paid leave, wages and occupational pension terms",
+        "Hiring eligibility and employer screening obligations",
+        "Workforce development and labor administration"
+      ],
+      "exclude": [
+        "Public-official ethics or conflicts of interest alone",
+        "Business/professional licensing alone",
+        "A person described as an employee without an employment provision"
+      ]
+    },
+    {
+      "id": "elections",
+      "name": "Elections and voting",
+      "description": "Voting access, election administration, electoral districts, candidate eligibility and campaign finance.",
+      "terms": [
+        "election",
+        "elections",
+        "voting",
+        "ballot",
+        "ballots",
+        "voter",
+        "voters",
+        "redistricting",
+        "campaign finance"
+      ],
+      "semantic_examples": [
+        "Changes voter registration, ballot access, election procedures, or campaign finance."
+      ],
+      "hypothesis": "This text changes policy concerning Voting access, election administration, electoral districts, candidate eligibility and campaign finance.",
+      "include": [
+        "Redistricting and electoral boundaries",
+        "Election staffing and voting procedures",
+        "Changes to board candidate eligibility or selection by voters"
+      ],
+      "exclude": [
+        "An ordinary referendum condition for an unrelated local government action, without a distinct electoral administration change",
+        "Appointment of an official without a change to electoral rules",
+        "The word candidate used outside elections"
+      ]
+    },
+    {
+      "id": "business_economy",
+      "name": "Business and economic development",
+      "description": "Business licensing, consumer protection, commercial regulation and economic development.",
+      "terms": [
+        "business licensing",
+        "consumer protection",
+        "economic development",
+        "business license"
+      ],
+      "include": [
+        "Commercial licensing and consumer rights",
+        "Economic development grants and business incentives"
+      ],
+      "exclude": [
+        "A business merely affected by an unrelated tax provision"
+      ],
+      "semantic_examples": [
+        "Commercial licensing and consumer rights",
+        "Economic development grants and business incentives"
+      ],
+      "hypothesis": "This text changes policy concerning Business licensing, consumer protection, commercial regulation and economic development."
+    },
+    {
+      "id": "government_finance",
+      "name": "Government operations and public finance",
+      "description": "Government administration, public budgets, borrowing and allocation of public funds.",
+      "terms": [
+        "public borrowing",
+        "government operations",
+        "municipal bonds",
+        "appropriation",
+        "appropriations"
+      ],
+      "include": [
+        "Agency powers and government administration",
+        "Public budgets, borrowing and bonds"
+      ],
+      "exclude": [
+        "A government body merely administering a sector-specific policy",
+        "Tax changes alone belong to taxation"
+      ],
+      "semantic_examples": [
+        "Agency powers and government administration",
+        "Public budgets, borrowing and bonds"
+      ],
+      "hypothesis": "This text changes policy concerning Government administration, public budgets, borrowing and allocation of public funds."
+    },
+    {
+      "id": "technology",
+      "name": "Technology and digital policy",
+      "description": "Digital privacy, cybersecurity, artificial intelligence governance and digital services.",
+      "terms": [
+        "data privacy",
+        "cybersecurity",
+        "artificial intelligence",
+        "personal data",
+        "digital services"
+      ],
+      "include": [
+        "Personal-data protections and cybersecurity requirements",
+        "Rules governing AI systems and digital services"
+      ],
+      "exclude": [
+        "A data-center tax, water or energy provision without a distinct digital-policy change"
+      ],
+      "semantic_examples": [
+        "Personal-data protections and cybersecurity requirements",
+        "Rules governing AI systems and digital services"
+      ],
+      "hypothesis": "This text changes policy concerning Digital privacy, cybersecurity, artificial intelligence governance and digital services."
+    },
+    {
+      "id": "land_use",
+      "name": "Land use and development",
+      "description": "Development permissions, industrial siting, planning and nonresidential land use.",
+      "terms": [
+        "industrial siting",
+        "development permits",
+        "land use",
+        "industrial zoning"
+      ],
+      "include": [
+        "Industrial zoning and development permits",
+        "Planning and siting rules for nonresidential facilities"
+      ],
+      "exclude": [
+        "Residential-only zoning belongs to housing",
+        "A facility location mentioned without a land-use change"
+      ],
+      "semantic_examples": [
+        "Industrial zoning and development permits",
+        "Planning and siting rules for nonresidential facilities"
+      ],
+      "hypothesis": "This text changes policy concerning Development permissions, industrial siting, planning and nonresidential land use."
+    },
+    {
+      "id": "agriculture_food",
+      "name": "Agriculture and food",
+      "description": "Farming, agricultural programs, food production and food safety.",
+      "terms": [
+        "agriculture",
+        "farming",
+        "food safety",
+        "agricultural programs",
+        "food production"
+      ],
+      "include": [
+        "Farm programs and agricultural production",
+        "Food safety requirements"
+      ],
+      "exclude": [
+        "A farm mentioned only as a beneficiary of unrelated policy"
+      ],
+      "semantic_examples": [
+        "Farm programs and agricultural production",
+        "Food safety requirements"
+      ],
+      "hypothesis": "This text changes policy concerning Farming, agricultural programs, food production and food safety."
+    },
+    {
+      "id": "social_services",
+      "name": "Social services",
+      "description": "Public assistance, disability support, child welfare and family services.",
+      "terms": [
+        "public assistance",
+        "child welfare",
+        "disability services",
+        "family services"
+      ],
+      "include": [
+        "Nonmedical public assistance and disability support",
+        "Child welfare and family support programs"
+      ],
+      "exclude": [
+        "Medical treatment belongs to healthcare",
+        "A demographic group mentioned without a service provision"
+      ],
+      "semantic_examples": [
+        "Nonmedical public assistance and disability support",
+        "Child welfare and family support programs"
+      ],
+      "hypothesis": "This text changes policy concerning Public assistance, disability support, child welfare and family services."
+    }
+  ],
+  "semantic_version": "2",
+  "hypothesis_version": "3",
+  "status": "active_unvalidated",
+  "rules": [
+    "Assign all substantively changed policy topics; do not force one label.",
+    "A code citation, affected population, or institution alone is insufficient.",
+    "Keep affected sectors separate from direct topic labels; user-selected design.",
+    "Distinguish assigned, outside_taxonomy, needs_more_text, and pending.",
+    "Require exact input excerpts plus an explanation; excerpts alone do not prove relevance.",
+    "Do not infer policy direction, effectiveness, or enactment from category labels.",
+    "Ceremonial measures should be excluded from policy analysis even when they name a school, airport, or public official.",
+    "A sector-specific tax provision alone gets taxation plus an affected-sector tag. Add the sector as a policy topic only if a distinct substantive provision supports it."
+  ],
+  "sectors": [
+    {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "description": "Medical providers, patients, pharmaceuticals and health services."
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "description": "Schools, colleges, universities and educational services."
+    },
+    {
+      "id": "housing",
+      "name": "Housing",
+      "description": "Residential development, rental housing and shelter services."
+    },
+    {
+      "id": "transportation",
+      "name": "Transportation",
+      "description": "Mobility, transport operators, drivers and vehicle services."
+    },
+    {
+      "id": "energy",
+      "name": "Energy",
+      "description": "Energy producers, distributors, utilities and consumers."
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "description": "Banking, insurance, financial services and monetary systems."
+    },
+    {
+      "id": "technology",
+      "name": "Technology",
+      "description": "Digital services, data centers, recording devices and technology businesses."
+    },
+    {
+      "id": "agriculture",
+      "name": "Agriculture",
+      "description": "Farming, food production and related agricultural activities."
+    },
+    {
+      "id": "government",
+      "name": "Government",
+      "description": "Government agencies, public administration and local districts."
+    },
+    {
+      "id": "commerce",
+      "name": "Commerce",
+      "description": "Retail, business licensing and other commercial activities."
+    }
+  ],
+  "topic_sector_rule": "Topics describe the direct legal change; affected_sectors identify explicitly targeted sectors. Do not infer every indirect economic consequence."
+}

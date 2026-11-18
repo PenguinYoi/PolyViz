@@ -1,0 +1,601 @@
+{
+  "scope": "Nine development cases; not an independent accuracy benchmark. Original topics unchanged.",
+  "native_review_summary": {
+    "broad_topic_agreement": 8,
+    "uncertain": 35,
+    "native_category_has_no_simple_crosswalk": 5,
+    "possible_topic_disagreement": 4
+  },
+  "policy_alignment_summary": {
+    "broad_agreement_only": 6,
+    "uncertain": 35,
+    "taxonomy_gap": 2,
+    "contextually_aligned": 4,
+    "suggested_topic_addition": 3,
+    "excluded_nonpolicy": 1,
+    "suggested_topic_removal": 1
+  },
+  "cases": [
+    {
+      "id": "CA-2025-2026-REGULAR-AB2397",
+      "title": "Local government: community facilities districts: financing.",
+      "topics": [],
+      "external_review": {
+        "status": "native_category_has_no_simple_crosswalk",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "24",
+            "name": "Local government and governance",
+            "score": 0.828036078283538
+          },
+          {
+            "native_topic": "14",
+            "name": "Community development and housing",
+            "score": 0.07325186008474079
+          },
+          {
+            "native_topic": "7",
+            "name": "Environment",
+            "score": 0.022286226936281687
+          }
+        ],
+        "score_margin": 0.7547842181987972,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      },
+      "policy_alignment": {
+        "version": "1",
+        "policy_version": "2-draft",
+        "status": "taxonomy_gap",
+        "supported_policy_topics": [],
+        "suggested_additions": [],
+        "suggested_removals": [],
+        "affected_sector_suggestions": [
+          "government"
+        ],
+        "evidence": [
+          {
+            "axis": "affected_sector",
+            "label": "government",
+            "excerpt": "Local government",
+            "reason": "Local-government bodies explicitly targeted."
+          }
+        ],
+        "taxonomy_gaps": [
+          {
+            "native_topic": "24",
+            "domain": "local_government_finance_or_governance",
+            "reason": "Current description and broad source category do not identify a supported topic among the ten. Fuller text may reveal additional provisions."
+          }
+        ],
+        "analysis_eligibility": "not_determined",
+        "applied": false,
+        "verification_status": "not_verified",
+        "codebook_url": "https://minio.la.utexas.edu/compagendas/codebookfiles/II._Policy_Topics_Coding_061719_1.pdf"
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB715",
+      "title": "Elections.",
+      "topics": [
+        "elections"
+      ],
+      "external_review": {
+        "status": "native_category_has_no_simple_crosswalk",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.8692515749188776
+          },
+          {
+            "native_topic": "7",
+            "name": "Environment",
+            "score": 0.02930659895656643
+          },
+          {
+            "native_topic": "3",
+            "name": "Health",
+            "score": 0.021835929936113933
+          }
+        ],
+        "score_margin": 0.8399449759623112,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      },
+      "policy_alignment": {
+        "version": "1",
+        "policy_version": "2-draft",
+        "status": "contextually_aligned",
+        "supported_policy_topics": [
+          "elections"
+        ],
+        "suggested_additions": [],
+        "suggested_removals": [],
+        "affected_sector_suggestions": [],
+        "evidence": [
+          {
+            "axis": "policy_topic",
+            "label": "elections",
+            "excerpt": "Elections",
+            "reason": "Explicit electoral subject within a broader government/civil-rights source category.",
+            "source_codebook_context": "206 voting rights; 2011 redistricting; 2012 electoral administration. These subtopics are context references, not predicted subtopic labels."
+          }
+        ],
+        "taxonomy_gaps": [],
+        "analysis_eligibility": "not_determined",
+        "applied": false,
+        "verification_status": "not_verified",
+        "codebook_url": "https://minio.la.utexas.edu/compagendas/codebookfiles/II._Policy_Topics_Coding_061719_1.pdf"
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB647",
+      "title": "Abandoned recreational vehicles.",
+      "topics": [],
+      "external_review": {
+        "status": "possible_topic_disagreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.9028936327573821
+          },
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.013745686169888909
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.012304059622568956
+          }
+        ],
+        "score_margin": 0.8891479465874932,
+        "broad_topic_overlaps": [
+          "transportation"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      },
+      "policy_alignment": {
+        "version": "1",
+        "policy_version": "2-draft",
+        "status": "suggested_topic_addition",
+        "supported_policy_topics": [
+          "transportation"
+        ],
+        "suggested_additions": [
+          "transportation"
+        ],
+        "suggested_removals": [],
+        "affected_sector_suggestions": [],
+        "evidence": [
+          {
+            "axis": "policy_topic",
+            "label": "transportation",
+            "excerpt": "Abandoned recreational vehicles",
+            "reason": "Explicit vehicle/transport regulation, not an incidental mention of a vehicle.",
+            "source_codebook_context": "1000 transportation and vehicle regulation; source primary topic is not a complete multi-label reference."
+          }
+        ],
+        "taxonomy_gaps": [],
+        "analysis_eligibility": "not_determined",
+        "applied": false,
+        "verification_status": "not_verified",
+        "codebook_url": "https://minio.la.utexas.edu/compagendas/codebookfiles/II._Policy_Topics_Coding_061719_1.pdf"
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB1985",
+      "title": "Student health: athletic coaches and trainers: mental health training.",
+      "topics": [],
+      "external_review": {
+        "status": "possible_topic_disagreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "3",
+            "name": "Health",
+            "score": 0.9452179972520022
+          },
+          {
+            "native_topic": "6",
+            "name": "Education",
+            "score": 0.01715500793566666
+          },
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.010357660030919192
+          }
+        ],
+        "score_margin": 0.9280629893163355,
+        "broad_topic_overlaps": [
+          "healthcare"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      },
+      "policy_alignment": {
+        "version": "1",
+        "policy_version": "2-draft",
+        "status": "suggested_topic_addition",
+        "supported_policy_topics": [
+          "healthcare"
+        ],
+        "suggested_additions": [
+          "healthcare"
+        ],
+        "suggested_removals": [],
+        "affected_sector_suggestions": [
+          "healthcare",
+          "education"
+        ],
+        "evidence": [
+          {
+            "axis": "policy_topic",
+            "label": "healthcare",
+            "excerpt": "mental health training",
+            "reason": "Explicit health-service or health-practice subject supports a healthcare suggestion.",
+            "source_codebook_context": "325 health training; 333 mental health; do not map every health-sector tax bill to healthcare."
+          },
+          {
+            "axis": "affected_sector",
+            "label": "healthcare",
+            "excerpt": "Student health",
+            "reason": "Health-related services or practice explicitly targeted."
+          },
+          {
+            "axis": "affected_sector",
+            "label": "education",
+            "excerpt": "Student health",
+            "reason": "Student services are an affected sector; this does not independently establish an educational duty or provision."
+          }
+        ],
+        "taxonomy_gaps": [],
+        "analysis_eligibility": "not_determined",
+        "applied": false,
+        "verification_status": "not_verified",
+        "codebook_url": "https://minio.la.utexas.edu/compagendas/codebookfiles/II._Policy_Topics_Coding_061719_1.pdf"
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB2437",
+      "title": "Impounded vehicles.",
+      "topics": [],
+      "external_review": {
+        "status": "possible_topic_disagreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.8779046053469501
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.026766141362534003
+          },
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.017760371984518623
+          }
+        ],
+        "score_margin": 0.8511384639844162,
+        "broad_topic_overlaps": [
+          "transportation"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      },
+      "policy_alignment": {
+        "version": "1",
+        "policy_version": "2-draft",
+        "status": "suggested_topic_addition",
+        "supported_policy_topics": [
+          "transportation"
+        ],
+        "suggested_additions": [
+          "transportation"
+        ],
+        "suggested_removals": [],
+        "affected_sector_suggestions": [],
+        "evidence": [
+          {
+            "axis": "policy_topic",
+            "label": "transportation",
+            "excerpt": "Impounded vehicles",
+            "reason": "Explicit vehicle/transport regulation, not an incidental mention of a vehicle.",
+            "source_codebook_context": "1000 transportation and vehicle regulation; source primary topic is not a complete multi-label reference."
+          }
+        ],
+        "taxonomy_gaps": [],
+        "analysis_eligibility": "not_determined",
+        "applied": false,
+        "verification_status": "not_verified",
+        "codebook_url": "https://minio.la.utexas.edu/compagendas/codebookfiles/II._Policy_Topics_Coding_061719_1.pdf"
+      }
+    },
+    {
+      "id": "FL-2025-REGULAR-H4009",
+      "title": "St. Augustine-St. Johns County Airport Authority, St. Johns County",
+      "topics": [],
+      "external_review": {
+        "status": "possible_topic_disagreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.8778476381800437
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.01710073246048959
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.016356332810147412
+          }
+        ],
+        "score_margin": 0.8607469057195541,
+        "broad_topic_overlaps": [
+          "transportation"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      },
+      "policy_alignment": {
+        "version": "1",
+        "policy_version": "2-draft",
+        "status": "excluded_nonpolicy",
+        "supported_policy_topics": [],
+        "suggested_additions": [],
+        "suggested_removals": [],
+        "affected_sector_suggestions": [],
+        "evidence": [
+          {
+            "axis": "analysis_eligibility",
+            "excerpt": "Renames Northeast Florida Regional Airport.",
+            "reason": "The complete supplied summary describes only renaming; institution type alone does not establish a substantive policy change."
+          }
+        ],
+        "taxonomy_gaps": [],
+        "analysis_eligibility": "exclude_pure_renaming",
+        "applied": false,
+        "verification_status": "not_verified",
+        "codebook_url": "https://minio.la.utexas.edu/compagendas/codebookfiles/II._Policy_Topics_Coding_061719_1.pdf"
+      }
+    },
+    {
+      "id": "FL-2025-REGULAR-H4067",
+      "title": "Special Beverage Licenses for Equestrian Sport Facilities in Marion County",
+      "topics": [],
+      "external_review": {
+        "status": "native_category_has_no_simple_crosswalk",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.8764208957931282
+          },
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.05350997728112469
+          },
+          {
+            "native_topic": "3",
+            "name": "Health",
+            "score": 0.011725615382823318
+          }
+        ],
+        "score_margin": 0.8229109185120035,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      },
+      "policy_alignment": {
+        "version": "1",
+        "policy_version": "2-draft",
+        "status": "taxonomy_gap",
+        "supported_policy_topics": [],
+        "suggested_additions": [],
+        "suggested_removals": [],
+        "affected_sector_suggestions": [
+          "commerce"
+        ],
+        "evidence": [
+          {
+            "axis": "affected_sector",
+            "label": "commerce",
+            "excerpt": "Beverage Licenses",
+            "reason": "Commercial licensing or regulated commercial activity."
+          }
+        ],
+        "taxonomy_gaps": [
+          {
+            "native_topic": "15",
+            "domain": "business_licensing",
+            "reason": "Commercial licensing does not automatically fit the ten policy topics. No new policy category is silently created."
+          }
+        ],
+        "analysis_eligibility": "not_determined",
+        "applied": false,
+        "verification_status": "not_verified",
+        "codebook_url": "https://minio.la.utexas.edu/compagendas/codebookfiles/II._Policy_Topics_Coding_061719_1.pdf"
+      }
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09989",
+      "title": "Authorizes the Tovas Dovid Community Kollel, Inc. to receive retroactive real property tax exempt status for the 2023, 2024 and 2025 assessment rolls and all of the 2023-2024, 2024-2025 and 2025-2026 school taxes.",
+      "topics": [
+        "taxation",
+        "education"
+      ],
+      "external_review": {
+        "status": "native_category_has_no_simple_crosswalk",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "24",
+            "name": "Local government and governance",
+            "score": 0.8618705205078693
+          },
+          {
+            "native_topic": "13",
+            "name": "Social welfare",
+            "score": 0.04494413690867787
+          },
+          {
+            "native_topic": "16",
+            "name": "Defense",
+            "score": 0.023433052845479314
+          }
+        ],
+        "score_margin": 0.8169263835991915,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      },
+      "policy_alignment": {
+        "version": "1",
+        "policy_version": "2-draft",
+        "status": "suggested_topic_removal",
+        "supported_policy_topics": [
+          "taxation"
+        ],
+        "suggested_additions": [],
+        "suggested_removals": [
+          "education"
+        ],
+        "affected_sector_suggestions": [],
+        "evidence": [
+          {
+            "axis": "policy_topic",
+            "label": "taxation",
+            "excerpt": "property tax",
+            "reason": "Explicit tax instrument is supported by the description; broad local-government/commerce categories can contain tax provisions.",
+            "source_codebook_context": "107 state taxation; 2404 local taxes; sector-specific tax provisions may use sector codes."
+          },
+          {
+            "axis": "policy_topic",
+            "label": "education",
+            "action": "suggest_removal",
+            "excerpt": "school taxes",
+            "reason": "Only a school-tax reference is present; the supplied description does not establish an education provision."
+          }
+        ],
+        "taxonomy_gaps": [],
+        "analysis_eligibility": "not_determined",
+        "applied": false,
+        "verification_status": "not_verified",
+        "codebook_url": "https://minio.la.utexas.edu/compagendas/codebookfiles/II._Policy_Topics_Coding_061719_1.pdf"
+      }
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5814",
+      "title": "SPORTS WAGERING-FANTASY MKT",
+      "topics": [
+        "taxation",
+        "public_safety"
+      ],
+      "external_review": {
+        "status": "native_category_has_no_simple_crosswalk",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.8840733254577742
+          },
+          {
+            "native_topic": "5",
+            "name": "Labor, employment, immigration",
+            "score": 0.02259236996399603
+          },
+          {
+            "native_topic": "1",
+            "name": "Fiscal and economic issues",
+            "score": 0.015640181038035786
+          }
+        ],
+        "score_margin": 0.8614809554937781,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      },
+      "policy_alignment": {
+        "version": "1",
+        "policy_version": "2-draft",
+        "status": "contextually_aligned",
+        "supported_policy_topics": [
+          "taxation",
+          "public_safety"
+        ],
+        "suggested_additions": [],
+        "suggested_removals": [],
+        "affected_sector_suggestions": [
+          "commerce"
+        ],
+        "evidence": [
+          {
+            "axis": "policy_topic",
+            "label": "taxation",
+            "excerpt": "transaction tax",
+            "reason": "Explicit tax instrument is supported by the description; broad local-government/commerce categories can contain tax provisions.",
+            "source_codebook_context": "107 state taxation; 2404 local taxes; sector-specific tax provisions may use sector codes."
+          },
+          {
+            "axis": "affected_sector",
+            "label": "commerce",
+            "excerpt": "SPORTS WAGERING",
+            "reason": "Commercial licensing or regulated commercial activity."
+          },
+          {
+            "axis": "policy_topic",
+            "label": "public_safety",
+            "excerpt": "shall not be convicted of gambling",
+            "reason": "Description explicitly changes criminal liability or offenses.",
+            "source_codebook_context": "1526 gambling/business regulation can overlap with criminal-law provisions; a separate substantive provision supports the extra topic."
+          }
+        ],
+        "taxonomy_gaps": [],
+        "analysis_eligibility": "not_determined",
+        "applied": false,
+        "verification_status": "not_verified",
+        "codebook_url": "https://minio.la.utexas.edu/compagendas/codebookfiles/II._Policy_Topics_Coding_061719_1.pdf"
+      }
+    }
+  ]
+}

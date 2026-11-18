@@ -1,0 +1,1391 @@
+{
+  "seed": 20261118,
+  "design": "Ten seeded selections per state from bill links on the first public listing page for session year 2025; resolutions excluded; prior evaluation bills excluded. Convenience sampling frame, mixed statuses, not representative of nationwide enacted laws.",
+  "states": {
+    "CA": {
+      "listing_url": "https://legiscan.com/CA/legislation/2025",
+      "eligible": [
+        {
+          "link": 43,
+          "bill": "AB1961"
+        },
+        {
+          "link": 46,
+          "bill": "AB2231"
+        },
+        {
+          "link": 49,
+          "bill": "SB1401"
+        },
+        {
+          "link": 52,
+          "bill": "AB2397"
+        },
+        {
+          "link": 55,
+          "bill": "AB40"
+        },
+        {
+          "link": 58,
+          "bill": "AB647"
+        },
+        {
+          "link": 61,
+          "bill": "AB685"
+        },
+        {
+          "link": 64,
+          "bill": "AB1267"
+        },
+        {
+          "link": 67,
+          "bill": "SB690"
+        },
+        {
+          "link": 70,
+          "bill": "AB2234"
+        },
+        {
+          "link": 73,
+          "bill": "AB2656"
+        },
+        {
+          "link": 76,
+          "bill": "SB692"
+        },
+        {
+          "link": 79,
+          "bill": "SB1406"
+        },
+        {
+          "link": 82,
+          "bill": "AB1969"
+        },
+        {
+          "link": 85,
+          "bill": "SB503"
+        },
+        {
+          "link": 88,
+          "bill": "SB1107"
+        },
+        {
+          "link": 91,
+          "bill": "AB2405"
+        },
+        {
+          "link": 94,
+          "bill": "AB1626"
+        },
+        {
+          "link": 97,
+          "bill": "AB2663"
+        },
+        {
+          "link": 100,
+          "bill": "SB1111"
+        },
+        {
+          "link": 103,
+          "bill": "SB661"
+        },
+        {
+          "link": 106,
+          "bill": "SB1414"
+        },
+        {
+          "link": 109,
+          "bill": "AB1278"
+        },
+        {
+          "link": 112,
+          "bill": "SB1417"
+        },
+        {
+          "link": 115,
+          "bill": "AB1979"
+        },
+        {
+          "link": 118,
+          "bill": "AB2413"
+        },
+        {
+          "link": 121,
+          "bill": "AB1537"
+        },
+        {
+          "link": 124,
+          "bill": "AB2251"
+        },
+        {
+          "link": 127,
+          "bill": "AB1539"
+        },
+        {
+          "link": 130,
+          "bill": "AB2418"
+        },
+        {
+          "link": 133,
+          "bill": "SB1423"
+        },
+        {
+          "link": 136,
+          "bill": "AB706"
+        },
+        {
+          "link": 139,
+          "bill": "AB1985"
+        },
+        {
+          "link": 142,
+          "bill": "AB1987"
+        },
+        {
+          "link": 145,
+          "bill": "SB1125"
+        },
+        {
+          "link": 148,
+          "bill": "AB2257"
+        },
+        {
+          "link": 151,
+          "bill": "SB715"
+        },
+        {
+          "link": 154,
+          "bill": "SB1130"
+        },
+        {
+          "link": 157,
+          "bill": "SB1148"
+        },
+        {
+          "link": 160,
+          "bill": "AB2263"
+        },
+        {
+          "link": 163,
+          "bill": "AB2684"
+        },
+        {
+          "link": 166,
+          "bill": "SB868"
+        },
+        {
+          "link": 169,
+          "bill": "AB1301"
+        },
+        {
+          "link": 172,
+          "bill": "AB2689"
+        },
+        {
+          "link": 175,
+          "bill": "AB2434"
+        },
+        {
+          "link": 178,
+          "bill": "AB1129"
+        },
+        {
+          "link": 181,
+          "bill": "SB1073"
+        },
+        {
+          "link": 184,
+          "bill": "AB2270"
+        },
+        {
+          "link": 187,
+          "bill": "SB1158"
+        },
+        {
+          "link": 190,
+          "bill": "AB2437"
+        }
+      ],
+      "chosen": [
+        {
+          "link": 142,
+          "bill": "AB1987"
+        },
+        {
+          "link": 106,
+          "bill": "SB1414"
+        },
+        {
+          "link": 52,
+          "bill": "AB2397"
+        },
+        {
+          "link": 151,
+          "bill": "SB715"
+        },
+        {
+          "link": 58,
+          "bill": "AB647"
+        },
+        {
+          "link": 64,
+          "bill": "AB1267"
+        },
+        {
+          "link": 139,
+          "bill": "AB1985"
+        },
+        {
+          "link": 190,
+          "bill": "AB2437"
+        },
+        {
+          "link": 154,
+          "bill": "SB1130"
+        },
+        {
+          "link": 76,
+          "bill": "SB692"
+        }
+      ]
+    },
+    "TX": {
+      "listing_url": "https://legiscan.com/TX/legislation/2025",
+      "eligible": [
+        {
+          "link": 44,
+          "bill": "SB785"
+        },
+        {
+          "link": 50,
+          "bill": "HB5671"
+        },
+        {
+          "link": 53,
+          "bill": "HB5659"
+        },
+        {
+          "link": 56,
+          "bill": "SB2878"
+        },
+        {
+          "link": 59,
+          "bill": "HB500"
+        },
+        {
+          "link": 62,
+          "bill": "SB2753"
+        },
+        {
+          "link": 65,
+          "bill": "SB2501"
+        },
+        {
+          "link": 68,
+          "bill": "HB4885"
+        },
+        {
+          "link": 74,
+          "bill": "HB4530"
+        },
+        {
+          "link": 77,
+          "bill": "SB22"
+        },
+        {
+          "link": 80,
+          "bill": "SB2206"
+        },
+        {
+          "link": 83,
+          "bill": "HB4325"
+        },
+        {
+          "link": 86,
+          "bill": "SB2111"
+        },
+        {
+          "link": 89,
+          "bill": "SB2078"
+        },
+        {
+          "link": 92,
+          "bill": "HB4042"
+        },
+        {
+          "link": 95,
+          "bill": "SB1968"
+        },
+        {
+          "link": 98,
+          "bill": "SB1937"
+        },
+        {
+          "link": 101,
+          "bill": "SB1838"
+        },
+        {
+          "link": 104,
+          "bill": "SB1758"
+        },
+        {
+          "link": 107,
+          "bill": "HB3372"
+        },
+        {
+          "link": 110,
+          "bill": "HB3120"
+        },
+        {
+          "link": 116,
+          "bill": "SB1362"
+        },
+        {
+          "link": 119,
+          "bill": "HB2853"
+        },
+        {
+          "link": 122,
+          "bill": "SB1278"
+        },
+        {
+          "link": 125,
+          "bill": "HB2842"
+        },
+        {
+          "link": 128,
+          "bill": "SB1253"
+        },
+        {
+          "link": 131,
+          "bill": "HB2520"
+        },
+        {
+          "link": 134,
+          "bill": "HB2518"
+        },
+        {
+          "link": 137,
+          "bill": "HB2421"
+        },
+        {
+          "link": 140,
+          "bill": "SB1032"
+        },
+        {
+          "link": 143,
+          "bill": "HB2243"
+        },
+        {
+          "link": 146,
+          "bill": "SB974"
+        },
+        {
+          "link": 149,
+          "bill": "SB973"
+        },
+        {
+          "link": 152,
+          "bill": "SB1"
+        },
+        {
+          "link": 155,
+          "bill": "HB1690"
+        },
+        {
+          "link": 158,
+          "bill": "SB646"
+        },
+        {
+          "link": 161,
+          "bill": "SB650"
+        },
+        {
+          "link": 164,
+          "bill": "SB648"
+        },
+        {
+          "link": 167,
+          "bill": "SB614"
+        },
+        {
+          "link": 170,
+          "bill": "HB705"
+        },
+        {
+          "link": 173,
+          "bill": "HB762"
+        },
+        {
+          "link": 176,
+          "bill": "HB1056"
+        },
+        {
+          "link": 179,
+          "bill": "SB268"
+        },
+        {
+          "link": 182,
+          "bill": "HB413"
+        },
+        {
+          "link": 185,
+          "bill": "HB305"
+        },
+        {
+          "link": 188,
+          "bill": "HB766"
+        },
+        {
+          "link": 191,
+          "bill": "HB1052"
+        }
+      ],
+      "chosen": [
+        {
+          "link": 173,
+          "bill": "HB762"
+        },
+        {
+          "link": 149,
+          "bill": "SB973"
+        },
+        {
+          "link": 56,
+          "bill": "SB2878"
+        },
+        {
+          "link": 68,
+          "bill": "HB4885"
+        },
+        {
+          "link": 176,
+          "bill": "HB1056"
+        },
+        {
+          "link": 83,
+          "bill": "HB4325"
+        },
+        {
+          "link": 104,
+          "bill": "SB1758"
+        },
+        {
+          "link": 80,
+          "bill": "SB2206"
+        },
+        {
+          "link": 167,
+          "bill": "SB614"
+        },
+        {
+          "link": 95,
+          "bill": "SB1968"
+        }
+      ]
+    },
+    "FL": {
+      "listing_url": "https://legiscan.com/FL/legislation/2025",
+      "eligible": [
+        {
+          "link": 52,
+          "bill": "H1195"
+        },
+        {
+          "link": 55,
+          "bill": "H6521"
+        },
+        {
+          "link": 58,
+          "bill": "S0022"
+        },
+        {
+          "link": 61,
+          "bill": "S0014"
+        },
+        {
+          "link": 64,
+          "bill": "H4047"
+        },
+        {
+          "link": 67,
+          "bill": "S0010"
+        },
+        {
+          "link": 70,
+          "bill": "H4041"
+        },
+        {
+          "link": 73,
+          "bill": "H4067"
+        },
+        {
+          "link": 76,
+          "bill": "H4033"
+        },
+        {
+          "link": 79,
+          "bill": "H4023"
+        },
+        {
+          "link": 82,
+          "bill": "S0008"
+        },
+        {
+          "link": 85,
+          "bill": "H4071"
+        },
+        {
+          "link": 88,
+          "bill": "H1219"
+        },
+        {
+          "link": 91,
+          "bill": "H4075"
+        },
+        {
+          "link": 94,
+          "bill": "H4043"
+        },
+        {
+          "link": 97,
+          "bill": "H4013"
+        },
+        {
+          "link": 100,
+          "bill": "H4061"
+        },
+        {
+          "link": 103,
+          "bill": "S0026"
+        },
+        {
+          "link": 106,
+          "bill": "H4057"
+        },
+        {
+          "link": 109,
+          "bill": "H4011"
+        },
+        {
+          "link": 112,
+          "bill": "H4009"
+        },
+        {
+          "link": 115,
+          "bill": "H4037"
+        },
+        {
+          "link": 118,
+          "bill": "H4031"
+        },
+        {
+          "link": 121,
+          "bill": "H4059"
+        },
+        {
+          "link": 124,
+          "bill": "H4035"
+        },
+        {
+          "link": 127,
+          "bill": "H6503"
+        },
+        {
+          "link": 130,
+          "bill": "H4021"
+        },
+        {
+          "link": 133,
+          "bill": "H4025"
+        },
+        {
+          "link": 136,
+          "bill": "H4051"
+        },
+        {
+          "link": 139,
+          "bill": "H4029"
+        },
+        {
+          "link": 142,
+          "bill": "H4007"
+        },
+        {
+          "link": 145,
+          "bill": "H4053"
+        },
+        {
+          "link": 148,
+          "bill": "H4015"
+        },
+        {
+          "link": 151,
+          "bill": "H0677"
+        },
+        {
+          "link": 154,
+          "bill": "H4001"
+        },
+        {
+          "link": 157,
+          "bill": "H4073"
+        },
+        {
+          "link": 160,
+          "bill": "H4065"
+        },
+        {
+          "link": 163,
+          "bill": "S0028"
+        },
+        {
+          "link": 166,
+          "bill": "H4017"
+        },
+        {
+          "link": 169,
+          "bill": "H4045"
+        },
+        {
+          "link": 172,
+          "bill": "H4049"
+        },
+        {
+          "link": 175,
+          "bill": "S0020"
+        },
+        {
+          "link": 178,
+          "bill": "H0987"
+        },
+        {
+          "link": 181,
+          "bill": "S7022"
+        },
+        {
+          "link": 184,
+          "bill": "S0892"
+        },
+        {
+          "link": 187,
+          "bill": "S7018"
+        },
+        {
+          "link": 190,
+          "bill": "S2502"
+        },
+        {
+          "link": 193,
+          "bill": "H7031"
+        },
+        {
+          "link": 196,
+          "bill": "H5017"
+        },
+        {
+          "link": 199,
+          "bill": "H1421"
+        }
+      ],
+      "chosen": [
+        {
+          "link": 196,
+          "bill": "H5017"
+        },
+        {
+          "link": 118,
+          "bill": "H4031"
+        },
+        {
+          "link": 136,
+          "bill": "H4051"
+        },
+        {
+          "link": 76,
+          "bill": "H4033"
+        },
+        {
+          "link": 112,
+          "bill": "H4009"
+        },
+        {
+          "link": 73,
+          "bill": "H4067"
+        },
+        {
+          "link": 70,
+          "bill": "H4041"
+        },
+        {
+          "link": 169,
+          "bill": "H4045"
+        },
+        {
+          "link": 124,
+          "bill": "H4035"
+        },
+        {
+          "link": 79,
+          "bill": "H4023"
+        }
+      ]
+    },
+    "NY": {
+      "listing_url": "https://legiscan.com/NY/legislation/2025",
+      "eligible": [
+        {
+          "link": 43,
+          "bill": "S10743"
+        },
+        {
+          "link": 47,
+          "bill": "S10742"
+        },
+        {
+          "link": 50,
+          "bill": "S10741"
+        },
+        {
+          "link": 53,
+          "bill": "S09866"
+        },
+        {
+          "link": 56,
+          "bill": "S00072"
+        },
+        {
+          "link": 60,
+          "bill": "S10739"
+        },
+        {
+          "link": 63,
+          "bill": "S10740"
+        },
+        {
+          "link": 66,
+          "bill": "S10738"
+        },
+        {
+          "link": 69,
+          "bill": "S10736"
+        },
+        {
+          "link": 72,
+          "bill": "S10737"
+        },
+        {
+          "link": 75,
+          "bill": "A11476"
+        },
+        {
+          "link": 78,
+          "bill": "S10396"
+        },
+        {
+          "link": 81,
+          "bill": "A11375"
+        },
+        {
+          "link": 84,
+          "bill": "A11296"
+        },
+        {
+          "link": 87,
+          "bill": "S10264"
+        },
+        {
+          "link": 90,
+          "bill": "S10134"
+        },
+        {
+          "link": 93,
+          "bill": "S09997"
+        },
+        {
+          "link": 96,
+          "bill": "S09989"
+        },
+        {
+          "link": 99,
+          "bill": "S09971"
+        },
+        {
+          "link": 102,
+          "bill": "A10936"
+        },
+        {
+          "link": 105,
+          "bill": "S09853"
+        },
+        {
+          "link": 108,
+          "bill": "S09758"
+        },
+        {
+          "link": 111,
+          "bill": "A10679"
+        },
+        {
+          "link": 114,
+          "bill": "A10653"
+        },
+        {
+          "link": 117,
+          "bill": "A10510"
+        },
+        {
+          "link": 120,
+          "bill": "S09345"
+        },
+        {
+          "link": 123,
+          "bill": "A10411"
+        },
+        {
+          "link": 126,
+          "bill": "A10334"
+        },
+        {
+          "link": 129,
+          "bill": "A10267"
+        },
+        {
+          "link": 132,
+          "bill": "A10218"
+        },
+        {
+          "link": 135,
+          "bill": "A10055"
+        },
+        {
+          "link": 138,
+          "bill": "A10102"
+        },
+        {
+          "link": 141,
+          "bill": "A10079"
+        },
+        {
+          "link": 144,
+          "bill": "A09609"
+        },
+        {
+          "link": 147,
+          "bill": "S08944"
+        },
+        {
+          "link": 150,
+          "bill": "S08925"
+        },
+        {
+          "link": 153,
+          "bill": "A09566"
+        },
+        {
+          "link": 156,
+          "bill": "S08904"
+        },
+        {
+          "link": 159,
+          "bill": "S08899"
+        },
+        {
+          "link": 162,
+          "bill": "S08870"
+        },
+        {
+          "link": 165,
+          "bill": "A09183"
+        },
+        {
+          "link": 168,
+          "bill": "A08742"
+        },
+        {
+          "link": 171,
+          "bill": "A08695"
+        },
+        {
+          "link": 174,
+          "bill": "A08492"
+        },
+        {
+          "link": 177,
+          "bill": "A08388"
+        },
+        {
+          "link": 180,
+          "bill": "S07279"
+        },
+        {
+          "link": 183,
+          "bill": "S06482"
+        },
+        {
+          "link": 186,
+          "bill": "A06773"
+        },
+        {
+          "link": 190,
+          "bill": "A06744"
+        },
+        {
+          "link": 193,
+          "bill": "S06273"
+        }
+      ],
+      "chosen": [
+        {
+          "link": 171,
+          "bill": "A08695"
+        },
+        {
+          "link": 193,
+          "bill": "S06273"
+        },
+        {
+          "link": 53,
+          "bill": "S09866"
+        },
+        {
+          "link": 72,
+          "bill": "S10737"
+        },
+        {
+          "link": 47,
+          "bill": "S10742"
+        },
+        {
+          "link": 66,
+          "bill": "S10738"
+        },
+        {
+          "link": 96,
+          "bill": "S09989"
+        },
+        {
+          "link": 177,
+          "bill": "A08388"
+        },
+        {
+          "link": 129,
+          "bill": "A10267"
+        },
+        {
+          "link": 108,
+          "bill": "S09758"
+        }
+      ]
+    },
+    "IL": {
+      "listing_url": "https://legiscan.com/IL/legislation/2025",
+      "eligible": [
+        {
+          "link": 49,
+          "bill": "HB5839"
+        },
+        {
+          "link": 74,
+          "bill": "SB4214"
+        },
+        {
+          "link": 87,
+          "bill": "HB5835"
+        },
+        {
+          "link": 93,
+          "bill": "HB5834"
+        },
+        {
+          "link": 96,
+          "bill": "HB5833"
+        },
+        {
+          "link": 99,
+          "bill": "HB5832"
+        },
+        {
+          "link": 118,
+          "bill": "HB5827"
+        },
+        {
+          "link": 121,
+          "bill": "HB5826"
+        },
+        {
+          "link": 133,
+          "bill": "HB5819"
+        },
+        {
+          "link": 136,
+          "bill": "HB5818"
+        },
+        {
+          "link": 151,
+          "bill": "HB5814"
+        },
+        {
+          "link": 157,
+          "bill": "HB5813"
+        },
+        {
+          "link": 163,
+          "bill": "HB5811"
+        },
+        {
+          "link": 175,
+          "bill": "HB5810"
+        },
+        {
+          "link": 178,
+          "bill": "HB5808"
+        },
+        {
+          "link": 181,
+          "bill": "HB5809"
+        },
+        {
+          "link": 184,
+          "bill": "HB5804"
+        },
+        {
+          "link": 187,
+          "bill": "HB5802"
+        }
+      ],
+      "chosen": [
+        {
+          "link": 49,
+          "bill": "HB5839"
+        },
+        {
+          "link": 118,
+          "bill": "HB5827"
+        },
+        {
+          "link": 151,
+          "bill": "HB5814"
+        },
+        {
+          "link": 93,
+          "bill": "HB5834"
+        },
+        {
+          "link": 96,
+          "bill": "HB5833"
+        },
+        {
+          "link": 99,
+          "bill": "HB5832"
+        },
+        {
+          "link": 87,
+          "bill": "HB5835"
+        },
+        {
+          "link": 136,
+          "bill": "HB5818"
+        },
+        {
+          "link": 163,
+          "bill": "HB5811"
+        },
+        {
+          "link": 157,
+          "bill": "HB5813"
+        }
+      ]
+    },
+    "WA": {
+      "listing_url": "https://legiscan.com/WA/legislation/2025",
+      "eligible": [
+        {
+          "link": 44,
+          "bill": "SB6260"
+        },
+        {
+          "link": 47,
+          "bill": "SB6003"
+        },
+        {
+          "link": 50,
+          "bill": "HB2681"
+        },
+        {
+          "link": 53,
+          "bill": "HB2487"
+        },
+        {
+          "link": 56,
+          "bill": "HB1960"
+        },
+        {
+          "link": 59,
+          "bill": "HB2034"
+        },
+        {
+          "link": 62,
+          "bill": "SB6228"
+        },
+        {
+          "link": 65,
+          "bill": "SB5998"
+        },
+        {
+          "link": 68,
+          "bill": "HB2689"
+        },
+        {
+          "link": 71,
+          "bill": "SB5974"
+        },
+        {
+          "link": 74,
+          "bill": "SB6231"
+        },
+        {
+          "link": 77,
+          "bill": "SB6005"
+        },
+        {
+          "link": 80,
+          "bill": "SB6225"
+        },
+        {
+          "link": 83,
+          "bill": "HB2711"
+        },
+        {
+          "link": 86,
+          "bill": "HB1390"
+        },
+        {
+          "link": 89,
+          "bill": "SB6034"
+        },
+        {
+          "link": 92,
+          "bill": "HB2496"
+        },
+        {
+          "link": 95,
+          "bill": "SB6137"
+        },
+        {
+          "link": 98,
+          "bill": "HB2215"
+        },
+        {
+          "link": 101,
+          "bill": "SB6002"
+        },
+        {
+          "link": 104,
+          "bill": "SB6113"
+        },
+        {
+          "link": 107,
+          "bill": "HB1903"
+        },
+        {
+          "link": 110,
+          "bill": "SB6355"
+        },
+        {
+          "link": 113,
+          "bill": "SB6246"
+        },
+        {
+          "link": 116,
+          "bill": "SB5862"
+        },
+        {
+          "link": 119,
+          "bill": "HB2156"
+        },
+        {
+          "link": 122,
+          "bill": "SB5820"
+        },
+        {
+          "link": 125,
+          "bill": "HB2411"
+        },
+        {
+          "link": 128,
+          "bill": "HB2105"
+        },
+        {
+          "link": 131,
+          "bill": "SB6346"
+        },
+        {
+          "link": 134,
+          "bill": "SB5925"
+        },
+        {
+          "link": 137,
+          "bill": "HB1906"
+        },
+        {
+          "link": 140,
+          "bill": "SB6026"
+        },
+        {
+          "link": 143,
+          "bill": "HB1345"
+        },
+        {
+          "link": 146,
+          "bill": "SB6237"
+        },
+        {
+          "link": 149,
+          "bill": "HB2418"
+        },
+        {
+          "link": 152,
+          "bill": "HB1974"
+        },
+        {
+          "link": 155,
+          "bill": "HB2266"
+        },
+        {
+          "link": 158,
+          "bill": "SB6027"
+        },
+        {
+          "link": 161,
+          "bill": "HB2325"
+        },
+        {
+          "link": 164,
+          "bill": "SB6035"
+        },
+        {
+          "link": 167,
+          "bill": "SB5981"
+        },
+        {
+          "link": 170,
+          "bill": "SB5346"
+        },
+        {
+          "link": 173,
+          "bill": "HB1710"
+        },
+        {
+          "link": 176,
+          "bill": "SB5892"
+        },
+        {
+          "link": 179,
+          "bill": "HB2251"
+        },
+        {
+          "link": 182,
+          "bill": "SB5105"
+        },
+        {
+          "link": 185,
+          "bill": "HB2548"
+        },
+        {
+          "link": 188,
+          "bill": "SB5868"
+        },
+        {
+          "link": 191,
+          "bill": "HB1941"
+        }
+      ],
+      "chosen": [
+        {
+          "link": 83,
+          "bill": "HB2711"
+        },
+        {
+          "link": 53,
+          "bill": "HB2487"
+        },
+        {
+          "link": 86,
+          "bill": "HB1390"
+        },
+        {
+          "link": 143,
+          "bill": "HB1345"
+        },
+        {
+          "link": 119,
+          "bill": "HB2156"
+        },
+        {
+          "link": 65,
+          "bill": "SB5998"
+        },
+        {
+          "link": 122,
+          "bill": "SB5820"
+        },
+        {
+          "link": 155,
+          "bill": "HB2266"
+        },
+        {
+          "link": 62,
+          "bill": "SB6228"
+        },
+        {
+          "link": 101,
+          "bill": "SB6002"
+        }
+      ]
+    }
+  },
+  "retrieved_count": 52,
+  "retrieval_exclusions": [
+    {
+      "state": "NY",
+      "bill": "S10737",
+      "reason": "Public bill-detail page unavailable through web lookup; no truncated listing substituted."
+    },
+    {
+      "state": "NY",
+      "bill": "S10742",
+      "reason": "Public bill-detail page unavailable through web lookup; no truncated listing substituted."
+    },
+    {
+      "state": "NY",
+      "bill": "S10738",
+      "reason": "Public bill-detail page unavailable through web lookup; no truncated listing substituted."
+    },
+    {
+      "state": "IL",
+      "bill": "HB5839",
+      "reason": "Public bill-detail page unavailable through web lookup; no truncated listing substituted."
+    },
+    {
+      "state": "IL",
+      "bill": "HB5834",
+      "reason": "Public bill-detail page unavailable through web lookup; no truncated listing substituted."
+    },
+    {
+      "state": "IL",
+      "bill": "HB5833",
+      "reason": "Public bill-detail page unavailable through web lookup; no truncated listing substituted."
+    },
+    {
+      "state": "IL",
+      "bill": "HB5832",
+      "reason": "Public bill-detail page unavailable through web lookup; no truncated listing substituted."
+    },
+    {
+      "state": "IL",
+      "bill": "HB5835",
+      "reason": "Public bill-detail page unavailable through web lookup; no truncated listing substituted."
+    }
+  ]
+}

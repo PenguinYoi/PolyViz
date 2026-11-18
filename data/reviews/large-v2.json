@@ -1,0 +1,1170 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "version": "2-draft",
+    "topics": [
+      {
+        "id": "housing",
+        "name": "Housing",
+        "description": "Residential housing development, affordability programs, rental relationships, eviction, and homelessness services.",
+        "terms": [
+          "housing",
+          "tenant",
+          "tenants",
+          "landlord",
+          "landlords",
+          "zoning",
+          "homelessness",
+          "eviction",
+          "rent control",
+          "affordable homes"
+        ],
+        "semantic_examples": [
+          "Regulates rental agreements, tenancy, eviction procedures, and landlord obligations.",
+          "Funds construction of affordable homes and addresses homelessness."
+        ],
+        "hypothesis": "This text is about housing.",
+        "include": [
+          "Residential zoning and accessory dwelling units",
+          "Rental advertising, tenancy, eviction and residential landlord duties",
+          "Housing assistance and homelessness shelter programs"
+        ],
+        "exclude": [
+          "Industrial-only zoning or data-center siting",
+          "Real-estate professional licensing without a residential housing provision",
+          "A reference to residents or buildings alone"
+        ]
+      },
+      {
+        "id": "healthcare",
+        "name": "Healthcare",
+        "description": "Medical care, insurance coverage, provider practice, patient rights, and population-health programs.",
+        "terms": [
+          "healthcare",
+          "health care",
+          "medicaid",
+          "medicare",
+          "hospital",
+          "hospitals",
+          "public health",
+          "health insurance",
+          "mental health",
+          "prescription drug",
+          "prescription drugs"
+        ],
+        "semantic_examples": [
+          "Expands access to medical treatment, health insurance, or mental health services."
+        ],
+        "hypothesis": "This text is about healthcare.",
+        "include": [
+          "Mental-health treatment and patient services",
+          "Medical-provider practice, licensure and clinical training requirements",
+          "Disease prevention and governance of operational public-health programs"
+        ],
+        "exclude": [
+          "A Health Code citation alone",
+          "Wages or pensions for healthcare employees without a care/practice provision",
+          "A sector-specific tax exemption without a healthcare-service or practice provision"
+        ]
+      },
+      {
+        "id": "education",
+        "name": "Education",
+        "description": "School and higher-education instruction, educational services, governance, staffing duties, access, and funding.",
+        "terms": [
+          "education",
+          "school",
+          "schools",
+          "student",
+          "students",
+          "teacher",
+          "teachers",
+          "tuition",
+          "university",
+          "universities",
+          "school district"
+        ],
+        "semantic_examples": [
+          "Changes school funding, classroom instruction, teacher duties, or university tuition."
+        ],
+        "hypothesis": "This text is about education.",
+        "include": [
+          "School curriculum, tuition and teacher duties",
+          "Operational duties of schools delivering services",
+          "Studies explicitly examining educational participation or outcomes"
+        ],
+        "exclude": [
+          "Student eligibility to work as election officials",
+          "School-tax exemptions without a school resource or funding allocation provision",
+          "Continuing professional training outside educational institutions"
+        ]
+      },
+      {
+        "id": "transportation",
+        "name": "Transportation",
+        "description": "Transport networks, mobility, vehicle regulation, driver administration and transport safety.",
+        "terms": [
+          "transportation",
+          "public transit",
+          "highway",
+          "highways",
+          "railway",
+          "railroads",
+          "motor vehicle",
+          "motor vehicles",
+          "driver license",
+          "bicycle",
+          "bicycles"
+        ],
+        "semantic_examples": [
+          "Funds and operates bus networks, rail service, road improvements, or transportation safety."
+        ],
+        "hypothesis": "This text is about transportation.",
+        "include": [
+          "Road, rail, bus and freight operations",
+          "Abandoned or impounded vehicles",
+          "Driver/vehicle licensing and transport-administration records"
+        ],
+        "exclude": [
+          "Ceremonial airport or bridge renaming",
+          "Housing near transit without a separate transport provision",
+          "Generic equipment that happens to be a vehicle"
+        ]
+      },
+      {
+        "id": "environment",
+        "name": "Environment",
+        "description": "Pollution, waste, conservation, wildlife and environmental protection.",
+        "terms": [
+          "climate",
+          "pollution",
+          "emissions",
+          "conservation",
+          "environmental protection",
+          "recycling",
+          "water quality",
+          "air quality",
+          "wetlands",
+          "wildlife"
+        ],
+        "semantic_examples": [
+          "Controls pollution and protects water, air, ecosystems, and wildlife."
+        ],
+        "hypothesis": "This text is about environmental protection.",
+        "include": [
+          "Waste disposal, recycling and illegal dumping",
+          "Air/water pollution controls",
+          "Wildlife conservation and management"
+        ],
+        "exclude": [
+          "Industrial siting without a stated environmental provision",
+          "A Public Resources Code citation alone",
+          "A district with a natural-sounding name without environmental duties"
+        ]
+      },
+      {
+        "id": "energy",
+        "name": "Energy",
+        "description": "Energy generation, distribution, fuels, energy utility services and energy efficiency.",
+        "terms": [
+          "renewable energy",
+          "electricity",
+          "solar",
+          "wind energy",
+          "natural gas",
+          "electric utility",
+          "electric utilities",
+          "energy efficiency",
+          "power grid"
+        ],
+        "semantic_examples": [
+          "Regulates electricity generation, energy efficiency, and utility infrastructure."
+        ],
+        "hypothesis": "This text is about energy.",
+        "include": [
+          "Renewable generation and electricity networks",
+          "Building energy efficiency",
+          "Energy-service regulation"
+        ],
+        "exclude": [
+          "Water-only district governance",
+          "General investment without an energy provision",
+          "A reference to an electric appliance alone"
+        ]
+      },
+      {
+        "id": "taxation",
+        "name": "Taxation",
+        "description": "Tax rates, bases, credits, exemptions, assessment and tax administration.",
+        "terms": [
+          "tax",
+          "taxes",
+          "taxation",
+          "tax credit",
+          "tax credits",
+          "tax exemption",
+          "tax exemptions",
+          "taxpayer",
+          "taxpayers"
+        ],
+        "semantic_examples": [
+          "Changes taxes, deductions, exemptions, credits, or tax collection."
+        ],
+        "hypothesis": "This text is about taxation.",
+        "include": [
+          "Creates or repeals a tax credit or exemption",
+          "Express property-tax assessment provisions",
+          "Tax powers of local districts"
+        ],
+        "exclude": [
+          "Debt administration, bonds, appropriations or fees without tax changes",
+          "A statement that tax provisions are unchanged",
+          "Assuming an appraisal is a tax assessment without enough context"
+        ]
+      },
+      {
+        "id": "public_safety",
+        "name": "Public safety and justice",
+        "description": "Criminal justice, criminal procedure, policing, corrections, firearms and emergency response.",
+        "terms": [
+          "criminal",
+          "police",
+          "policing",
+          "firearm",
+          "firearms",
+          "sentencing",
+          "prison",
+          "prisons",
+          "corrections",
+          "emergency response",
+          "law enforcement"
+        ],
+        "semantic_examples": [
+          "Changes criminal offenses, sentencing, policing, firearms laws, or emergency response."
+        ],
+        "hypothesis": "This text is about crime and public safety.",
+        "include": [
+          "Juvenile criminal records and appointed criminal counsel",
+          "Grand-jury evidence, forensic case review and sentencing",
+          "Operational policing and emergency-response duties"
+        ],
+        "exclude": [
+          "Civil eviction, civil liability or civil court procedure alone",
+          "Police officer pensions without policing provisions",
+          "Employment background-check acceptance without a criminal-process or public-safety provision",
+          "Unspecified jury or investigator procedures when criminal/civil scope is unknown"
+        ]
+      },
+      {
+        "id": "labor",
+        "name": "Labor and employment",
+        "description": "Employment conditions, worker rights, wages, pensions, hiring access and workforce development.",
+        "terms": [
+          "employment",
+          "unemployment",
+          "minimum wage",
+          "worker",
+          "workers",
+          "workplace",
+          "collective bargaining",
+          "paid leave",
+          "occupational safety"
+        ],
+        "semantic_examples": [
+          "Regulates wages, collective bargaining, employment rights, and workplace conditions."
+        ],
+        "hypothesis": "This text is about labor and employment.",
+        "include": [
+          "Severance, paid leave, wages and occupational pension terms",
+          "Hiring eligibility and employer screening obligations",
+          "Workforce development and labor administration"
+        ],
+        "exclude": [
+          "Public-official ethics or conflicts of interest alone",
+          "Business/professional licensing alone",
+          "A person described as an employee without an employment provision"
+        ]
+      },
+      {
+        "id": "elections",
+        "name": "Elections and voting",
+        "description": "Voting access, election administration, electoral districts, candidate eligibility and campaign finance.",
+        "terms": [
+          "election",
+          "elections",
+          "voting",
+          "ballot",
+          "ballots",
+          "voter",
+          "voters",
+          "redistricting",
+          "campaign finance"
+        ],
+        "semantic_examples": [
+          "Changes voter registration, ballot access, election procedures, or campaign finance."
+        ],
+        "hypothesis": "This text is about elections and voting.",
+        "include": [
+          "Redistricting and electoral boundaries",
+          "Election staffing and voting procedures",
+          "Changes to board candidate eligibility or selection by voters"
+        ],
+        "exclude": [
+          "An ordinary referendum condition for an unrelated local government action, without a distinct electoral administration change",
+          "Appointment of an official without a change to electoral rules",
+          "The word candidate used outside elections"
+        ]
+      }
+    ],
+    "semantic_version": "1",
+    "hypothesis_version": "2",
+    "status": "draft_not_adopted",
+    "rules": [
+      "Assign all substantively changed policy topics; do not force one label.",
+      "A code citation, affected population, or institution alone is insufficient.",
+      "Keep affected sectors separate from direct topic labels; user-selected design.",
+      "Distinguish assigned, outside_taxonomy, needs_more_text, and pending.",
+      "Require exact input excerpts plus an explanation; excerpts alone do not prove relevance.",
+      "Do not infer policy direction, effectiveness, or enactment from category labels.",
+      "Ceremonial measures should be excluded from policy analysis even when they name a school, airport, or public official.",
+      "A sector-specific tax provision alone gets taxation plus an affected-sector tag. Add the sector as a policy topic only if a distinct substantive provision supports it."
+    ],
+    "sectors": [
+      {
+        "id": "healthcare",
+        "name": "Healthcare",
+        "description": "Medical providers, patients, pharmaceuticals and health services."
+      },
+      {
+        "id": "education",
+        "name": "Education",
+        "description": "Schools, colleges, universities and educational services."
+      },
+      {
+        "id": "housing",
+        "name": "Housing",
+        "description": "Residential development, rental housing and shelter services."
+      },
+      {
+        "id": "transportation",
+        "name": "Transportation",
+        "description": "Mobility, transport operators, drivers and vehicle services."
+      },
+      {
+        "id": "energy",
+        "name": "Energy",
+        "description": "Energy producers, distributors, utilities and consumers."
+      },
+      {
+        "id": "finance",
+        "name": "Finance",
+        "description": "Banking, insurance, financial services and monetary systems."
+      },
+      {
+        "id": "technology",
+        "name": "Technology",
+        "description": "Digital services, data centers, recording devices and technology businesses."
+      },
+      {
+        "id": "agriculture",
+        "name": "Agriculture",
+        "description": "Farming, food production and related agricultural activities."
+      },
+      {
+        "id": "government",
+        "name": "Government",
+        "description": "Government agencies, public administration and local districts."
+      },
+      {
+        "id": "commerce",
+        "name": "Commerce",
+        "description": "Retail, business licensing and other commercial activities."
+      }
+    ],
+    "topic_sector_rule": "Topics describe the direct legal change; affected_sectors identify explicitly targeted sectors. Do not infer every indirect economic consequence."
+  },
+  "policy_hash": "e53f22f97faf4c567d710ae9c31967d0c34016a038a18f9eb02ba665d8b0135e",
+  "input_hash": "69b7a89e408a8a337a492889cfe7306930b632fe00f64b1d4ad1c7eaedb5fa52",
+  "records": [
+    {
+      "id": "CA-2025-2026-REGULAR-AB1987",
+      "state": "CA",
+      "title": "Department-managed lands: wildlife areas: hunting.",
+      "summary": "An act to amend Sections 1745, 1745.1, and 1758 of, and to add Section 1528.5 to, the Fish and Game Code, relating to fish and wildlife.",
+      "source_url": "https://legiscan.com/CA/bill/AB1987/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB1414",
+      "state": "CA",
+      "title": "County of San Bernardino Citizens Redistricting Commission.",
+      "summary": "An act to add Chapter 6.11 (commencing with Section 21596) to Division 21 of the Elections Code, relating to elections.",
+      "source_url": "https://legiscan.com/CA/bill/SB1414/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB2397",
+      "state": "CA",
+      "title": "Local government: community facilities districts: financing.",
+      "summary": "An act to add Section 53316.8 to the Government Code, relating to local government.",
+      "source_url": "https://legiscan.com/CA/bill/AB2397/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB715",
+      "state": "CA",
+      "title": "Elections.",
+      "summary": "An act to amend Sections 6041, 6340, 6520, 6722, 6852, 8020, 8020.5, 8022, 8024, 8027, 8028, 8121, 8147.5, 8903, 10220, 10224, 10225, 10229, 10403, 10407, 10510, 10516, 10603, 10604, 10703, 12101, 12262, 13112, 13107.3, and 13307 of the Elections Code, relating to elections.",
+      "source_url": "https://legiscan.com/CA/bill/SB715/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB647",
+      "state": "CA",
+      "title": "Abandoned recreational vehicles.",
+      "summary": "An act to amend Section 22851.5 of the Vehicle Code, relating to vehicles.",
+      "source_url": "https://legiscan.com/CA/bill/AB647/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB1267",
+      "state": "CA",
+      "title": "Marriage: prohibition on minors.",
+      "summary": "An act to amend Sections 297, 423, and 2210 of, and to repeal Sections 297.1, 298.8, 302, 303, 304, and 1501 of, the Family Code, and to repeal Sections 102233 and 102356 of the Health and Safety Code, relating to marriage.",
+      "source_url": "https://legiscan.com/CA/bill/AB1267/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB1985",
+      "state": "CA",
+      "title": "Student health: athletic coaches and trainers: mental health training.",
+      "summary": "An act to add Section 67387 to the Education Code, relating to student health.",
+      "source_url": "https://legiscan.com/CA/bill/AB1985/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB2437",
+      "state": "CA",
+      "title": "Impounded vehicles.",
+      "summary": "An act to amend Sections 4000, 10856, 14602.6, 14602.7, 14602.8, 21100.4, 22651.07, 22651.1, 22658, 22659.5, and 23118 of the Vehicle Code, relating to vehicles.",
+      "source_url": "https://legiscan.com/CA/bill/AB2437/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB1130",
+      "state": "CA",
+      "title": "Invasion of privacy: wearable recording devices.",
+      "summary": "An act to add Chapter 40 (commencing with Section 22949.85) to Division 8 of the Business and Professions Code, and to amend Sections 633, 633.1, and 633.5 of, and to add Section 632.8 to, the Penal Code, relating to privacy.",
+      "source_url": "https://legiscan.com/CA/bill/SB1130/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB692",
+      "state": "CA",
+      "title": "Vehicles: homelessness.",
+      "summary": "An act to add Section 22851.35 to the Vehicle Code, relating to vehicles.",
+      "source_url": "https://legiscan.com/CA/bill/SB692/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB762",
+      "state": "TX",
+      "title": "Relating to severance pay for political subdivision employees and independent contractors.",
+      "summary": "Relating to severance pay for political subdivision employees and independent contractors.",
+      "source_url": "https://legiscan.com/TX/bill/HB762/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB973",
+      "state": "TX",
+      "title": "Relating to the periodic reappraisal of property by, and the prohibition on posting on the Internet certain information held by, an appraisal district.",
+      "summary": "Relating to the periodic reappraisal of property by, and the prohibition on posting on the Internet certain information held by, an appraisal district.",
+      "source_url": "https://legiscan.com/TX/bill/SB973/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB2878",
+      "state": "TX",
+      "title": "Relating to the operation and administration of and practices and procedures related to proceedings in the judicial branch of state government, including court security, court documents and arrest warrants, document delivery, juvenile boards, constitutional amendment election challenges, mandatory expunction for certain persons, record retention, and youth diversion; increasing a criminal penalty; authorizing fees.",
+      "summary": "Relating to the operation and administration of and practices and procedures related to proceedings in the judicial branch of state government, including court security, court documents and arrest warrants, document delivery, juvenile boards, constitutional amendment election challenges, mandatory expunction for certain persons, record retention, and youth diversion; increasing a criminal penalty; authorizing fees.",
+      "source_url": "https://legiscan.com/TX/bill/SB2878/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB4885",
+      "state": "TX",
+      "title": "Relating to the disclosure of confidential juvenile records to a managed assigned counsel program.",
+      "summary": "Relating to the disclosure of confidential juvenile records to a managed assigned counsel program.",
+      "source_url": "https://legiscan.com/TX/bill/HB4885/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB1056",
+      "state": "TX",
+      "title": "Relating to the recognition of gold and silver specie as legal tender and the establishment of a transactional currency based on gold and silver; authorizing a fee.",
+      "summary": "Relating to the recognition of gold and silver specie as legal tender and the establishment of a transactional currency based on gold and silver; authorizing a fee.",
+      "source_url": "https://legiscan.com/TX/bill/HB1056/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB4325",
+      "state": "TX",
+      "title": "Relating to civil liability for prohibited barratry.",
+      "summary": "Relating to civil liability for prohibited barratry.",
+      "source_url": "https://legiscan.com/TX/bill/HB4325/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB1758",
+      "state": "TX",
+      "title": "Relating to the operation of a cement kiln and the production of aggregates near a semiconductor wafer manufacturing facility.",
+      "summary": "Relating to the operation of a cement kiln and the production of aggregates near a semiconductor wafer manufacturing facility.",
+      "source_url": "https://legiscan.com/TX/bill/SB1758/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB2206",
+      "state": "TX",
+      "title": "Relating to a franchise tax credit for, and the application of sales and use taxes to, certain research and development expenses.",
+      "summary": "Relating to a franchise tax credit for, and the application of sales and use taxes to, certain research and development expenses.",
+      "source_url": "https://legiscan.com/TX/bill/SB2206/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB614",
+      "state": "TX",
+      "title": "Relating to the authority of the Texas Forensic Science Commission to review and refer certain cases to the office of capital and forensic writs.",
+      "summary": "Relating to the authority of the Texas Forensic Science Commission to review and refer certain cases to the office of capital and forensic writs.",
+      "source_url": "https://legiscan.com/TX/bill/SB614/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB1968",
+      "state": "TX",
+      "title": "Relating to the licensing and regulation of certain real estate professionals by the Texas Real Estate Commission.",
+      "summary": "Relating to the licensing and regulation of certain real estate professionals by the Texas Real Estate Commission.",
+      "source_url": "https://legiscan.com/TX/bill/SB1968/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H5017",
+      "state": "FL",
+      "title": "Debt Reduction",
+      "summary": "Revises information required to be included in specified report; creates Debt Reduction Program within SBA for specified purpose; provides requirements for use of certain funds by Division of Bond Finance; requires CFO to transfer certain funds to SBA by specified date each fiscal year; requires any unexpended funds to revert to General Revenue Fund by specified date.",
+      "source_url": "https://legiscan.com/FL/bill/H5017/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4031",
+      "state": "FL",
+      "title": "City of Oviedo, Seminole County",
+      "summary": "Provides exception to general law; authorizes Division of Alcoholic Beverages & Tobacco of DBPR to issue special licenses or modify existing licenses for bona fide licensees operating within such entertainment district for sale of certain alcoholic beverages for consumption off premises; provides that special licenses or modifications of existing licenses are in addition to certain other authorized temporary permits; requires bona fide licensees to comply with all other statutory requirements.",
+      "source_url": "https://legiscan.com/FL/bill/H4031/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4051",
+      "state": "FL",
+      "title": "Pasco County Mosquito Control District, Pasco County",
+      "summary": "Provides applicability of laws on term limits for Pasco County Mosquito Control District board members; requires county commission to draw geographical subdistricts; provides qualifications for district board candidates & members.",
+      "source_url": "https://legiscan.com/FL/bill/H4051/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4033",
+      "state": "FL",
+      "title": "San Carlos Estates Water Control District, Lee County",
+      "summary": "Provides that San Carlos Estates Water Control District, independent special district, shall become dependent district of City of Bonita Springs; reenacting, amending, & repealing certain circuit court decree; provides for transition; provides that members of city council shall assume offices of board of supervisors of said district; provides boundaries; requires referendum.",
+      "source_url": "https://legiscan.com/FL/bill/H4033/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4009",
+      "state": "FL",
+      "title": "St. Augustine-St. Johns County Airport Authority, St. Johns County",
+      "summary": "Renames Northeast Florida Regional Airport.",
+      "source_url": "https://legiscan.com/FL/bill/H4009/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4067",
+      "state": "FL",
+      "title": "Special Beverage Licenses for Equestrian Sport Facilities in Marion County",
+      "summary": "Provides for issuance of special beverage licenses to certain equestrian sport facilities located in Marion County; authorizes package sale of wine & malt beverages for off-premises consumption & sale of alcoholic beverages for on-premises consumption under such licenses; provides for conditions & restrictions; provides for compliance with Beverage Law, with certain exceptions.",
+      "source_url": "https://legiscan.com/FL/bill/H4067/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4041",
+      "state": "FL",
+      "title": "Collier County",
+      "summary": "Creates Corkscrew Grove Stewardship District; provides short title; provides legislative findings & intent; states legislative policy regarding creation of district; establishes compliance with minimum requirements for creation of independent special district; provides for creation & establishment of district; establishes legal boundaries of district; provides for jurisdiction & charter of district; provides for board of supervisors; provides for election, membership, terms, meetings, & duties of board members; provides method for transition of board from landowner control to control by resident electors of district; provides for district manager & district personnel; provides for district treasurer, selection of public depository, & district budgets & financial reports; provides general & special powers of district; provides for bonds; provides for borrowing; provides for future ad valorem taxation; provides for special assessments; provides for issuance of certificates of indebtedness; provides for tax liens; provides for competitive procurement; provides for fees & charges; provides for termination, contraction, expansion, or merger of district; provides for required notices to purchasers of residential units within district; specifies district public property; provides severability; provides for referendum.",
+      "source_url": "https://legiscan.com/FL/bill/H4041/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4045",
+      "state": "FL",
+      "title": "City Pension Fund for Firefighters and Police Officers in the City of Tampa, Hillsborough County",
+      "summary": "Increases DROP participation from 5 years to 8 years; removes full scale contribution rate; revises, updates, & conforms terminology.",
+      "source_url": "https://legiscan.com/FL/bill/H4045/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4035",
+      "state": "FL",
+      "title": "Lee County",
+      "summary": "Revises boundaries of the Lee County Mosquito Control District; repeals chapter 2001-335, Laws of Florida, relating to Fort Myers Beach Mosquito Control District; provides for merger of districts; transfers assets & liabilities of Fort Myers Beach Mosquito Control District to the Lee County Mosquito Control District; requires referendum.",
+      "source_url": "https://legiscan.com/FL/bill/H4035/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4023",
+      "state": "FL",
+      "title": "Officers and Employees of North Springs Improvement District, Broward County",
+      "summary": "adds to charter of North Springs Improvement District, Broward County, prohibition for conflicting employment or contractual relationships.",
+      "source_url": "https://legiscan.com/FL/bill/H4023/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A08695",
+      "state": "NY",
+      "title": "Provides that after an alternate juror has been substituted, the jury shall deliberate anew on all issues submitted to the jury at the outset of deliberations; exempts issues for which a verdict was already rendered.",
+      "summary": "Provides that after an alternate juror has been substituted, the jury shall deliberate anew on all issues submitted to the jury at the outset of deliberations; exempts issues for which a verdict was already rendered.",
+      "source_url": "https://legiscan.com/NY/bill/A08695/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S06273",
+      "state": "NY",
+      "title": "Authorizes and directs the commissioner of education to conduct a study on the number of children who are caregivers and how being a caregiver impacts their education.",
+      "summary": "Authorizes and directs the commissioner of education to conduct a study on the number of children who are caregivers and how being a caregiver impacts their education.",
+      "source_url": "https://legiscan.com/NY/bill/S06273/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09866",
+      "state": "NY",
+      "title": "Creates a publicly available list of persons who have been convicted of illegal dumping for a period of three years.",
+      "summary": "Creates a publicly available list of persons who have been convicted of illegal dumping for a period of three years.",
+      "source_url": "https://legiscan.com/NY/bill/S09866/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09989",
+      "state": "NY",
+      "title": "Authorizes the Tovas Dovid Community Kollel, Inc. to receive retroactive real property tax exempt status for the 2023, 2024 and 2025 assessment rolls and all of the 2023-2024, 2024-2025 and 2025-2026 school taxes.",
+      "summary": "Authorizes the Tovas Dovid Community Kollel, Inc. to receive retroactive real property tax exempt status for the 2023, 2024 and 2025 assessment rolls and all of the 2023-2024, 2024-2025 and 2025-2026 school taxes.",
+      "source_url": "https://legiscan.com/NY/bill/S09989/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A08388",
+      "state": "NY",
+      "title": "Authorizes, under certain circumstances, full-time college and university students to act as election inspectors and poll clerks in the election district where their college or university is located.",
+      "summary": "Authorizes, under certain circumstances, full-time college and university students to act as election inspectors and poll clerks in the election district where their college or university is located.",
+      "source_url": "https://legiscan.com/NY/bill/A08388/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A10267",
+      "state": "NY",
+      "title": "Renames the New York state workforce investment board as the New York state workforce development board; revises the duties of the board.",
+      "summary": "Renames the New York state workforce investment board as the New York state workforce development board; revises the duties of the board.",
+      "source_url": "https://legiscan.com/NY/bill/A10267/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09758",
+      "state": "NY",
+      "title": "Provides that any writing or record made as a memorandum or record of any act, transaction, occurrence or event, may be received in grand jury proceedings as evidence of proof that such act, transaction, occurrence or event, if it was made in the regular course of any business.",
+      "summary": "Provides that any writing or record made as a memorandum or record of any act, transaction, occurrence or event, may be received in grand jury proceedings as evidence of proof that such act, transaction, occurrence or event, if it was made in the regular course of any business.",
+      "source_url": "https://legiscan.com/NY/bill/S09758/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5827",
+      "state": "IL",
+      "title": "ACCEPT FINGERPRINT RECORDS ACT",
+      "summary": "Creates the Standard Acceptance of Records from Fingerprint Vendors Act.\nProvides that, beginning January 1, 2027, a State agency, school district, or unit of local government must accept a fingerprint-based criminal history record check from any certified live scan fingerprint vendor if the State agency, school district, or unit of local government requires an individual to complete a fingerprint-based criminal history record check (1) to continue employment with the State agency, school district, or unit of local government or (2) to obtain employment, licensure, or a grant from the State agency, school district, or unit of local government.\nProvides that, on and after the effective date of the Act, a State agency, school district, or unit of local government may not enter into, amend, or renew a contract with a fingerprint vendor that prohibits or has the effect of prohibiting the State agency, school district, or unit of local government from accepting a fingerprint-based criminal history record check from any other certified live scan fingerprint vendor. Effective immediately.",
+      "source_url": "https://legiscan.com/IL/bill/HB5827/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5814",
+      "state": "IL",
+      "title": "SPORTS WAGERING-FANTASY MKT",
+      "summary": "Amends the Sports Wagering Act. Repeals provisions concerning an exchange wager transaction tax. Repeals the following provisions concerning fantasy contests: (1) provisions providing that fantasy contests do not constitute gambling; (2) provisions concerning licensure of fantasy contest operators; and (3) provisions imposing a privilege tax on the privilege of holding a license to operate fantasy contests under the Act. Amends the Criminal Code of 2012.\nRepeals provisions providing that participants in certain fantasy contests shall not be convicted of gambling. Effective immediately.",
+      "source_url": "https://legiscan.com/IL/bill/HB5814/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5818",
+      "state": "IL",
+      "title": "LOC GOVT-DATA CENTER",
+      "summary": "Amends the Counties Code. Allows a county to establish standards for the construction of data centers by ordinance. Provides that the standards may include, without limitation, the size, height, and design of structures and the number of facilities that may be located within a geographic area. Provides that a county may regulate the siting of data centers in unincorporated areas of the county outside of the zoning jurisdiction of a municipality and may establish other specified standards.\nSets forth provisions concerning notice and hearings. Provides that any provision of a county zoning ordinance pertaining to data centers that is in effect prior to the effective date may remain in effect. Amends the Illinois Municipal Code. Provides that a municipality may, by ordinance, regulate the siting of data centers within the municipality's zoning jurisdiction, including the 1.5-mile radius surrounding its zoning jurisdiction, and may establish other specified standards.\nSets forth provisions concerning notice and hearings.",
+      "source_url": "https://legiscan.com/IL/bill/HB5818/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5811",
+      "state": "IL",
+      "title": "SPORTS WAGERING-EXCHANGE TAX",
+      "summary": "Amends the Sports Wagering Act. Repeals provisions concerning an exchange wager transaction tax. Effective immediately.",
+      "source_url": "https://legiscan.com/IL/bill/HB5811/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5813",
+      "state": "IL",
+      "title": "FAIR RENTAL ENFORCEMENT ACT",
+      "summary": "Amends the Eviction Article of the Code of Civil Procedure. Provides that if a tenant fails to pay rent within the time stated in the notice and demand for payment of rent and the landlord commences an eviction or ejectment action, the summons and complaint for the eviction or ejectment action shall be served on the tenant within 5 business days after the landlord commences the action.\nRequires the tenant to file an appearance within 5 business days of receiving the summons and complaint for the eviction or ejectment action. Requires the court to hold the hearing on the eviction or ejectment action within 10 business days of the tenant filing an appearance, or, if the tenant fails to file an appearance, within 10 business days of the date on which the tenant was required to file an appearance.\nProvides that, if a judgment is entered in favor of the landlord, the judgment shall be served on the tenant within 5 business days of the entry of the judgment. Provides that possession of the premises shall be restored to the landlord immediately following the service of the judgment.",
+      "source_url": "https://legiscan.com/IL/bill/HB5813/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2711",
+      "state": "WA",
+      "title": "Concerning transportation resources.",
+      "summary": "Concerning transportation resources.",
+      "source_url": "https://legiscan.com/WA/bill/HB2711/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2487",
+      "state": "WA",
+      "title": "Concerning taxes imposed on insurers operating within the state.",
+      "summary": "Concerning taxes imposed on insurers operating within the state.",
+      "source_url": "https://legiscan.com/WA/bill/HB2487/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB1390",
+      "state": "WA",
+      "title": "Repealing the community protection program.",
+      "summary": "Repealing the community protection program.",
+      "source_url": "https://legiscan.com/WA/bill/HB1390/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB1345",
+      "state": "WA",
+      "title": "Establishing limitations on detached accessory dwelling units outside of urban growth areas.",
+      "summary": "Establishing limitations on detached accessory dwelling units outside of urban growth areas.",
+      "source_url": "https://legiscan.com/WA/bill/HB1345/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2156",
+      "state": "WA",
+      "title": "Concerning the authority of investigators of the attorney general's office.",
+      "summary": "Concerning the authority of investigators of the attorney general's office.",
+      "source_url": "https://legiscan.com/WA/bill/HB2156/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB5998",
+      "state": "WA",
+      "title": "Making 2025-2027 fiscal biennium supplemental operating appropriations.",
+      "summary": "Making 2025-2027 fiscal biennium supplemental operating appropriations.",
+      "source_url": "https://legiscan.com/WA/bill/SB5998/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB5820",
+      "state": "WA",
+      "title": "Concerning the responsibility of certain counties to include freight rail dependent use overlay as part of the transportation element of their comprehensive plan.",
+      "summary": "Concerning the responsibility of certain counties to include freight rail dependent use overlay as part of the transportation element of their comprehensive plan.",
+      "source_url": "https://legiscan.com/WA/bill/SB5820/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2266",
+      "state": "WA",
+      "title": "Encouraging permanent supportive housing, transitional housing, indoor emergency housing, and indoor emergency shelters.",
+      "summary": "Encouraging permanent supportive housing, transitional housing, indoor emergency housing, and indoor emergency shelters.",
+      "source_url": "https://legiscan.com/WA/bill/HB2266/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB6228",
+      "state": "WA",
+      "title": "Revised for engrossed: Removing a tax exemption for the warehousing and reselling of prescription drugs and providing tax relief for critical access pharmacies.",
+      "summary": "Revised for engrossed: Removing a tax exemption for the warehousing and reselling of prescription drugs and providing tax relief for critical access pharmacies.",
+      "source_url": "https://legiscan.com/WA/bill/SB6228/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB6002",
+      "state": "WA",
+      "title": "Concerning driver privacy protections.",
+      "summary": "Concerning driver privacy protections.",
+      "source_url": "https://legiscan.com/WA/bill/SB6002/2025",
+      "outcome": "pending",
+      "topics": null,
+      "evidence": {},
+      "affected_sectors": null,
+      "sector_evidence": {},
+      "notes": "",
+      "reviewer": null,
+      "reviewed_at": null
+    }
+  ]
+}

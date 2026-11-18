@@ -1,0 +1,218 @@
+{
+  "version": "1",
+  "topics": [
+    {
+      "id": "housing",
+      "name": "Housing",
+      "description": "Housing supply, affordability, tenancy, and homelessness.",
+      "terms": [
+        "housing",
+        "tenant",
+        "tenants",
+        "landlord",
+        "landlords",
+        "zoning",
+        "homelessness",
+        "eviction",
+        "rent control",
+        "affordable homes"
+      ],
+      "semantic_examples": [
+        "Regulates rental agreements, tenancy, eviction procedures, and landlord obligations.",
+        "Funds construction of affordable homes and addresses homelessness."
+      ],
+      "hypothesis": "This text is about housing."
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "description": "Healthcare access, coverage, providers, and public health.",
+      "terms": [
+        "healthcare",
+        "health care",
+        "medicaid",
+        "medicare",
+        "hospital",
+        "hospitals",
+        "public health",
+        "health insurance",
+        "mental health",
+        "prescription drug",
+        "prescription drugs"
+      ],
+      "semantic_examples": [
+        "Expands access to medical treatment, health insurance, or mental health services."
+      ],
+      "hypothesis": "This text is about healthcare."
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "description": "Schools, higher education, students, and education funding.",
+      "terms": [
+        "education",
+        "school",
+        "schools",
+        "student",
+        "students",
+        "teacher",
+        "teachers",
+        "tuition",
+        "university",
+        "universities",
+        "school district"
+      ],
+      "semantic_examples": [
+        "Changes school funding, classroom instruction, teacher duties, or university tuition."
+      ],
+      "hypothesis": "This text is about education."
+    },
+    {
+      "id": "transportation",
+      "name": "Transportation",
+      "description": "Roads, transit, vehicles, and transportation infrastructure.",
+      "terms": [
+        "transportation",
+        "public transit",
+        "highway",
+        "highways",
+        "railway",
+        "railroads",
+        "motor vehicle",
+        "motor vehicles",
+        "driver license",
+        "bicycle",
+        "bicycles"
+      ],
+      "semantic_examples": [
+        "Funds and operates bus networks, rail service, road improvements, or transportation safety."
+      ],
+      "hypothesis": "This text is about transportation."
+    },
+    {
+      "id": "environment",
+      "name": "Environment",
+      "description": "Environmental protection, pollution, conservation, and climate.",
+      "terms": [
+        "climate",
+        "pollution",
+        "emissions",
+        "conservation",
+        "environmental protection",
+        "recycling",
+        "water quality",
+        "air quality",
+        "wetlands",
+        "wildlife"
+      ],
+      "semantic_examples": [
+        "Controls pollution and protects water, air, ecosystems, and wildlife."
+      ],
+      "hypothesis": "This text is about environmental protection."
+    },
+    {
+      "id": "energy",
+      "name": "Energy",
+      "description": "Energy production, distribution, utilities, and efficiency.",
+      "terms": [
+        "renewable energy",
+        "electricity",
+        "solar",
+        "wind energy",
+        "natural gas",
+        "electric utility",
+        "electric utilities",
+        "energy efficiency",
+        "power grid"
+      ],
+      "semantic_examples": [
+        "Regulates electricity generation, energy efficiency, and utility infrastructure."
+      ],
+      "hypothesis": "This text is about energy."
+    },
+    {
+      "id": "taxation",
+      "name": "Taxation",
+      "description": "Taxes, tax credits, exemptions, and revenue collection.",
+      "terms": [
+        "tax",
+        "taxes",
+        "taxation",
+        "tax credit",
+        "tax credits",
+        "tax exemption",
+        "tax exemptions",
+        "taxpayer",
+        "taxpayers"
+      ],
+      "semantic_examples": [
+        "Changes taxes, deductions, exemptions, credits, or tax collection."
+      ],
+      "hypothesis": "This text is about taxation."
+    },
+    {
+      "id": "public_safety",
+      "name": "Public safety and justice",
+      "description": "Criminal justice, policing, corrections, and emergency response.",
+      "terms": [
+        "criminal",
+        "police",
+        "policing",
+        "firearm",
+        "firearms",
+        "sentencing",
+        "prison",
+        "prisons",
+        "corrections",
+        "emergency response",
+        "law enforcement"
+      ],
+      "semantic_examples": [
+        "Changes criminal offenses, sentencing, policing, firearms laws, or emergency response."
+      ],
+      "hypothesis": "This text is about crime and public safety."
+    },
+    {
+      "id": "labor",
+      "name": "Labor and employment",
+      "description": "Workers, wages, workplace protections, and unemployment.",
+      "terms": [
+        "employment",
+        "unemployment",
+        "minimum wage",
+        "worker",
+        "workers",
+        "workplace",
+        "collective bargaining",
+        "paid leave",
+        "occupational safety"
+      ],
+      "semantic_examples": [
+        "Regulates wages, collective bargaining, employment rights, and workplace conditions."
+      ],
+      "hypothesis": "This text is about labor and employment."
+    },
+    {
+      "id": "elections",
+      "name": "Elections and voting",
+      "description": "Voting access, election administration, and campaign finance.",
+      "terms": [
+        "election",
+        "elections",
+        "voting",
+        "ballot",
+        "ballots",
+        "voter",
+        "voters",
+        "redistricting",
+        "campaign finance"
+      ],
+      "semantic_examples": [
+        "Changes voter registration, ballot access, election procedures, or campaign finance."
+      ],
+      "hypothesis": "This text is about elections and voting."
+    }
+  ],
+  "semantic_version": "1",
+  "hypothesis_version": "2"
+}

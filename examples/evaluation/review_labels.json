@@ -1,0 +1,11 @@
+{
+  "basis": "Author-assisted provisional review of LegiScan title and summary; not independent expert annotation or full-text review.",
+  "labels": {
+    "CA-2025-2026-REGULAR-SB79": ["housing", "transportation"],
+    "TX-89-REGULAR-HB2": ["education"],
+    "TX-89-REGULAR-SB25": ["healthcare", "education"],
+    "CA-2025-2026-REGULAR-AB288": ["labor"],
+    "CA-2025-2026-REGULAR-AB2025": ["housing"],
+    "CA-2025-2026-REGULAR-AB2020": ["housing"]
+  }
+}

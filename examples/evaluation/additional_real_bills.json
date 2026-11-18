@@ -1,0 +1,56 @@
+[
+  {
+    "state": "CA",
+    "session_id": "2021-2022-REGULAR",
+    "bill_number": "SB54",
+    "title": "Solid waste: reporting, packaging, and plastic food service ware.",
+    "summary": "An act to amend Section 41821.5 of, to add Chapter 3 (commencing with Section 42040) to Part 3 of Division 30 of, and to repeal Section 42064 of, the Public Resources Code, relating to solid waste.",
+    "status": "unknown",
+    "source_url": "https://legiscan.com/CA/bill/SB54/2021"
+  },
+  {
+    "state": "CA",
+    "session_id": "2015-2016-REGULAR",
+    "bill_number": "SB350",
+    "title": "Clean Energy and Pollution Reduction Act of 2015.",
+    "summary": "An act relating to energy.",
+    "status": "unknown",
+    "source_url": "https://legiscan.com/CA/bill/SB350/2015"
+  },
+  {
+    "state": "FL",
+    "session_id": "2022-REGULAR",
+    "bill_number": "H1557",
+    "title": "Parental Rights in Education",
+    "summary": "Requires district school boards to adopt procedures that comport with certain provisions of law for notifying student's parent of specified information; requires such procedures to reinforce fundamental right of parents to make decisions regarding upbringing & control of their children; prohibits school district from adopting procedures or student support forms that prohibit school district personnel from notifying parent about specified information or that encourage student to withhold from parent such information; prohibits school district personnel from discouraging or prohibiting parental notification & involvement in critical decisions affecting student's mental, emotional, or physical well-being; prohibits classroom discussion about sexual orientation or gender identity in certain grade levels; requires school districts to notify parents of healthcare services; authorizes parent to bring action against school district to obtain declaratory judgment; provides for additional award of injunctive relief, damages, & reasonable attorney fees & court costs to certain parents.",
+    "status": "unknown",
+    "source_url": "https://legiscan.com/FL/bill/H1557/2022"
+  },
+  {
+    "state": "TX",
+    "session_id": "87-SPECIAL2",
+    "bill_number": "SB1",
+    "title": "Relating to election integrity and security, including by preventing fraud in the conduct of elections in this state; increasing criminal penalties; creating criminal offenses.",
+    "summary": "Relating to election integrity and security, including by preventing fraud in the conduct of elections in this state; increasing criminal penalties; creating criminal offenses.",
+    "status": "unknown",
+    "source_url": "https://legiscan.com/TX/bill/SB1/2021/X2"
+  },
+  {
+    "state": "CA",
+    "session_id": "2023-2024-REGULAR",
+    "bill_number": "SB525",
+    "title": "Minimum wages: health care workers.",
+    "summary": "An act to add Sections 1182.14 and 1182.15 to the Labor Code, relating to employment.",
+    "status": "unknown",
+    "source_url": "https://legiscan.com/CA/bill/SB525/2023"
+  },
+  {
+    "state": "CA",
+    "session_id": "2019-2020-REGULAR",
+    "bill_number": "AB5",
+    "title": "Worker status: employees and independent contractors.",
+    "summary": "An act to amend Section 3351 of, and to add Section 2750.3 to, the Labor Code, and to amend Sections 606.5 and 621 of the Unemployment Insurance Code, relating to employment, and making an appropriation therefor.",
+    "status": "unknown",
+    "source_url": "https://legiscan.com/CA/bill/AB5/2019"
+  }
+]

@@ -1,0 +1,737 @@
+{
+  "basis": "Policy-based assistant audit after seeing old results; development material only. Not a new evaluation reference. No independent human review has occurred.",
+  "policy": "data/policies/topics-v2-draft.json",
+  "records": [
+    {
+      "id": "CA-2025-2026-REGULAR-AB1987",
+      "original_topics": [
+        "environment"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "environment"
+      ],
+      "policy_note": "Wildlife-area and hunting management.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/CA/bill/AB1987/2025"
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB1414",
+      "original_topics": [
+        "elections"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "elections"
+      ],
+      "policy_note": "Redistricting commission.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/CA/bill/SB1414/2025"
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB2397",
+      "original_topics": [],
+      "proposed_outcome": "outside_taxonomy",
+      "proposed_topics": [],
+      "policy_note": "Local district financing; summary does not establish a tax or housing provision.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/CA/bill/AB2397/2025"
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB715",
+      "original_topics": [
+        "elections"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "elections"
+      ],
+      "policy_note": "Election law changes.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/CA/bill/SB715/2025"
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB647",
+      "original_topics": [
+        "transportation"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "transportation"
+      ],
+      "policy_note": "Abandoned vehicle regulation.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/CA/bill/AB647/2025"
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB1267",
+      "original_topics": [],
+      "proposed_outcome": "outside_taxonomy",
+      "proposed_topics": [],
+      "policy_note": "Marriage eligibility is outside the initial ten-topic taxonomy; Health Code citation alone is not healthcare.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/CA/bill/AB1267/2025"
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB1985",
+      "original_topics": [
+        "education",
+        "healthcare"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "education",
+        "healthcare"
+      ],
+      "policy_note": "Student health and mental-health training for coaches.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/CA/bill/AB1985/2025"
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB2437",
+      "original_topics": [
+        "transportation"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "transportation"
+      ],
+      "policy_note": "Vehicle impoundment; no explicit criminal-law provision in supplied subject text.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/CA/bill/AB2437/2025"
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB1130",
+      "original_topics": [],
+      "proposed_outcome": "outside_taxonomy",
+      "proposed_topics": [],
+      "policy_note": "Recording-device privacy; no substantive criminal provision described beyond a Penal Code citation.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/CA/bill/SB1130/2025"
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB692",
+      "original_topics": [
+        "housing",
+        "transportation"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "housing",
+        "transportation"
+      ],
+      "policy_note": "Vehicle regulation specifically concerning homelessness; secondary-topic scope is debatable.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/CA/bill/SB692/2025"
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB762",
+      "original_topics": [
+        "labor"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "labor"
+      ],
+      "policy_note": "Employee and contractor severance pay.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/TX/bill/HB762/2025"
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB973",
+      "original_topics": [
+        "taxation"
+      ],
+      "proposed_outcome": "needs_more_text",
+      "proposed_topics": null,
+      "policy_note": "The description does not explicitly establish that reappraisal is for taxation.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/TX/bill/SB973/2025"
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB2878",
+      "original_topics": [
+        "public_safety",
+        "elections"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "public_safety",
+        "elections"
+      ],
+      "policy_note": "Court security, warrants, youth diversion, criminal penalties, and election challenges.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/TX/bill/SB2878/2025"
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB4885",
+      "original_topics": [
+        "public_safety"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "public_safety"
+      ],
+      "policy_note": "Juvenile records and assigned counsel.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/TX/bill/HB4885/2025"
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB1056",
+      "original_topics": [],
+      "proposed_outcome": "outside_taxonomy",
+      "proposed_topics": [],
+      "policy_note": "Currency and legal tender; no taxation provision stated.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/TX/bill/HB1056/2025"
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB4325",
+      "original_topics": [],
+      "proposed_outcome": "outside_taxonomy",
+      "proposed_topics": [],
+      "policy_note": "Civil barratry liability; civil legal services are outside the current criminal-justice category.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/TX/bill/HB4325/2025"
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB1758",
+      "original_topics": [
+        "environment"
+      ],
+      "proposed_outcome": "needs_more_text",
+      "proposed_topics": null,
+      "policy_note": "Industrial operation/siting does not establish an environmental provision in this description.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/TX/bill/SB1758/2025"
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB2206",
+      "original_topics": [
+        "taxation"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "taxation"
+      ],
+      "policy_note": "Franchise tax credit and sales/use tax treatment.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/TX/bill/SB2206/2025"
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB614",
+      "original_topics": [
+        "public_safety"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "public_safety"
+      ],
+      "policy_note": "Forensic case review and capital writs.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/TX/bill/SB614/2025"
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB1968",
+      "original_topics": [],
+      "proposed_outcome": "outside_taxonomy",
+      "proposed_topics": [],
+      "policy_note": "Real-estate professional licensing, not explicitly residential housing or worker protections.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/TX/bill/SB1968/2025"
+    },
+    {
+      "id": "FL-2025-REGULAR-H5017",
+      "original_topics": [],
+      "proposed_outcome": "outside_taxonomy",
+      "proposed_topics": [],
+      "policy_note": "State debt and public-finance administration lack a matching category.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/FL/bill/H5017/2025"
+    },
+    {
+      "id": "FL-2025-REGULAR-H4031",
+      "original_topics": [],
+      "proposed_outcome": "outside_taxonomy",
+      "proposed_topics": [],
+      "policy_note": "Alcohol business licensing; no public-health provision stated.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/FL/bill/H4031/2025"
+    },
+    {
+      "id": "FL-2025-REGULAR-H4051",
+      "original_topics": [
+        "elections"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "elections"
+      ],
+      "policy_note": "Board candidate qualifications and geographical districts; mosquito-control context alone is not health policy.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/FL/bill/H4051/2025"
+    },
+    {
+      "id": "FL-2025-REGULAR-H4033",
+      "original_topics": [
+        "elections"
+      ],
+      "proposed_outcome": "outside_taxonomy",
+      "proposed_topics": [],
+      "policy_note": "Local water-district governance is outside the ten topics; a referendum condition alone is not electoral administration under the draft rule.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/FL/bill/H4033/2025"
+    },
+    {
+      "id": "FL-2025-REGULAR-H4009",
+      "original_topics": [],
+      "proposed_outcome": "outside_taxonomy",
+      "proposed_topics": [],
+      "policy_note": "Ceremonial airport renaming does not substantively change transportation policy.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/FL/bill/H4009/2025"
+    },
+    {
+      "id": "FL-2025-REGULAR-H4067",
+      "original_topics": [],
+      "proposed_outcome": "outside_taxonomy",
+      "proposed_topics": [],
+      "policy_note": "Alcohol retail licenses; no healthcare provision described.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/FL/bill/H4067/2025"
+    },
+    {
+      "id": "FL-2025-REGULAR-H4041",
+      "original_topics": [
+        "elections",
+        "taxation"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "elections",
+        "taxation"
+      ],
+      "policy_note": "District election transition, referendum, and ad valorem tax powers; residential purchaser notice alone not housing supply or tenancy.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/FL/bill/H4041/2025"
+    },
+    {
+      "id": "FL-2025-REGULAR-H4045",
+      "original_topics": [
+        "labor"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "labor"
+      ],
+      "policy_note": "Occupational pension/deferred retirement conditions; officer occupation alone not policing policy.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/FL/bill/H4045/2025"
+    },
+    {
+      "id": "FL-2025-REGULAR-H4035",
+      "original_topics": [
+        "healthcare",
+        "elections"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "healthcare"
+      ],
+      "policy_note": "Operational mosquito-control district restructuring is public-health program governance; referendum is an incidental condition.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/FL/bill/H4035/2025"
+    },
+    {
+      "id": "FL-2025-REGULAR-H4023",
+      "original_topics": [],
+      "proposed_outcome": "outside_taxonomy",
+      "proposed_topics": [],
+      "policy_note": "Public-official conflict-of-interest ethics; employment mentioned but no worker-rights provision.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/FL/bill/H4023/2025"
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A08695",
+      "original_topics": [
+        "public_safety"
+      ],
+      "proposed_outcome": "needs_more_text",
+      "proposed_topics": null,
+      "policy_note": "Need criminal/civil jurisdiction before assigning criminal justice.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/NY/bill/A08695/2025"
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S06273",
+      "original_topics": [
+        "education"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "education"
+      ],
+      "policy_note": "Study of effects of caregiving on children's education.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/NY/bill/S06273/2025"
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09866",
+      "original_topics": [
+        "environment",
+        "public_safety"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "environment",
+        "public_safety"
+      ],
+      "policy_note": "Conviction registry for illegal dumping.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/NY/bill/S09866/2025"
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09989",
+      "original_topics": [
+        "taxation"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "taxation"
+      ],
+      "policy_note": "Property/school tax exemption; school-tax mention alone not education policy.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/NY/bill/S09989/2025"
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A08388",
+      "original_topics": [
+        "elections"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "elections"
+      ],
+      "policy_note": "Election staffing eligibility; students are the eligible group, not a separate education provision.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/NY/bill/A08388/2025"
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A10267",
+      "original_topics": [
+        "labor"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "labor"
+      ],
+      "policy_note": "Workforce development board duties.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/NY/bill/A10267/2025"
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09758",
+      "original_topics": [
+        "public_safety"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "public_safety"
+      ],
+      "policy_note": "Evidence admissibility in grand-jury proceedings.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/NY/bill/S09758/2025"
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5827",
+      "original_topics": [
+        "public_safety",
+        "labor"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "labor"
+      ],
+      "policy_note": "The described change is acceptance of screening records in hiring, not criminal proceedings. Schools are among covered employers, not a distinct educational provision.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/IL/bill/HB5827/2025"
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5814",
+      "original_topics": [
+        "taxation",
+        "public_safety"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "taxation",
+        "public_safety"
+      ],
+      "policy_note": "Repeals wagering taxes and criminal gambling exceptions.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/IL/bill/HB5814/2025"
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5818",
+      "original_topics": [],
+      "proposed_outcome": "outside_taxonomy",
+      "proposed_topics": [],
+      "policy_note": "Industrial data-center siting; zoning alone does not establish housing or environmental protection.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/IL/bill/HB5818/2025"
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5811",
+      "original_topics": [
+        "taxation"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "taxation"
+      ],
+      "policy_note": "Repeal of wagering transaction tax.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/IL/bill/HB5811/2025"
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5813",
+      "original_topics": [
+        "housing"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "housing"
+      ],
+      "policy_note": "Rental nonpayment eviction procedures.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/IL/bill/HB5813/2025"
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2711",
+      "original_topics": [
+        "transportation"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "transportation"
+      ],
+      "policy_note": "Transportation resources.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/WA/bill/HB2711/2025"
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2487",
+      "original_topics": [
+        "taxation"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "taxation"
+      ],
+      "policy_note": "Insurer taxes; insurer type not specified as health.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/WA/bill/HB2487/2025"
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB1390",
+      "original_topics": [],
+      "proposed_outcome": "needs_more_text",
+      "proposed_topics": null,
+      "policy_note": "Program name alone cannot establish the policy area.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/WA/bill/HB1390/2025"
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB1345",
+      "original_topics": [
+        "housing"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "housing"
+      ],
+      "policy_note": "Accessory dwelling unit development limits.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/WA/bill/HB1345/2025"
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2156",
+      "original_topics": [
+        "public_safety"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "public_safety"
+      ],
+      "policy_note": "Attorney-general investigation powers; criminal/civil scope not specified.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/WA/bill/HB2156/2025"
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB5998",
+      "original_topics": [],
+      "proposed_outcome": "needs_more_text",
+      "proposed_topics": null,
+      "policy_note": "General appropriations title does not identify funded policy provisions.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/WA/bill/SB5998/2025"
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB5820",
+      "original_topics": [
+        "transportation"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "transportation"
+      ],
+      "policy_note": "Freight rail and transport planning.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/WA/bill/SB5820/2025"
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2266",
+      "original_topics": [
+        "housing"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "housing"
+      ],
+      "policy_note": "Supportive/transitional/emergency housing.",
+      "original_ambiguity": false,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/WA/bill/HB2266/2025"
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB6228",
+      "original_topics": [
+        "taxation",
+        "healthcare"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "taxation"
+      ],
+      "policy_note": "Drug-sector tax exemptions change taxation; healthcare is an affected sector unless a care/practice provision is established.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/WA/bill/SB6228/2025"
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB6002",
+      "original_topics": [
+        "transportation"
+      ],
+      "proposed_outcome": "assigned",
+      "proposed_topics": [
+        "transportation"
+      ],
+      "policy_note": "Driver privacy protections; transport-administration versus general privacy scope is debatable.",
+      "original_ambiguity": true,
+      "review_status": "assistant_draft_not_human_verified",
+      "requires_human_review": true,
+      "source_url": "https://legiscan.com/WA/bill/SB6002/2025"
+    }
+  ]
+}

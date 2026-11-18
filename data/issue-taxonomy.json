@@ -1,0 +1,187 @@
+{
+  "version": "1",
+  "status": "candidate_detection_unvalidated",
+  "rules": [
+    "Use only controlled identifiers; never generate labels dynamically.",
+    "Lexical matches are candidates, not confirmed legal changes.",
+    "A sector or issue does not automatically imply a policy topic.",
+    "No candidate means unresolved, not absent."
+  ],
+  "issue_tags": [
+    {
+      "id": "data_centers",
+      "name": "Data centers",
+      "description": "Measures explicitly concerning data-center facilities.",
+      "aliases": [
+        "data center",
+        "data centers",
+        "data centre",
+        "data centres"
+      ],
+      "exclude": [
+        "A generic database or mention of data alone"
+      ]
+    },
+    {
+      "id": "water_use",
+      "name": "Water use",
+      "description": "Water consumption, withdrawal, reuse or reporting.",
+      "aliases": [
+        "water use",
+        "water usage",
+        "water consumption",
+        "water withdrawal",
+        "water reuse"
+      ],
+      "exclude": [
+        "Water quality alone without a use provision"
+      ]
+    },
+    {
+      "id": "artificial_intelligence",
+      "name": "Artificial intelligence",
+      "description": "Explicit AI systems or governance.",
+      "aliases": [
+        "artificial intelligence",
+        "generative AI"
+      ],
+      "exclude": [
+        "Do not infer AI from a data-center reference"
+      ]
+    },
+    {
+      "id": "electricity_rates",
+      "name": "Electricity rates",
+      "description": "Electricity pricing and allocation of ratepayer costs.",
+      "aliases": [
+        "electricity rates",
+        "electric rates",
+        "ratepayer costs"
+      ],
+      "exclude": [
+        "Energy use alone"
+      ]
+    },
+    {
+      "id": "tax_incentives",
+      "name": "Tax incentives",
+      "description": "Tax credits, exemptions or other explicit tax incentives.",
+      "aliases": [
+        "tax incentives",
+        "tax incentive",
+        "tax credits",
+        "tax credit",
+        "tax exemptions",
+        "tax exemption"
+      ],
+      "exclude": [
+        "General grants or subsidies without a tax instrument"
+      ]
+    }
+  ],
+  "affected_sectors": [
+    {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "description": "Medical providers, patients, pharmaceuticals and health services."
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "description": "Schools, colleges, universities and educational services."
+    },
+    {
+      "id": "housing",
+      "name": "Housing",
+      "description": "Residential development, rental housing and shelter services."
+    },
+    {
+      "id": "transportation",
+      "name": "Transportation",
+      "description": "Mobility, transport operators, drivers and vehicle services."
+    },
+    {
+      "id": "energy",
+      "name": "Energy",
+      "description": "Energy producers, distributors, utilities and consumers."
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "description": "Banking, insurance, financial services and monetary systems."
+    },
+    {
+      "id": "technology",
+      "name": "Technology",
+      "description": "Digital services, data centers, recording devices and technology businesses."
+    },
+    {
+      "id": "agriculture",
+      "name": "Agriculture",
+      "description": "Farming, food production and related agricultural activities."
+    },
+    {
+      "id": "government",
+      "name": "Government",
+      "description": "Government agencies, public administration and local districts."
+    },
+    {
+      "id": "commerce",
+      "name": "Commerce",
+      "description": "Retail, business licensing and other commercial activities."
+    },
+    {
+      "id": "data_center_industry",
+      "name": "Data-center industry",
+      "description": "Operators and developers of data-center facilities.",
+      "aliases": [
+        "data center",
+        "data centers",
+        "data centre",
+        "data centres"
+      ]
+    }
+  ],
+  "policy_actions": [
+    {
+      "id": "requires_reporting",
+      "name": "Requires reporting",
+      "description": "Introduces a reporting or disclosure obligation.",
+      "aliases": [
+        "requires reporting",
+        "requires disclosure",
+        "shall report",
+        "must report"
+      ],
+      "exclude": [
+        "Negated, repealed, or quoted obligations"
+      ]
+    },
+    {
+      "id": "creates_tax_incentive",
+      "name": "Creates tax incentive",
+      "description": "Establishes a tax credit, exemption or incentive.",
+      "aliases": [
+        "creates a tax credit",
+        "establishes a tax credit",
+        "creates a tax exemption"
+      ],
+      "exclude": [
+        "Repeal or discussion of existing incentives"
+      ]
+    },
+    {
+      "id": "restricts_development",
+      "name": "Restricts development",
+      "description": "Limits or pauses development approvals.",
+      "aliases": [
+        "prohibits construction",
+        "development moratorium",
+        "construction moratorium"
+      ],
+      "exclude": [
+        "A proposal to remove a restriction"
+      ]
+    }
+  ]
+}

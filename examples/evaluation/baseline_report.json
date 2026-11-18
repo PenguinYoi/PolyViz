@@ -1,0 +1,86 @@
+{
+  "taxonomy_version": "1",
+  "count": 6,
+  "exact_matches": 4,
+  "micro_precision": 1.0,
+  "micro_recall": 0.75,
+  "results": [
+    {
+      "id": "CA-2025-2026-REGULAR-SB79",
+      "expected": [
+        "housing",
+        "transportation"
+      ],
+      "predicted": [
+        "housing"
+      ],
+      "missing": [
+        "transportation"
+      ],
+      "extra": [],
+      "exact_match": false
+    },
+    {
+      "id": "TX-89-REGULAR-HB2",
+      "expected": [
+        "education"
+      ],
+      "predicted": [
+        "education"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "TX-89-REGULAR-SB25",
+      "expected": [
+        "education",
+        "healthcare"
+      ],
+      "predicted": [
+        "education",
+        "healthcare"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB288",
+      "expected": [
+        "labor"
+      ],
+      "predicted": [
+        "labor"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB2025",
+      "expected": [
+        "housing"
+      ],
+      "predicted": [],
+      "missing": [
+        "housing"
+      ],
+      "extra": [],
+      "exact_match": false
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB2020",
+      "expected": [
+        "housing"
+      ],
+      "predicted": [
+        "housing"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    }
+  ]
+}

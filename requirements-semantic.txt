@@ -1,0 +1,4 @@
+# Optional local model; no API or paid inference service.
+sentence-transformers>=3.0,<6
+sentencepiece>=0.2,<0.3
+protobuf>=4,<7

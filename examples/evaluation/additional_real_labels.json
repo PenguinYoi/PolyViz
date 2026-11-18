@@ -1,0 +1,27 @@
+{
+  "basis": "Provisional author-assisted title/summary labels defined before running final hybrid on this sample. Not independent expert annotations. SB350 summary abbreviated to its final subject clause; others transcribed from linked pages. All statuses intentionally unknown: topic-only sample. Healthcare on H1557 and SB525 is a secondary-topic judgment requiring review.",
+  "labels": {
+    "CA-2021-2022-REGULAR-SB54": [
+      "environment"
+    ],
+    "CA-2015-2016-REGULAR-SB350": [
+      "energy",
+      "environment"
+    ],
+    "FL-2022-REGULAR-H1557": [
+      "education",
+      "healthcare"
+    ],
+    "TX-87-SPECIAL2-SB1": [
+      "elections",
+      "public_safety"
+    ],
+    "CA-2023-2024-REGULAR-SB525": [
+      "labor",
+      "healthcare"
+    ],
+    "CA-2019-2020-REGULAR-AB5": [
+      "labor"
+    ]
+  }
+}

@@ -1,0 +1,1738 @@
+{
+  "source_model": "pa-primary-v2",
+  "count": 52,
+  "statuses": {
+    "broad_topic_agreement": 8,
+    "uncertain": 35,
+    "native_category_has_no_simple_crosswalk": 5,
+    "possible_topic_disagreement": 4
+  },
+  "exact_source_matches": 0,
+  "note": "These are automated reviewer statuses, not correctness scores. All bills are outside the training state; no source labels confirm this sample.",
+  "bills": [
+    {
+      "id": "CA-2025-2026-REGULAR-AB1987",
+      "topics": [
+        "environment"
+      ],
+      "external_review": {
+        "status": "broad_topic_agreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "7",
+            "name": "Environment",
+            "score": 0.9316943790592763
+          },
+          {
+            "native_topic": "3",
+            "name": "Health",
+            "score": 0.009830261058588677
+          },
+          {
+            "native_topic": "14",
+            "name": "Community development and housing",
+            "score": 0.009794266720953876
+          }
+        ],
+        "score_margin": 0.9218641180006877,
+        "broad_topic_overlaps": [
+          "environment"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB1414",
+      "topics": [
+        "elections"
+      ],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.7273333566082407
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.04927659028411917
+          },
+          {
+            "native_topic": "13",
+            "name": "Social welfare",
+            "score": 0.04203389065424774
+          }
+        ],
+        "score_margin": 0.6780567663241216,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB2397",
+      "topics": [],
+      "external_review": {
+        "status": "native_category_has_no_simple_crosswalk",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "24",
+            "name": "Local government and governance",
+            "score": 0.828036078283538
+          },
+          {
+            "native_topic": "14",
+            "name": "Community development and housing",
+            "score": 0.07325186008474079
+          },
+          {
+            "native_topic": "7",
+            "name": "Environment",
+            "score": 0.022286226936281687
+          }
+        ],
+        "score_margin": 0.7547842181987972,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB715",
+      "topics": [
+        "elections"
+      ],
+      "external_review": {
+        "status": "native_category_has_no_simple_crosswalk",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.8692515749188776
+          },
+          {
+            "native_topic": "7",
+            "name": "Environment",
+            "score": 0.02930659895656643
+          },
+          {
+            "native_topic": "3",
+            "name": "Health",
+            "score": 0.021835929936113933
+          }
+        ],
+        "score_margin": 0.8399449759623112,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB647",
+      "topics": [],
+      "external_review": {
+        "status": "possible_topic_disagreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.9028936327573821
+          },
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.013745686169888909
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.012304059622568956
+          }
+        ],
+        "score_margin": 0.8891479465874932,
+        "broad_topic_overlaps": [
+          "transportation"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB1267",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.4629940263421717
+          },
+          {
+            "native_topic": "3",
+            "name": "Health",
+            "score": 0.3335631521031422
+          },
+          {
+            "native_topic": "14",
+            "name": "Community development and housing",
+            "score": 0.045873289381135426
+          }
+        ],
+        "score_margin": 0.1294308742390295,
+        "broad_topic_overlaps": [
+          "public_safety"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB1985",
+      "topics": [],
+      "external_review": {
+        "status": "possible_topic_disagreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "3",
+            "name": "Health",
+            "score": 0.9452179972520022
+          },
+          {
+            "native_topic": "6",
+            "name": "Education",
+            "score": 0.01715500793566666
+          },
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.010357660030919192
+          }
+        ],
+        "score_margin": 0.9280629893163355,
+        "broad_topic_overlaps": [
+          "healthcare"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB2437",
+      "topics": [],
+      "external_review": {
+        "status": "possible_topic_disagreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.8779046053469501
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.026766141362534003
+          },
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.017760371984518623
+          }
+        ],
+        "score_margin": 0.8511384639844162,
+        "broad_topic_overlaps": [
+          "transportation"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB1130",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.534543822795121
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.2677138568277313
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.0447751778899463
+          }
+        ],
+        "score_margin": 0.2668299659673897,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB692",
+      "topics": [
+        "housing",
+        "transportation"
+      ],
+      "external_review": {
+        "status": "broad_topic_agreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.838709678828755
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.07417638575561912
+          },
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.01748716259779354
+          }
+        ],
+        "score_margin": 0.7645332930731359,
+        "broad_topic_overlaps": [
+          "transportation"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB762",
+      "topics": [
+        "labor"
+      ],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.7881036971453249
+          },
+          {
+            "native_topic": "5",
+            "name": "Labor, employment, immigration",
+            "score": 0.15878220882737284
+          },
+          {
+            "native_topic": "8",
+            "name": "Energy",
+            "score": 0.007306050244339127
+          }
+        ],
+        "score_margin": 0.6293214883179521,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB973",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.5721676745344709
+          },
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.1284247957959012
+          },
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.0747922853502749
+          }
+        ],
+        "score_margin": 0.44374287873856977,
+        "broad_topic_overlaps": [
+          "public_safety"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB2878",
+      "topics": [
+        "elections",
+        "public_safety"
+      ],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.7623738714577045
+          },
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.1786292338670169
+          },
+          {
+            "native_topic": "1",
+            "name": "Fiscal and economic issues",
+            "score": 0.010481723295007251
+          }
+        ],
+        "score_margin": 0.5837446375906876,
+        "broad_topic_overlaps": [
+          "public_safety"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB4885",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.6336757544463678
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.11169415799351998
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.07588054422255505
+          }
+        ],
+        "score_margin": 0.5219815964528478,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB1056",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.2439775690445305
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.15561122488803358
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.15441072520805477
+          }
+        ],
+        "score_margin": 0.08836634415649691,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB4325",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.7408249224725151
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.05549880370085546
+          },
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.054831559706862834
+          }
+        ],
+        "score_margin": 0.6853261187716596,
+        "broad_topic_overlaps": [
+          "public_safety"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB1758",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "1",
+            "name": "Fiscal and economic issues",
+            "score": 0.1764495807730824
+          },
+          {
+            "native_topic": "8",
+            "name": "Energy",
+            "score": 0.16842005560069453
+          },
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.1677763794993791
+          }
+        ],
+        "score_margin": 0.008029525172387864,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB2206",
+      "topics": [
+        "taxation"
+      ],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "8",
+            "name": "Energy",
+            "score": 0.3777388072304919
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.14992061785282854
+          },
+          {
+            "native_topic": "24",
+            "name": "Local government and governance",
+            "score": 0.12728831574954566
+          }
+        ],
+        "score_margin": 0.22781818937766338,
+        "broad_topic_overlaps": [
+          "energy"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB614",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.2993205168735043
+          },
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.16402790374884035
+          },
+          {
+            "native_topic": "14",
+            "name": "Community development and housing",
+            "score": 0.1431024149158877
+          }
+        ],
+        "score_margin": 0.13529261312466395,
+        "broad_topic_overlaps": [
+          "public_safety"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB1968",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.5765513680705937
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.370108861984649
+          },
+          {
+            "native_topic": "7",
+            "name": "Environment",
+            "score": 0.009872471050530589
+          }
+        ],
+        "score_margin": 0.20644250608594472,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "FL-2025-REGULAR-H5017",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "1",
+            "name": "Fiscal and economic issues",
+            "score": 0.311200873895336
+          },
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.18192200355378785
+          },
+          {
+            "native_topic": "8",
+            "name": "Energy",
+            "score": 0.12717486865237207
+          }
+        ],
+        "score_margin": 0.12927887034154817,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "FL-2025-REGULAR-H4031",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.671781130324546
+          },
+          {
+            "native_topic": "3",
+            "name": "Health",
+            "score": 0.058187799819179285
+          },
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.04695977735206189
+          }
+        ],
+        "score_margin": 0.6135933305053667,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "FL-2025-REGULAR-H4051",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.21858614766283907
+          },
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.19878315952794817
+          },
+          {
+            "native_topic": "3",
+            "name": "Health",
+            "score": 0.09033943227454128
+          }
+        ],
+        "score_margin": 0.019802988134890898,
+        "broad_topic_overlaps": [
+          "public_safety"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "FL-2025-REGULAR-H4033",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "24",
+            "name": "Local government and governance",
+            "score": 0.273501162036728
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.2389722652283064
+          },
+          {
+            "native_topic": "6",
+            "name": "Education",
+            "score": 0.14969772354502556
+          }
+        ],
+        "score_margin": 0.03452889680842158,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "FL-2025-REGULAR-H4009",
+      "topics": [],
+      "external_review": {
+        "status": "possible_topic_disagreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.8778476381800437
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.01710073246048959
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.016356332810147412
+          }
+        ],
+        "score_margin": 0.8607469057195541,
+        "broad_topic_overlaps": [
+          "transportation"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "FL-2025-REGULAR-H4067",
+      "topics": [],
+      "external_review": {
+        "status": "native_category_has_no_simple_crosswalk",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.8764208957931282
+          },
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.05350997728112469
+          },
+          {
+            "native_topic": "3",
+            "name": "Health",
+            "score": 0.011725615382823318
+          }
+        ],
+        "score_margin": 0.8229109185120035,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "FL-2025-REGULAR-H4041",
+      "topics": [
+        "taxation",
+        "housing",
+        "elections"
+      ],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "24",
+            "name": "Local government and governance",
+            "score": 0.24467996556159308
+          },
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.1578498889395401
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.1496912068169573
+          }
+        ],
+        "score_margin": 0.08683007662205297,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "FL-2025-REGULAR-H4045",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.560719201758457
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.3899948846612835
+          },
+          {
+            "native_topic": "8",
+            "name": "Energy",
+            "score": 0.024010360226681397
+          }
+        ],
+        "score_margin": 0.1707243170971735,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "FL-2025-REGULAR-H4035",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "6",
+            "name": "Education",
+            "score": 0.2038968305878646
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.17181611633895963
+          },
+          {
+            "native_topic": "24",
+            "name": "Local government and governance",
+            "score": 0.13558337052527064
+          }
+        ],
+        "score_margin": 0.03208071424890496,
+        "broad_topic_overlaps": [
+          "education"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "FL-2025-REGULAR-H4023",
+      "topics": [
+        "labor"
+      ],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.5326166815132842
+          },
+          {
+            "native_topic": "14",
+            "name": "Community development and housing",
+            "score": 0.14893352944982402
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.10572323948730881
+          }
+        ],
+        "score_margin": 0.3836831520634602,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A08695",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.49997592936426605
+          },
+          {
+            "native_topic": "16",
+            "name": "Defense",
+            "score": 0.1268209662080708
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.05387263636393391
+          }
+        ],
+        "score_margin": 0.37315496315619523,
+        "broad_topic_overlaps": [
+          "public_safety"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S06273",
+      "topics": [
+        "education"
+      ],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "6",
+            "name": "Education",
+            "score": 0.6240590892086925
+          },
+          {
+            "native_topic": "3",
+            "name": "Health",
+            "score": 0.09286110074379908
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.0817367031264019
+          }
+        ],
+        "score_margin": 0.5311979884648934,
+        "broad_topic_overlaps": [
+          "education"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09866",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.6547788832849248
+          },
+          {
+            "native_topic": "13",
+            "name": "Social welfare",
+            "score": 0.07033767179013782
+          },
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.0516144325265734
+          }
+        ],
+        "score_margin": 0.584441211494787,
+        "broad_topic_overlaps": [
+          "public_safety"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09989",
+      "topics": [
+        "taxation",
+        "education"
+      ],
+      "external_review": {
+        "status": "native_category_has_no_simple_crosswalk",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "24",
+            "name": "Local government and governance",
+            "score": 0.8618705205078693
+          },
+          {
+            "native_topic": "13",
+            "name": "Social welfare",
+            "score": 0.04494413690867787
+          },
+          {
+            "native_topic": "16",
+            "name": "Defense",
+            "score": 0.023433052845479314
+          }
+        ],
+        "score_margin": 0.8169263835991915,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A08388",
+      "topics": [
+        "elections",
+        "education"
+      ],
+      "external_review": {
+        "status": "broad_topic_agreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "6",
+            "name": "Education",
+            "score": 0.9215870725115298
+          },
+          {
+            "native_topic": "3",
+            "name": "Health",
+            "score": 0.010359981419786555
+          },
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.00997708623660925
+          }
+        ],
+        "score_margin": 0.9112270910917433,
+        "broad_topic_overlaps": [
+          "education"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A10267",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "5",
+            "name": "Labor, employment, immigration",
+            "score": 0.7768403734057788
+          },
+          {
+            "native_topic": "6",
+            "name": "Education",
+            "score": 0.045725950391747885
+          },
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.04538104966715691
+          }
+        ],
+        "score_margin": 0.731114423014031,
+        "broad_topic_overlaps": [
+          "labor"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09758",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.3586212663777939
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.3063326323303685
+          },
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.08319499348784881
+          }
+        ],
+        "score_margin": 0.0522886340474254,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5827",
+      "topics": [
+        "labor",
+        "public_safety",
+        "education"
+      ],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "6",
+            "name": "Education",
+            "score": 0.45145629319525893
+          },
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.21205219633404418
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.13153594172550678
+          }
+        ],
+        "score_margin": 0.23940409686121475,
+        "broad_topic_overlaps": [
+          "education"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5814",
+      "topics": [
+        "taxation",
+        "public_safety"
+      ],
+      "external_review": {
+        "status": "native_category_has_no_simple_crosswalk",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.8840733254577742
+          },
+          {
+            "native_topic": "5",
+            "name": "Labor, employment, immigration",
+            "score": 0.02259236996399603
+          },
+          {
+            "native_topic": "1",
+            "name": "Fiscal and economic issues",
+            "score": 0.015640181038035786
+          }
+        ],
+        "score_margin": 0.8614809554937781,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5818",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "14",
+            "name": "Community development and housing",
+            "score": 0.32104019457482846
+          },
+          {
+            "native_topic": "24",
+            "name": "Local government and governance",
+            "score": 0.20493313381878556
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.14712161354011918
+          }
+        ],
+        "score_margin": 0.1161070607560429,
+        "broad_topic_overlaps": [
+          "housing"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5811",
+      "topics": [
+        "taxation"
+      ],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.758936209159795
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.05209481966353925
+          },
+          {
+            "native_topic": "24",
+            "name": "Local government and governance",
+            "score": 0.05014075193742764
+          }
+        ],
+        "score_margin": 0.7068413894962557,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5813",
+      "topics": [
+        "housing",
+        "public_safety"
+      ],
+      "external_review": {
+        "status": "broad_topic_agreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.8184549463417551
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.058594453964105835
+          },
+          {
+            "native_topic": "20",
+            "name": "State government operations",
+            "score": 0.03359345371704892
+          }
+        ],
+        "score_margin": 0.7598604923776493,
+        "broad_topic_overlaps": [
+          "public_safety"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2711",
+      "topics": [
+        "transportation"
+      ],
+      "external_review": {
+        "status": "broad_topic_agreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.9202033920513063
+          },
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.01466742142192107
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.011507396109527801
+          }
+        ],
+        "score_margin": 0.9055359706293852,
+        "broad_topic_overlaps": [
+          "transportation"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2487",
+      "topics": [
+        "taxation"
+      ],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.6464333838786054
+          },
+          {
+            "native_topic": "24",
+            "name": "Local government and governance",
+            "score": 0.08330196725087428
+          },
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.07850907905812984
+          }
+        ],
+        "score_margin": 0.5631314166277311,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB1390",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "14",
+            "name": "Community development and housing",
+            "score": 0.35611773993430157
+          },
+          {
+            "native_topic": "7",
+            "name": "Environment",
+            "score": 0.11549236342831229
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.11342192165693737
+          }
+        ],
+        "score_margin": 0.24062537650598928,
+        "broad_topic_overlaps": [
+          "housing"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB1345",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "14",
+            "name": "Community development and housing",
+            "score": 0.7793284454988747
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.04057016351475611
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.02936617576015692
+          }
+        ],
+        "score_margin": 0.7387582819841186,
+        "broad_topic_overlaps": [
+          "housing"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2156",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.4894223429511647
+          },
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.11908723768945206
+          },
+          {
+            "native_topic": "8",
+            "name": "Energy",
+            "score": 0.07587193040412128
+          }
+        ],
+        "score_margin": 0.37033510526171265,
+        "broad_topic_overlaps": [
+          "public_safety"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB5998",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "1",
+            "name": "Fiscal and economic issues",
+            "score": 0.5707763165619258
+          },
+          {
+            "native_topic": "6",
+            "name": "Education",
+            "score": 0.21005930369307296
+          },
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.11488204686476945
+          }
+        ],
+        "score_margin": 0.3607170128688529,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB5820",
+      "topics": [
+        "transportation"
+      ],
+      "external_review": {
+        "status": "broad_topic_agreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.8365206988889421
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.05306770017289821
+          },
+          {
+            "native_topic": "14",
+            "name": "Community development and housing",
+            "score": 0.02468125408759209
+          }
+        ],
+        "score_margin": 0.7834529987160439,
+        "broad_topic_overlaps": [
+          "transportation"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2266",
+      "topics": [
+        "housing",
+        "healthcare"
+      ],
+      "external_review": {
+        "status": "broad_topic_agreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "14",
+            "name": "Community development and housing",
+            "score": 0.8673802755526209
+          },
+          {
+            "native_topic": "15",
+            "name": "Banking, finance, domestic commerce",
+            "score": 0.049886049174612576
+          },
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.01401910558946919
+          }
+        ],
+        "score_margin": 0.8174942263780083,
+        "broad_topic_overlaps": [
+          "housing"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB6228",
+      "topics": [
+        "taxation",
+        "healthcare"
+      ],
+      "external_review": {
+        "status": "broad_topic_agreement",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "3",
+            "name": "Health",
+            "score": 0.8905006788401868
+          },
+          {
+            "native_topic": "24",
+            "name": "Local government and governance",
+            "score": 0.028001808035337417
+          },
+          {
+            "native_topic": "7",
+            "name": "Environment",
+            "score": 0.016331419052119153
+          }
+        ],
+        "score_margin": 0.8624988708048493,
+        "broad_topic_overlaps": [
+          "healthcare"
+        ],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB6002",
+      "topics": [],
+      "external_review": {
+        "status": "uncertain",
+        "verification_status": "polyviz_labels_not_verified",
+        "native_candidates": [
+          {
+            "native_topic": "2",
+            "name": "Civil rights and liberties",
+            "score": 0.5269767603266688
+          },
+          {
+            "native_topic": "10",
+            "name": "Transportation",
+            "score": 0.3942682014812609
+          },
+          {
+            "native_topic": "12",
+            "name": "Law, crime, and family",
+            "score": 0.01188806627284693
+          }
+        ],
+        "score_margin": 0.13270855884540794,
+        "broad_topic_overlaps": [],
+        "exact_source_label": null,
+        "cross_state_transfer": true,
+        "note": "Source-trained primary-topic suggestions are an automated second opinion, not a complete or verified multi-label reference. Source subjects do not separately confirm direct topics or affected sectors.",
+        "source_input_text_matches": null
+      }
+    }
+  ]
+}

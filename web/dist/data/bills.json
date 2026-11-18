@@ -1,0 +1,471 @@
+{
+  "schema_version": 2,
+  "title": "2025 enactments \u00b7 California & Texas",
+  "coverage": "Curated sample, not a complete session inventory. Labels are assistant-proposed and unverified.",
+  "snapshot_date": "2026-11-18",
+  "states": [
+    "CA",
+    "TX"
+  ],
+  "year": 2025,
+  "bills": [
+    {
+      "id": "CA-2025-2026-REGULAR-AB130",
+      "state": "CA",
+      "session_id": "2025-2026-REGULAR",
+      "bill_number": "AB130",
+      "origin_chamber": "lower",
+      "title": "Housing approvals and environmental review",
+      "summary": "Changes approvals for qualifying housing and exempts eligible infill housing projects from environmental review.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-06-30",
+        "effective": null
+      },
+      "enacted_date": "2025-06-30",
+      "policy_topics": [
+        "housing",
+        "environment"
+      ],
+      "topics": [
+        "housing",
+        "environment"
+      ],
+      "issue_tags": [],
+      "affected_sectors": [],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://www.gov.ca.gov/2025/06/30/governor-newsom-signs-into-law-groundbreaking-reforms-to-build-more-housing-affordability/"
+      },
+      "sources": [
+        {
+          "label": "Enactment source",
+          "url": "https://www.gov.ca.gov/2025/06/30/governor-newsom-signs-into-law-groundbreaking-reforms-to-build-more-housing-affordability/"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_demo_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "eligible infill housing projects",
+            "source_field": "summary",
+            "note": "Supporting phrase in the PolyViz paraphrase; not independent evidence of classification accuracy."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "checked_on": "2026-11-18",
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB131",
+      "state": "CA",
+      "session_id": "2025-2026-REGULAR",
+      "bill_number": "SB131",
+      "origin_chamber": "upper",
+      "title": "Environmental review and development approvals",
+      "summary": "Changes environmental review procedures and exemptions for selected development and infrastructure projects.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-06-30",
+        "effective": null
+      },
+      "enacted_date": "2025-06-30",
+      "policy_topics": [
+        "environment",
+        "land_use"
+      ],
+      "topics": [
+        "environment",
+        "land_use"
+      ],
+      "issue_tags": [],
+      "affected_sectors": [],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://www.gov.ca.gov/2025/06/30/governor-newsom-signs-into-law-groundbreaking-reforms-to-build-more-housing-affordability/"
+      },
+      "sources": [
+        {
+          "label": "Enactment source",
+          "url": "https://www.gov.ca.gov/2025/06/30/governor-newsom-signs-into-law-groundbreaking-reforms-to-build-more-housing-affordability/"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_demo_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "environmental review procedures",
+            "source_field": "summary",
+            "note": "Supporting phrase in the PolyViz paraphrase; not independent evidence of classification accuracy."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "checked_on": "2026-11-18",
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB288",
+      "state": "CA",
+      "session_id": "2025-2026-REGULAR",
+      "bill_number": "AB288",
+      "origin_chamber": "lower",
+      "title": "Labor organization and unfair practices",
+      "summary": "Allows workers to petition the state Public Employment Relations Board when the federal labor board does not fulfill its duties.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-09-30",
+        "effective": null
+      },
+      "enacted_date": "2025-09-30",
+      "policy_topics": [
+        "labor"
+      ],
+      "topics": [
+        "labor"
+      ],
+      "issue_tags": [],
+      "affected_sectors": [],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://www.gov.ca.gov/2025/09/30/as-the-federal-government-turns-its-back-on-workers-governor-newsom-signs-landmark-bill-expanding-workers-rights/"
+      },
+      "sources": [
+        {
+          "label": "Enactment source",
+          "url": "https://www.gov.ca.gov/2025/09/30/as-the-federal-government-turns-its-back-on-workers-governor-newsom-signs-landmark-bill-expanding-workers-rights/"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_demo_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "workers to petition",
+            "source_field": "summary",
+            "note": "Supporting phrase in the PolyViz paraphrase; not independent evidence of classification accuracy."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "checked_on": "2026-11-18",
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
+      }
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB79",
+      "state": "CA",
+      "session_id": "2025-2026-REGULAR",
+      "bill_number": "SB79",
+      "origin_chamber": "upper",
+      "title": "Housing near public transportation",
+      "summary": "Allows additional housing development near qualifying public transportation stops.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-10-10",
+        "effective": null
+      },
+      "enacted_date": "2025-10-10",
+      "policy_topics": [
+        "housing"
+      ],
+      "topics": [
+        "housing"
+      ],
+      "issue_tags": [],
+      "affected_sectors": [],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://www.gov.ca.gov/2025/10/10/governor-newsom-builds-on-this-years-historic-housing-reforms-signs-legislation-to-accelerate-housing-and-affordability/"
+      },
+      "sources": [
+        {
+          "label": "Enactment source",
+          "url": "https://www.gov.ca.gov/2025/10/10/governor-newsom-builds-on-this-years-historic-housing-reforms-signs-legislation-to-accelerate-housing-and-affordability/"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_demo_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "housing development",
+            "source_field": "summary",
+            "note": "Supporting phrase in the PolyViz paraphrase; not independent evidence of classification accuracy."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "checked_on": "2026-11-18",
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
+      }
+    },
+    {
+      "id": "TX-89-REGULAR-HB2",
+      "state": "TX",
+      "session_id": "89-REGULAR",
+      "bill_number": "HB2",
+      "origin_chamber": "lower",
+      "title": "Public education and school finance",
+      "summary": "Changes public school funding, teacher compensation, and educator preparation and certification programs.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-06-20",
+        "effective": null
+      },
+      "enacted_date": "2025-06-20",
+      "policy_topics": [
+        "education",
+        "labor"
+      ],
+      "topics": [
+        "education",
+        "labor"
+      ],
+      "issue_tags": [],
+      "affected_sectors": [],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB2"
+      },
+      "sources": [
+        {
+          "label": "Enactment source",
+          "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB2"
+        },
+        {
+          "label": "Official enrolled summary",
+          "url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=HB2&LegSess=89R"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_demo_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "teacher compensation",
+            "source_field": "summary",
+            "note": "Supporting phrase in the PolyViz paraphrase; not independent evidence of classification accuracy."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "checked_on": "2026-11-18",
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
+      }
+    },
+    {
+      "id": "TX-89-REGULAR-SB6",
+      "state": "TX",
+      "session_id": "89-REGULAR",
+      "bill_number": "SB6",
+      "origin_chamber": "upper",
+      "title": "Electric-grid planning for large power users",
+      "summary": "Changes grid planning, connection requirements and cost allocation for large electricity users, including data centers.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-06-20",
+        "effective": null
+      },
+      "enacted_date": "2025-06-20",
+      "policy_topics": [
+        "energy"
+      ],
+      "topics": [
+        "energy"
+      ],
+      "issue_tags": [
+        "data_centers"
+      ],
+      "affected_sectors": [
+        "data_center_industry"
+      ],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB6"
+      },
+      "sources": [
+        {
+          "label": "Enactment source",
+          "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB6"
+        },
+        {
+          "label": "Official enrolled summary",
+          "url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=SB6&LegSess=89R"
+        },
+        {
+          "label": "Official data-center context",
+          "url": "https://capitol.texas.gov/tlodocs/89R/minutes/html/C4502026040910001.htm"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_demo_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "large electricity users",
+            "source_field": "summary",
+            "note": "Supporting phrase in the PolyViz paraphrase; not independent evidence of classification accuracy."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "checked_on": "2026-11-18",
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
+      }
+    },
+    {
+      "id": "TX-89-REGULAR-SB15",
+      "state": "TX",
+      "session_id": "89-REGULAR",
+      "bill_number": "SB15",
+      "origin_chamber": "upper",
+      "title": "Residential lot size and density",
+      "summary": "Limits certain municipal residential lot-size and density requirements.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-06-20",
+        "effective": null
+      },
+      "enacted_date": "2025-06-20",
+      "policy_topics": [
+        "housing"
+      ],
+      "topics": [
+        "housing"
+      ],
+      "issue_tags": [],
+      "affected_sectors": [],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB15"
+      },
+      "sources": [
+        {
+          "label": "Enactment source",
+          "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB15"
+        },
+        {
+          "label": "Official enrolled summary",
+          "url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=SB15&LegSess=89R"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_demo_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "residential lot-size",
+            "source_field": "summary",
+            "note": "Supporting phrase in the PolyViz paraphrase; not independent evidence of classification accuracy."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "checked_on": "2026-11-18",
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
+      }
+    },
+    {
+      "id": "TX-89-REGULAR-SB25",
+      "state": "TX",
+      "session_id": "89-REGULAR",
+      "bill_number": "SB25",
+      "origin_chamber": "upper",
+      "title": "Health, nutrition and education standards",
+      "summary": "Changes health and nutrition standards, including food labeling and educational requirements.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-06-22",
+        "effective": null
+      },
+      "enacted_date": "2025-06-22",
+      "policy_topics": [
+        "healthcare",
+        "education",
+        "agriculture_food"
+      ],
+      "topics": [
+        "healthcare",
+        "education",
+        "agriculture_food"
+      ],
+      "issue_tags": [],
+      "affected_sectors": [],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB25"
+      },
+      "sources": [
+        {
+          "label": "Enactment source",
+          "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB25"
+        },
+        {
+          "label": "Official enrolled summary",
+          "url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=SB25&LegSess=89R"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_demo_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "health and nutrition standards",
+            "source_field": "summary",
+            "note": "Supporting phrase in the PolyViz paraphrase; not independent evidence of classification accuracy."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "checked_on": "2026-11-18",
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
+      }
+    }
+  ]
+}

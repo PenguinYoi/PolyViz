@@ -1,0 +1,12 @@
+{
+  "files": {
+    "polyviz/classifier.py": "c6b5e0322be3ad839f6aeae79a6b3593722c996cb046e60434e78eafca076f3c",
+    "polyviz/semantic.py": "a47f92ec104bce50b9aa4f9f2d79c4bffba06c11ef5ffdc9b53119a3da795ef7",
+    "polyviz/nli.py": "66a3225785afae9b2ccb3665afe54a83a83b4ad6856c38fb9607eb6276502021",
+    "polyviz/hybrid.py": "030186a9daf811c7768f2f7d1c51800051bba6082371b3f171c9ce1e43850051",
+    "data/topics.json": "3179593783dd24a44ffb113adf39adaf0e08f189dcf570581a8118db25d2a9ac",
+    "examples/evaluation/large/bills.json": "15aa4fd3ebdcb519202457371dc7c19bfb9d1f8c68ff2e59895090fa799c81a4",
+    "examples/evaluation/large/review_labels.json": "466df476775d86a7f134239d559f5aabf2e6feb644b8f7a6ded6c61bb01d87da"
+  },
+  "policy": "Frozen before this sample is classified. Do not tune model or labels to its predictions in this evaluation."
+}

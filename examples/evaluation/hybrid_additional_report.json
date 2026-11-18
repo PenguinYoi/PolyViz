@@ -1,0 +1,99 @@
+{
+  "taxonomy_version": "1",
+  "count": 6,
+  "methods": [
+    "local_hybrid"
+  ],
+  "models": [
+    "MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33"
+  ],
+  "thresholds": [
+    0.7
+  ],
+  "exact_matches": 5,
+  "micro_precision": 1.0,
+  "micro_recall": 0.9,
+  "micro_f1": 0.9473684210526315,
+  "results": [
+    {
+      "id": "CA-2021-2022-REGULAR-SB54",
+      "expected": [
+        "environment"
+      ],
+      "predicted": [],
+      "missing": [
+        "environment"
+      ],
+      "extra": [],
+      "exact_match": false
+    },
+    {
+      "id": "CA-2015-2016-REGULAR-SB350",
+      "expected": [
+        "energy",
+        "environment"
+      ],
+      "predicted": [
+        "energy",
+        "environment"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "FL-2022-REGULAR-H1557",
+      "expected": [
+        "education",
+        "healthcare"
+      ],
+      "predicted": [
+        "education",
+        "healthcare"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "TX-87-SPECIAL2-SB1",
+      "expected": [
+        "elections",
+        "public_safety"
+      ],
+      "predicted": [
+        "elections",
+        "public_safety"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-2023-2024-REGULAR-SB525",
+      "expected": [
+        "healthcare",
+        "labor"
+      ],
+      "predicted": [
+        "healthcare",
+        "labor"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-2019-2020-REGULAR-AB5",
+      "expected": [
+        "labor"
+      ],
+      "predicted": [
+        "labor"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    }
+  ]
+}

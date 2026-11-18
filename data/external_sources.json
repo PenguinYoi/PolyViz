@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "id": "ppdp_cap",
+      "label_provenance": "researcher_hand_coded_primary_topic",
+      "acquired": true,
+      "dataset_page": "https://comparativeagendas.net/datasets_codebooks",
+      "download_url": "https://minio.la.utexas.edu/compagendas/datasetfiles/AlltopicsBillsandResolutionsRegularSessions1979_2019_11132019_CAP.csv",
+      "codebook_url": "https://minio.la.utexas.edu/compagendas/codebookfiles/II._Policy_Topics_Coding_061719_1.pdf",
+      "methodology_evidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12283944/",
+      "coverage": "Pennsylvania regular sessions 1979\u20132016 in inspected file; 102727 total records, bills and resolutions.",
+      "label_scope": "one primary native major topic and subtopic; not a complete multi-label reference",
+      "sha256": "0d9909058b2f00d6005840484d5fb711930e039c49b060dd6d48e2ba4d1bded3",
+      "license_note": "Public download; retain source attribution. No broad license is inferred here."
+    },
+    {
+      "id": "ncsl",
+      "label_provenance": "staff_manual_topic_assignment",
+      "acquired": false,
+      "methodology_evidence": "https://www.ncsl.org/resources/ncsl-databases-user-guide",
+      "coverage": "Topic-specific state databases; not a uniform exhaustive all-topic reference.",
+      "limitation": "Public database pages expose definitions; no bulk labeled record export acquired in this task."
+    },
+    {
+      "id": "nyu_furman_land_use",
+      "label_provenance": "mixed_human_and_human_validated_ai_coding",
+      "acquired": false,
+      "dataset_page": "https://www.furmancenter.org/data-tool/land-use-reform-tracker/",
+      "limitation": "Narrow housing/land-use scope; CSV download returned HTTP 403. Retain per-record coding-method flags if imported later."
+    },
+    {
+      "id": "state_agendas_2025",
+      "label_provenance": "machine_generated_multi_label_estimates",
+      "acquired": false,
+      "dataset_page": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12283944/",
+      "limitation": "Not eligible to be called confirmed human labels; OSF downloads unavailable in this environment."
+    },
+    {
+      "id": "florida_cap",
+      "acquired": true,
+      "label_provenance": "published_research_project_primary_native_codes; per-record coding method unspecified",
+      "download_url": "https://minio.la.utexas.edu/compagendas/datasetfiles/Florida_Legislative_Bills_2nd_Ed.csv",
+      "codebook_url": "https://minio.la.utexas.edu/compagendas/codebookfiles/CAP_Project_Codebook_1.pdf",
+      "sha256": "34b79b6d75b39003da712030d46c34b4d2e62b4b2e189cf59a8e139b8cd0f97a",
+      "coverage": "4119 rows across 1993, 1999, 2019, 2020; later-year Bill_Title values are blank. Filtered audit retains 738 unique 1993 titles.",
+      "use": "Transfer evaluation only; unchanged Pennsylvania model. Not used for training, calibration, or threshold selection."
+    }
+  ]
+}

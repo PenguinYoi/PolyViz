@@ -1,0 +1,404 @@
+{
+  "basis": "Assistant-assigned title/summary reference labels, frozen before model predictions. Not human-reviewed ground truth. Ambiguous secondary-topic and insufficient-text cases are identified before inference. Empty labels can mean outside taxonomy or insufficient information; see rationale.",
+  "labels": {
+    "CA-2025-2026-REGULAR-AB1987": [
+      "environment"
+    ],
+    "CA-2025-2026-REGULAR-SB1414": [
+      "elections"
+    ],
+    "CA-2025-2026-REGULAR-AB2397": [],
+    "CA-2025-2026-REGULAR-SB715": [
+      "elections"
+    ],
+    "CA-2025-2026-REGULAR-AB647": [
+      "transportation"
+    ],
+    "CA-2025-2026-REGULAR-AB1267": [],
+    "CA-2025-2026-REGULAR-AB1985": [
+      "education",
+      "healthcare"
+    ],
+    "CA-2025-2026-REGULAR-AB2437": [
+      "transportation"
+    ],
+    "CA-2025-2026-REGULAR-SB1130": [],
+    "CA-2025-2026-REGULAR-SB692": [
+      "housing",
+      "transportation"
+    ],
+    "TX-2025-2026-REGULAR-HB762": [
+      "labor"
+    ],
+    "TX-2025-2026-REGULAR-SB973": [
+      "taxation"
+    ],
+    "TX-2025-2026-REGULAR-SB2878": [
+      "public_safety",
+      "elections"
+    ],
+    "TX-2025-2026-REGULAR-HB4885": [
+      "public_safety"
+    ],
+    "TX-2025-2026-REGULAR-HB1056": [],
+    "TX-2025-2026-REGULAR-HB4325": [],
+    "TX-2025-2026-REGULAR-SB1758": [
+      "environment"
+    ],
+    "TX-2025-2026-REGULAR-SB2206": [
+      "taxation"
+    ],
+    "TX-2025-2026-REGULAR-SB614": [
+      "public_safety"
+    ],
+    "TX-2025-2026-REGULAR-SB1968": [],
+    "FL-2025-REGULAR-H5017": [],
+    "FL-2025-REGULAR-H4031": [],
+    "FL-2025-REGULAR-H4051": [
+      "elections"
+    ],
+    "FL-2025-REGULAR-H4033": [
+      "elections"
+    ],
+    "FL-2025-REGULAR-H4009": [],
+    "FL-2025-REGULAR-H4067": [],
+    "FL-2025-REGULAR-H4041": [
+      "elections",
+      "taxation"
+    ],
+    "FL-2025-REGULAR-H4045": [
+      "labor"
+    ],
+    "FL-2025-REGULAR-H4035": [
+      "healthcare",
+      "elections"
+    ],
+    "FL-2025-REGULAR-H4023": [],
+    "NY-2025-2026-REGULAR-A08695": [
+      "public_safety"
+    ],
+    "NY-2025-2026-REGULAR-S06273": [
+      "education"
+    ],
+    "NY-2025-2026-REGULAR-S09866": [
+      "environment",
+      "public_safety"
+    ],
+    "NY-2025-2026-REGULAR-S09989": [
+      "taxation"
+    ],
+    "NY-2025-2026-REGULAR-A08388": [
+      "elections"
+    ],
+    "NY-2025-2026-REGULAR-A10267": [
+      "labor"
+    ],
+    "NY-2025-2026-REGULAR-S09758": [
+      "public_safety"
+    ],
+    "IL-2025-2026-REGULAR-HB5827": [
+      "public_safety",
+      "labor"
+    ],
+    "IL-2025-2026-REGULAR-HB5814": [
+      "taxation",
+      "public_safety"
+    ],
+    "IL-2025-2026-REGULAR-HB5818": [],
+    "IL-2025-2026-REGULAR-HB5811": [
+      "taxation"
+    ],
+    "IL-2025-2026-REGULAR-HB5813": [
+      "housing"
+    ],
+    "WA-2025-2026-REGULAR-HB2711": [
+      "transportation"
+    ],
+    "WA-2025-2026-REGULAR-HB2487": [
+      "taxation"
+    ],
+    "WA-2025-2026-REGULAR-HB1390": [],
+    "WA-2025-2026-REGULAR-HB1345": [
+      "housing"
+    ],
+    "WA-2025-2026-REGULAR-HB2156": [
+      "public_safety"
+    ],
+    "WA-2025-2026-REGULAR-SB5998": [],
+    "WA-2025-2026-REGULAR-SB5820": [
+      "transportation"
+    ],
+    "WA-2025-2026-REGULAR-HB2266": [
+      "housing"
+    ],
+    "WA-2025-2026-REGULAR-SB6228": [
+      "taxation",
+      "healthcare"
+    ],
+    "WA-2025-2026-REGULAR-SB6002": [
+      "transportation"
+    ]
+  },
+  "annotations": {
+    "CA-2025-2026-REGULAR-AB1987": {
+      "rationale": "Wildlife-area and hunting management.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "CA-2025-2026-REGULAR-SB1414": {
+      "rationale": "Redistricting commission.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "CA-2025-2026-REGULAR-AB2397": {
+      "rationale": "Local district financing; summary does not establish a tax or housing provision.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "CA-2025-2026-REGULAR-SB715": {
+      "rationale": "Election law changes.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "CA-2025-2026-REGULAR-AB647": {
+      "rationale": "Abandoned vehicle regulation.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "CA-2025-2026-REGULAR-AB1267": {
+      "rationale": "Marriage eligibility is outside the initial ten-topic taxonomy; Health Code citation alone is not healthcare.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "CA-2025-2026-REGULAR-AB1985": {
+      "rationale": "Student health and mental-health training for coaches.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "CA-2025-2026-REGULAR-AB2437": {
+      "rationale": "Vehicle impoundment; no explicit criminal-law provision in supplied subject text.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "CA-2025-2026-REGULAR-SB1130": {
+      "rationale": "Recording-device privacy; no substantive criminal provision described beyond a Penal Code citation.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "CA-2025-2026-REGULAR-SB692": {
+      "rationale": "Vehicle regulation specifically concerning homelessness; secondary-topic scope is debatable.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "TX-2025-2026-REGULAR-HB762": {
+      "rationale": "Employee and contractor severance pay.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "TX-2025-2026-REGULAR-SB973": {
+      "rationale": "Appraisal district property reappraisal suggests property-tax administration; not explicit in summary.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "TX-2025-2026-REGULAR-SB2878": {
+      "rationale": "Court security, warrants, youth diversion, criminal penalties, and election challenges.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "TX-2025-2026-REGULAR-HB4885": {
+      "rationale": "Juvenile records and assigned counsel.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "TX-2025-2026-REGULAR-HB1056": {
+      "rationale": "Currency and legal tender; no taxation provision stated.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "TX-2025-2026-REGULAR-HB4325": {
+      "rationale": "Civil barratry liability; civil legal services are outside the current criminal-justice category.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "TX-2025-2026-REGULAR-SB1758": {
+      "rationale": "Industrial cement/aggregate operation siting; environmental purpose needs fuller text.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "TX-2025-2026-REGULAR-SB2206": {
+      "rationale": "Franchise tax credit and sales/use tax treatment.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "TX-2025-2026-REGULAR-SB614": {
+      "rationale": "Forensic case review and capital writs.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "TX-2025-2026-REGULAR-SB1968": {
+      "rationale": "Real-estate professional licensing, not explicitly residential housing or worker protections.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "FL-2025-REGULAR-H5017": {
+      "rationale": "State debt and public-finance administration lack a matching category.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "FL-2025-REGULAR-H4031": {
+      "rationale": "Alcohol business licensing; no public-health provision stated.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "FL-2025-REGULAR-H4051": {
+      "rationale": "Board candidate qualifications and geographical districts; mosquito-control context alone is not health policy.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "FL-2025-REGULAR-H4033": {
+      "rationale": "Explicit referendum requirement; district water governance is otherwise outside the taxonomy.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "FL-2025-REGULAR-H4009": {
+      "rationale": "Ceremonial airport renaming does not substantively change transportation policy.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "FL-2025-REGULAR-H4067": {
+      "rationale": "Alcohol retail licenses; no healthcare provision described.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "FL-2025-REGULAR-H4041": {
+      "rationale": "District election transition, referendum, and ad valorem tax powers; residential purchaser notice alone not housing supply or tenancy.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "FL-2025-REGULAR-H4045": {
+      "rationale": "Occupational pension/deferred retirement conditions; officer occupation alone not policing policy.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "FL-2025-REGULAR-H4035": {
+      "rationale": "Mosquito-control program restructuring and referendum; whether structural public-health governance counts is debatable.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "FL-2025-REGULAR-H4023": {
+      "rationale": "Public-official conflict-of-interest ethics; employment mentioned but no worker-rights provision.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "NY-2025-2026-REGULAR-A08695": {
+      "rationale": "Jury procedure is justice-related, but the supplied description does not identify criminal versus civil application.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "NY-2025-2026-REGULAR-S06273": {
+      "rationale": "Study of effects of caregiving on children's education.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "NY-2025-2026-REGULAR-S09866": {
+      "rationale": "Conviction registry for illegal dumping.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "NY-2025-2026-REGULAR-S09989": {
+      "rationale": "Property/school tax exemption; school-tax mention alone not education policy.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "NY-2025-2026-REGULAR-A08388": {
+      "rationale": "Election staffing eligibility; students are the eligible group, not a separate education provision.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "NY-2025-2026-REGULAR-A10267": {
+      "rationale": "Workforce development board duties.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "NY-2025-2026-REGULAR-S09758": {
+      "rationale": "Evidence admissibility in grand-jury proceedings.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "IL-2025-2026-REGULAR-HB5827": {
+      "rationale": "Criminal-history check acceptance rules for employment/licensure; secondary labor scope requires agreement.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "IL-2025-2026-REGULAR-HB5814": {
+      "rationale": "Repeals wagering taxes and criminal gambling exceptions.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "IL-2025-2026-REGULAR-HB5818": {
+      "rationale": "Industrial data-center siting; zoning alone does not establish housing or environmental protection.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "IL-2025-2026-REGULAR-HB5811": {
+      "rationale": "Repeal of wagering transaction tax.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "IL-2025-2026-REGULAR-HB5813": {
+      "rationale": "Rental nonpayment eviction procedures.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "WA-2025-2026-REGULAR-HB2711": {
+      "rationale": "Transportation resources.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "WA-2025-2026-REGULAR-HB2487": {
+      "rationale": "Insurer taxes; insurer type not specified as health.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "WA-2025-2026-REGULAR-HB1390": {
+      "rationale": "Program name does not establish its provisions; needs more text.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "WA-2025-2026-REGULAR-HB1345": {
+      "rationale": "Accessory dwelling unit development limits.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "WA-2025-2026-REGULAR-HB2156": {
+      "rationale": "Attorney-general investigation powers; criminal/civil scope not specified.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "WA-2025-2026-REGULAR-SB5998": {
+      "rationale": "General appropriations do not identify funded topics in supplied text.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "WA-2025-2026-REGULAR-SB5820": {
+      "rationale": "Freight rail and transport planning.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "WA-2025-2026-REGULAR-HB2266": {
+      "rationale": "Supportive/transitional/emergency housing.",
+      "ambiguous": false,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "WA-2025-2026-REGULAR-SB6228": {
+      "rationale": "Tax relief for drug distribution and pharmacies; secondary healthcare scope requires agreement.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    },
+    "WA-2025-2026-REGULAR-SB6002": {
+      "rationale": "Driver privacy protections; transport-administration versus general privacy scope is debatable.",
+      "ambiguous": true,
+      "review_status": "provisional_assistant_annotation"
+    }
+  }
+}

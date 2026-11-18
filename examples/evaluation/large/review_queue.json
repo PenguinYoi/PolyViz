@@ -1,0 +1,683 @@
+{
+  "note": "Model/reference disagreements, not confirmed errors. Use blind_review.json for independent labeling first.",
+  "bills": [
+    {
+      "id": "CA-2025-2026-REGULAR-AB647",
+      "state": "CA",
+      "expected": [
+        "transportation"
+      ],
+      "predicted": [],
+      "missing": [
+        "transportation"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Abandoned vehicle regulation.",
+      "title": "Abandoned recreational vehicles.",
+      "summary": "An act to amend Section 22851.5 of the Vehicle Code, relating to vehicles.",
+      "source_url": "https://legiscan.com/CA/bill/AB647/2025",
+      "flagged_suggestions": [
+        {
+          "topic": "transportation",
+          "entailment_score": 0.983105,
+          "hypothesis": "This text is about transportation.",
+          "model_input_passage": "Abandoned recreational vehicles. vehicles.",
+          "corroboration": []
+        },
+        {
+          "topic": "environment",
+          "entailment_score": 0.927409,
+          "hypothesis": "This text is about environmental protection.",
+          "model_input_passage": "Abandoned recreational vehicles. vehicles.",
+          "corroboration": []
+        }
+      ],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB1985",
+      "state": "CA",
+      "expected": [
+        "education",
+        "healthcare"
+      ],
+      "predicted": [],
+      "missing": [
+        "education",
+        "healthcare"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Student health and mental-health training for coaches.",
+      "title": "Student health: athletic coaches and trainers: mental health training.",
+      "summary": "An act to add Section 67387 to the Education Code, relating to student health.",
+      "source_url": "https://legiscan.com/CA/bill/AB1985/2025",
+      "flagged_suggestions": [],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB2437",
+      "state": "CA",
+      "expected": [
+        "transportation"
+      ],
+      "predicted": [],
+      "missing": [
+        "transportation"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Vehicle impoundment; no explicit criminal-law provision in supplied subject text.",
+      "title": "Impounded vehicles.",
+      "summary": "An act to amend Sections 4000, 10856, 14602.6, 14602.7, 14602.8, 21100.4, 22651.07, 22651.1, 22658, 22659.5, and 23118 of the Vehicle Code, relating to vehicles.",
+      "source_url": "https://legiscan.com/CA/bill/AB2437/2025",
+      "flagged_suggestions": [
+        {
+          "topic": "transportation",
+          "entailment_score": 0.991373,
+          "hypothesis": "This text is about transportation.",
+          "model_input_passage": "Impounded vehicles. vehicles.",
+          "corroboration": []
+        }
+      ],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB973",
+      "state": "TX",
+      "expected": [
+        "taxation"
+      ],
+      "predicted": [],
+      "missing": [
+        "taxation"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Appraisal district property reappraisal suggests property-tax administration; not explicit in summary.",
+      "title": "Relating to the periodic reappraisal of property by, and the prohibition on posting on the Internet certain information held by, an appraisal district.",
+      "summary": "Relating to the periodic reappraisal of property by, and the prohibition on posting on the Internet certain information held by, an appraisal district.",
+      "source_url": "https://legiscan.com/TX/bill/SB973/2025",
+      "flagged_suggestions": [],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB4885",
+      "state": "TX",
+      "expected": [
+        "public_safety"
+      ],
+      "predicted": [],
+      "missing": [
+        "public_safety"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Juvenile records and assigned counsel.",
+      "title": "Relating to the disclosure of confidential juvenile records to a managed assigned counsel program.",
+      "summary": "Relating to the disclosure of confidential juvenile records to a managed assigned counsel program.",
+      "source_url": "https://legiscan.com/TX/bill/HB4885/2025",
+      "flagged_suggestions": [],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB1758",
+      "state": "TX",
+      "expected": [
+        "environment"
+      ],
+      "predicted": [],
+      "missing": [
+        "environment"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Industrial cement/aggregate operation siting; environmental purpose needs fuller text.",
+      "title": "Relating to the operation of a cement kiln and the production of aggregates near a semiconductor wafer manufacturing facility.",
+      "summary": "Relating to the operation of a cement kiln and the production of aggregates near a semiconductor wafer manufacturing facility.",
+      "source_url": "https://legiscan.com/TX/bill/SB1758/2025",
+      "flagged_suggestions": [],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB614",
+      "state": "TX",
+      "expected": [
+        "public_safety"
+      ],
+      "predicted": [],
+      "missing": [
+        "public_safety"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Forensic case review and capital writs.",
+      "title": "Relating to the authority of the Texas Forensic Science Commission to review and refer certain cases to the office of capital and forensic writs.",
+      "summary": "Relating to the authority of the Texas Forensic Science Commission to review and refer certain cases to the office of capital and forensic writs.",
+      "source_url": "https://legiscan.com/TX/bill/SB614/2025",
+      "flagged_suggestions": [],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4051",
+      "state": "FL",
+      "expected": [
+        "elections"
+      ],
+      "predicted": [],
+      "missing": [
+        "elections"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Board candidate qualifications and geographical districts; mosquito-control context alone is not health policy.",
+      "title": "Pasco County Mosquito Control District, Pasco County",
+      "summary": "Provides applicability of laws on term limits for Pasco County Mosquito Control District board members; requires county commission to draw geographical subdistricts; provides qualifications for district board candidates & members.",
+      "source_url": "https://legiscan.com/FL/bill/H4051/2025",
+      "flagged_suggestions": [
+        {
+          "topic": "environment",
+          "entailment_score": 0.975152,
+          "hypothesis": "This text is about environmental protection.",
+          "model_input_passage": "Pasco County Mosquito Control District",
+          "corroboration": []
+        },
+        {
+          "topic": "labor",
+          "entailment_score": 0.748082,
+          "hypothesis": "This text is about labor and employment.",
+          "model_input_passage": "Pasco County Mosquito Control District, Pasco County Provides applicability of laws on term limits for Pasco County Mosquito Control District board members; requires county commission to draw geographical subdistricts; provides qualifications for district board candidates & members.",
+          "corroboration": []
+        }
+      ],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4033",
+      "state": "FL",
+      "expected": [
+        "elections"
+      ],
+      "predicted": [],
+      "missing": [
+        "elections"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Explicit referendum requirement; district water governance is otherwise outside the taxonomy.",
+      "title": "San Carlos Estates Water Control District, Lee County",
+      "summary": "Provides that San Carlos Estates Water Control District, independent special district, shall become dependent district of City of Bonita Springs; reenacting, amending, & repealing certain circuit court decree; provides for transition; provides that members of city council shall assume offices of board of supervisors of said district; provides boundaries; requires referendum.",
+      "source_url": "https://legiscan.com/FL/bill/H4033/2025",
+      "flagged_suggestions": [
+        {
+          "topic": "environment",
+          "entailment_score": 0.857139,
+          "hypothesis": "This text is about environmental protection.",
+          "model_input_passage": "San Carlos Estates Water Control District",
+          "corroboration": []
+        },
+        {
+          "topic": "housing",
+          "entailment_score": 0.768929,
+          "hypothesis": "This text is about housing.",
+          "model_input_passage": "San Carlos Estates Water Control District",
+          "corroboration": []
+        }
+      ],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4041",
+      "state": "FL",
+      "expected": [
+        "elections",
+        "taxation"
+      ],
+      "predicted": [
+        "elections",
+        "housing",
+        "taxation"
+      ],
+      "missing": [],
+      "extra": [
+        "housing"
+      ],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "District election transition, referendum, and ad valorem tax powers; residential purchaser notice alone not housing supply or tenancy.",
+      "title": "Collier County",
+      "summary": "Creates Corkscrew Grove Stewardship District; provides short title; provides legislative findings & intent; states legislative policy regarding creation of district; establishes compliance with minimum requirements for creation of independent special district; provides for creation & establishment of district; establishes legal boundaries of district; provides for jurisdiction & charter of district; provides for board of supervisors; provides for election, membership, terms, meetings, & duties of board members; provides method for transition of board from landowner control to control by resident electors of district; provides for district manager & district personnel; provides for district treasurer, selection of public depository, & district budgets & financial reports; provides general & special powers of district; provides for bonds; provides for borrowing; provides for future ad valorem taxation; provides for special assessments; provides for issuance of certificates of indebtedness; provides for tax liens; provides for competitive procurement; provides for fees & charges; provides for termination, contraction, expansion, or merger of district; provides for required notices to purchasers of residential units within district; specifies district public property; provides severability; provides for referendum.",
+      "source_url": "https://legiscan.com/FL/bill/H4041/2025",
+      "flagged_suggestions": [
+        {
+          "topic": "labor",
+          "entailment_score": 0.830174,
+          "hypothesis": "This text is about labor and employment.",
+          "model_input_passage": "provides for district manager & district personnel",
+          "corroboration": []
+        }
+      ],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4045",
+      "state": "FL",
+      "expected": [
+        "labor"
+      ],
+      "predicted": [],
+      "missing": [
+        "labor"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Occupational pension/deferred retirement conditions; officer occupation alone not policing policy.",
+      "title": "City Pension Fund for Firefighters and Police Officers in the City of Tampa, Hillsborough County",
+      "summary": "Increases DROP participation from 5 years to 8 years; removes full scale contribution rate; revises, updates, & conforms terminology.",
+      "source_url": "https://legiscan.com/FL/bill/H4045/2025",
+      "flagged_suggestions": [],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4035",
+      "state": "FL",
+      "expected": [
+        "elections",
+        "healthcare"
+      ],
+      "predicted": [],
+      "missing": [
+        "elections",
+        "healthcare"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Mosquito-control program restructuring and referendum; whether structural public-health governance counts is debatable.",
+      "title": "Lee County",
+      "summary": "Revises boundaries of the Lee County Mosquito Control District; repeals chapter 2001-335, Laws of Florida, relating to Fort Myers Beach Mosquito Control District; provides for merger of districts; transfers assets & liabilities of Fort Myers Beach Mosquito Control District to the Lee County Mosquito Control District; requires referendum.",
+      "source_url": "https://legiscan.com/FL/bill/H4035/2025",
+      "flagged_suggestions": [
+        {
+          "topic": "environment",
+          "entailment_score": 0.904667,
+          "hypothesis": "This text is about environmental protection.",
+          "model_input_passage": "relating to Fort Myers Beach Mosquito Control District",
+          "corroboration": []
+        }
+      ],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "FL-2025-REGULAR-H4023",
+      "state": "FL",
+      "expected": [],
+      "predicted": [
+        "labor"
+      ],
+      "missing": [],
+      "extra": [
+        "labor"
+      ],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Public-official conflict-of-interest ethics; employment mentioned but no worker-rights provision.",
+      "title": "Officers and Employees of North Springs Improvement District, Broward County",
+      "summary": "adds to charter of North Springs Improvement District, Broward County, prohibition for conflicting employment or contractual relationships.",
+      "source_url": "https://legiscan.com/FL/bill/H4023/2025",
+      "flagged_suggestions": [],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A08695",
+      "state": "NY",
+      "expected": [
+        "public_safety"
+      ],
+      "predicted": [],
+      "missing": [
+        "public_safety"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Jury procedure is justice-related, but the supplied description does not identify criminal versus civil application.",
+      "title": "Provides that after an alternate juror has been substituted, the jury shall deliberate anew on all issues submitted to the jury at the outset of deliberations; exempts issues for which a verdict was already rendered.",
+      "summary": "Provides that after an alternate juror has been substituted, the jury shall deliberate anew on all issues submitted to the jury at the outset of deliberations; exempts issues for which a verdict was already rendered.",
+      "source_url": "https://legiscan.com/NY/bill/A08695/2025",
+      "flagged_suggestions": [],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09866",
+      "state": "NY",
+      "expected": [
+        "environment",
+        "public_safety"
+      ],
+      "predicted": [],
+      "missing": [
+        "environment",
+        "public_safety"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Conviction registry for illegal dumping.",
+      "title": "Creates a publicly available list of persons who have been convicted of illegal dumping for a period of three years.",
+      "summary": "Creates a publicly available list of persons who have been convicted of illegal dumping for a period of three years.",
+      "source_url": "https://legiscan.com/NY/bill/S09866/2025",
+      "flagged_suggestions": [
+        {
+          "topic": "public_safety",
+          "entailment_score": 0.9263,
+          "hypothesis": "This text is about crime and public safety.",
+          "model_input_passage": "Creates a publicly available list of persons who have been convicted of illegal dumping for a period of three years.",
+          "corroboration": []
+        }
+      ],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09989",
+      "state": "NY",
+      "expected": [
+        "taxation"
+      ],
+      "predicted": [
+        "education",
+        "taxation"
+      ],
+      "missing": [],
+      "extra": [
+        "education"
+      ],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Property/school tax exemption; school-tax mention alone not education policy.",
+      "title": "Authorizes the Tovas Dovid Community Kollel, Inc. to receive retroactive real property tax exempt status for the 2023, 2024 and 2025 assessment rolls and all of the 2023-2024, 2024-2025 and 2025-2026 school taxes.",
+      "summary": "Authorizes the Tovas Dovid Community Kollel, Inc. to receive retroactive real property tax exempt status for the 2023, 2024 and 2025 assessment rolls and all of the 2023-2024, 2024-2025 and 2025-2026 school taxes.",
+      "source_url": "https://legiscan.com/NY/bill/S09989/2025",
+      "flagged_suggestions": [
+        {
+          "topic": "housing",
+          "entailment_score": 0.909987,
+          "hypothesis": "This text is about housing.",
+          "model_input_passage": "Authorizes the Tovas Dovid Community Kollel, Inc. to receive retroactive real property tax exempt status for the 2023, 2024 and 2025 assessment rolls and all of the 2023-2024, 2024-2025 and 2025-2026 school taxes.",
+          "corroboration": []
+        }
+      ],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A08388",
+      "state": "NY",
+      "expected": [
+        "elections"
+      ],
+      "predicted": [
+        "education",
+        "elections"
+      ],
+      "missing": [],
+      "extra": [
+        "education"
+      ],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Election staffing eligibility; students are the eligible group, not a separate education provision.",
+      "title": "Authorizes, under certain circumstances, full-time college and university students to act as election inspectors and poll clerks in the election district where their college or university is located.",
+      "summary": "Authorizes, under certain circumstances, full-time college and university students to act as election inspectors and poll clerks in the election district where their college or university is located.",
+      "source_url": "https://legiscan.com/NY/bill/A08388/2025",
+      "flagged_suggestions": [
+        {
+          "topic": "labor",
+          "entailment_score": 0.881474,
+          "hypothesis": "This text is about labor and employment.",
+          "model_input_passage": "full-time college and university students to act as election inspectors and poll clerks in the election district where their college or university is located.",
+          "corroboration": []
+        }
+      ],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A10267",
+      "state": "NY",
+      "expected": [
+        "labor"
+      ],
+      "predicted": [],
+      "missing": [
+        "labor"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Workforce development board duties.",
+      "title": "Renames the New York state workforce investment board as the New York state workforce development board; revises the duties of the board.",
+      "summary": "Renames the New York state workforce investment board as the New York state workforce development board; revises the duties of the board.",
+      "source_url": "https://legiscan.com/NY/bill/A10267/2025",
+      "flagged_suggestions": [
+        {
+          "topic": "labor",
+          "entailment_score": 0.834058,
+          "hypothesis": "This text is about labor and employment.",
+          "model_input_passage": "Renames the New York state workforce investment board as the New York state workforce development board; revises the duties of the board.",
+          "corroboration": []
+        }
+      ],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09758",
+      "state": "NY",
+      "expected": [
+        "public_safety"
+      ],
+      "predicted": [],
+      "missing": [
+        "public_safety"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Evidence admissibility in grand-jury proceedings.",
+      "title": "Provides that any writing or record made as a memorandum or record of any act, transaction, occurrence or event, may be received in grand jury proceedings as evidence of proof that such act, transaction, occurrence or event, if it was made in the regular course of any business.",
+      "summary": "Provides that any writing or record made as a memorandum or record of any act, transaction, occurrence or event, may be received in grand jury proceedings as evidence of proof that such act, transaction, occurrence or event, if it was made in the regular course of any business.",
+      "source_url": "https://legiscan.com/NY/bill/S09758/2025",
+      "flagged_suggestions": [],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5827",
+      "state": "IL",
+      "expected": [
+        "labor",
+        "public_safety"
+      ],
+      "predicted": [
+        "education",
+        "labor",
+        "public_safety"
+      ],
+      "missing": [],
+      "extra": [
+        "education"
+      ],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Criminal-history check acceptance rules for employment/licensure; secondary labor scope requires agreement.",
+      "title": "ACCEPT FINGERPRINT RECORDS ACT",
+      "summary": "Creates the Standard Acceptance of Records from Fingerprint Vendors Act.\nProvides that, beginning January 1, 2027, a State agency, school district, or unit of local government must accept a fingerprint-based criminal history record check from any certified live scan fingerprint vendor if the State agency, school district, or unit of local government requires an individual to complete a fingerprint-based criminal history record check (1) to continue employment with the State agency, school district, or unit of local government or (2) to obtain employment, licensure, or a grant from the State agency, school district, or unit of local government.\nProvides that, on and after the effective date of the Act, a State agency, school district, or unit of local government may not enter into, amend, or renew a contract with a fingerprint vendor that prohibits or has the effect of prohibiting the State agency, school district, or unit of local government from accepting a fingerprint-based criminal history record check from any other certified live scan fingerprint vendor. Effective immediately.",
+      "source_url": "https://legiscan.com/IL/bill/HB5827/2025",
+      "flagged_suggestions": [],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5813",
+      "state": "IL",
+      "expected": [
+        "housing"
+      ],
+      "predicted": [
+        "housing",
+        "public_safety"
+      ],
+      "missing": [],
+      "extra": [
+        "public_safety"
+      ],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Rental nonpayment eviction procedures.",
+      "title": "FAIR RENTAL ENFORCEMENT ACT",
+      "summary": "Amends the Eviction Article of the Code of Civil Procedure. Provides that if a tenant fails to pay rent within the time stated in the notice and demand for payment of rent and the landlord commences an eviction or ejectment action, the summons and complaint for the eviction or ejectment action shall be served on the tenant within 5 business days after the landlord commences the action.\nRequires the tenant to file an appearance within 5 business days of receiving the summons and complaint for the eviction or ejectment action. Requires the court to hold the hearing on the eviction or ejectment action within 10 business days of the tenant filing an appearance, or, if the tenant fails to file an appearance, within 10 business days of the date on which the tenant was required to file an appearance.\nProvides that, if a judgment is entered in favor of the landlord, the judgment shall be served on the tenant within 5 business days of the entry of the judgment. Provides that possession of the premises shall be restored to the landlord immediately following the service of the judgment.",
+      "source_url": "https://legiscan.com/IL/bill/HB5813/2025",
+      "flagged_suggestions": [
+        {
+          "topic": "labor",
+          "entailment_score": 0.824037,
+          "hypothesis": "This text is about labor and employment.",
+          "model_input_passage": "within 10 business days of the date on which the tenant was required to file an appearance.",
+          "corroboration": []
+        }
+      ],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB1345",
+      "state": "WA",
+      "expected": [
+        "housing"
+      ],
+      "predicted": [],
+      "missing": [
+        "housing"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Accessory dwelling unit development limits.",
+      "title": "Establishing limitations on detached accessory dwelling units outside of urban growth areas.",
+      "summary": "Establishing limitations on detached accessory dwelling units outside of urban growth areas.",
+      "source_url": "https://legiscan.com/WA/bill/HB1345/2025",
+      "flagged_suggestions": [
+        {
+          "topic": "housing",
+          "entailment_score": 0.992724,
+          "hypothesis": "This text is about housing.",
+          "model_input_passage": "Establishing limitations on detached accessory dwelling units outside of urban growth areas.",
+          "corroboration": []
+        }
+      ],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2156",
+      "state": "WA",
+      "expected": [
+        "public_safety"
+      ],
+      "predicted": [],
+      "missing": [
+        "public_safety"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Attorney-general investigation powers; criminal/civil scope not specified.",
+      "title": "Concerning the authority of investigators of the attorney general's office.",
+      "summary": "Concerning the authority of investigators of the attorney general's office.",
+      "source_url": "https://legiscan.com/WA/bill/HB2156/2025",
+      "flagged_suggestions": [],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2266",
+      "state": "WA",
+      "expected": [
+        "housing"
+      ],
+      "predicted": [
+        "healthcare",
+        "housing"
+      ],
+      "missing": [],
+      "extra": [
+        "healthcare"
+      ],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Supportive/transitional/emergency housing.",
+      "title": "Encouraging permanent supportive housing, transitional housing, indoor emergency housing, and indoor emergency shelters.",
+      "summary": "Encouraging permanent supportive housing, transitional housing, indoor emergency housing, and indoor emergency shelters.",
+      "source_url": "https://legiscan.com/WA/bill/HB2266/2025",
+      "flagged_suggestions": [],
+      "human_topics": null,
+      "human_rationale": null
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB6002",
+      "state": "WA",
+      "expected": [
+        "transportation"
+      ],
+      "predicted": [],
+      "missing": [
+        "transportation"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Driver privacy protections; transport-administration versus general privacy scope is debatable.",
+      "title": "Concerning driver privacy protections.",
+      "summary": "Concerning driver privacy protections.",
+      "source_url": "https://legiscan.com/WA/bill/SB6002/2025",
+      "flagged_suggestions": [
+        {
+          "topic": "transportation",
+          "entailment_score": 0.935508,
+          "hypothesis": "This text is about transportation.",
+          "model_input_passage": "Concerning driver privacy protections.",
+          "corroboration": []
+        }
+      ],
+      "human_topics": null,
+      "human_rationale": null
+    }
+  ]
+}

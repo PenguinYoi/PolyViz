@@ -1,0 +1,113 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-18T19:45:56.225948+00:00",
+  "bills": [
+    {
+      "id": "VA-DEMO-2025-HB1",
+      "state": "VA",
+      "session_id": "DEMO-2025",
+      "bill_number": "HB1",
+      "origin_chamber": "unknown",
+      "title": "Hypothetical data-center water-use reporting",
+      "summary": "Requires reporting of water consumption by data centers. This is a fictional example, not actual legislation.",
+      "status": "pending",
+      "source_status": "pending",
+      "enacted_date": null,
+      "source": {
+        "provider": "user_supplied",
+        "bill_id": null,
+        "url": null
+      },
+      "topics": [],
+      "classification": {
+        "method": "keyword_rules",
+        "method_version": "1",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "outcome": "unclassified",
+        "evidence": {}
+      },
+      "warnings": [
+        "No topic rules matched; this does not establish that the bill is outside the taxonomy."
+      ],
+      "dates": {
+        "introduced": "2025-01-15",
+        "enacted": null,
+        "effective": null
+      },
+      "policy_topics": [],
+      "issue_tags": [],
+      "affected_sectors": [],
+      "policy_actions": [],
+      "issue_classification": {
+        "method": "controlled_alias_candidates",
+        "method_version": "1",
+        "taxonomy_version": "1",
+        "taxonomy_sha256": "d459e7d141cf54a0aecb02eda63e146b50935cd262dafe3b0ec23650b374c78e",
+        "input_sha256": "c3b4f29b24cb23175bb2c41646ab3d20903acfbf21333d64007e8f4bb0e21ad9",
+        "input_format": "title + newline + summary",
+        "review_status": "needs_review",
+        "outcome": "candidates_found",
+        "candidates": [
+          {
+            "axis": "issue_tags",
+            "label": "data_centers",
+            "excerpt": "data-center",
+            "start": 13,
+            "end": 24,
+            "status": "candidate_not_assigned"
+          },
+          {
+            "axis": "issue_tags",
+            "label": "data_centers",
+            "excerpt": "data centers",
+            "start": 88,
+            "end": 100,
+            "status": "candidate_not_assigned"
+          },
+          {
+            "axis": "issue_tags",
+            "label": "water_use",
+            "excerpt": "water-use",
+            "start": 25,
+            "end": 34,
+            "status": "candidate_not_assigned"
+          },
+          {
+            "axis": "issue_tags",
+            "label": "water_use",
+            "excerpt": "water consumption",
+            "start": 67,
+            "end": 84,
+            "status": "candidate_not_assigned"
+          },
+          {
+            "axis": "affected_sectors",
+            "label": "data_center_industry",
+            "excerpt": "data-center",
+            "start": 13,
+            "end": 24,
+            "status": "candidate_not_assigned"
+          },
+          {
+            "axis": "affected_sectors",
+            "label": "data_center_industry",
+            "excerpt": "data centers",
+            "start": 88,
+            "end": 100,
+            "status": "candidate_not_assigned"
+          },
+          {
+            "axis": "policy_actions",
+            "label": "requires_reporting",
+            "excerpt": "Requires reporting",
+            "start": 45,
+            "end": 63,
+            "status": "candidate_not_assigned"
+          }
+        ],
+        "note": "Candidates are not assignments. Negation, repeal, citations and operative provisions have not been verified. No candidates does not establish absence."
+      }
+    }
+  ]
+}

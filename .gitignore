@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.DS_Store
+data/raw/
+data/generated/
+data/model_cache/
+work/
+data/models/

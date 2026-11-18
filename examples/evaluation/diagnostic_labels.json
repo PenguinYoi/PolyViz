@@ -1,0 +1,39 @@
+{
+  "basis": "Synthetic diagnostic cases authored before initial NLI run. Not real legislation, independent annotations, or held-out accuracy evidence.",
+  "labels": {
+    "CA-SYNTHETIC-HB1": [
+      "housing"
+    ],
+    "CA-SYNTHETIC-HB2": [
+      "housing"
+    ],
+    "CA-SYNTHETIC-HB3": [
+      "education",
+      "healthcare"
+    ],
+    "CA-SYNTHETIC-HB4": [
+      "energy",
+      "taxation"
+    ],
+    "CA-SYNTHETIC-HB5": [
+      "environment"
+    ],
+    "CA-SYNTHETIC-HB6": [
+      "labor"
+    ],
+    "CA-SYNTHETIC-HB7": [
+      "elections"
+    ],
+    "CA-SYNTHETIC-HB8": [
+      "transportation"
+    ],
+    "CA-SYNTHETIC-HB9": [
+      "public_safety"
+    ],
+    "CA-SYNTHETIC-HB10": [
+      "healthcare"
+    ],
+    "CA-SYNTHETIC-HB11": [],
+    "CA-SYNTHETIC-HB12": []
+  }
+}

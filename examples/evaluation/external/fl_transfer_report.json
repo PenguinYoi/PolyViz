@@ -1,0 +1,173 @@
+{
+  "task": "Cross-state primary-native-topic agreement on source-provided Florida codes, NOT PolyViz direct-topic/sector accuracy",
+  "source": {
+    "dataset": "Florida Policy Agendas Project, second edition",
+    "url": "https://minio.la.utexas.edu/compagendas/datasetfiles/Florida_Legislative_Bills_2nd_Ed.csv",
+    "codebook_url": "https://minio.la.utexas.edu/compagendas/codebookfiles/CAP_Project_Codebook_1.pdf",
+    "sha256": "34b79b6d75b39003da712030d46c34b4d2e62b4b2e189cf59a8e139b8cd0f97a",
+    "label_provenance": "Published research-project native major-topic codes; per-record coding/validation process is not identified in the file."
+  },
+  "model": "unchanged_pa_primary_v2",
+  "model_sha256": "85107120c3a5198fb2db409831a4f9bf6e83d7246a2dabcb3f91468ab31509d6",
+  "training_state": "PA",
+  "evaluation_state": "FL",
+  "years": [
+    1993
+  ],
+  "count": 738,
+  "filters": {
+    "raw_rows": 4119,
+    "invalid_identity_or_text_rows": 3339,
+    "invalid_native_code_rows": 2,
+    "duplicate_bill_rows_removed": 0,
+    "duplicate_title_rows_removed": 32,
+    "conflicting_title_rows": 8
+  },
+  "primary_topic_agreement": 0.5365853658536586,
+  "macro_f1": 0.45798312410201514,
+  "top3_primary_topic_recall": 0.7046070460704607,
+  "high_score_subset": {
+    "probability_cutoff": 0.8,
+    "margin_cutoff": 0.25,
+    "count": 294,
+    "coverage": 0.3983739837398374,
+    "primary_topic_agreement": 0.7414965986394558
+  },
+  "per_native_topic": {
+    "1": {
+      "precision": 0.6666666666666666,
+      "recall": 0.11428571428571428,
+      "f1-score": 0.1951219512195122,
+      "support": 35.0
+    },
+    "10": {
+      "precision": 0.53125,
+      "recall": 0.7083333333333334,
+      "f1-score": 0.6071428571428571,
+      "support": 24.0
+    },
+    "12": {
+      "precision": 0.577639751552795,
+      "recall": 0.7948717948717948,
+      "f1-score": 0.6690647482014388,
+      "support": 117.0
+    },
+    "13": {
+      "precision": 0.3157894736842105,
+      "recall": 0.75,
+      "f1-score": 0.4444444444444444,
+      "support": 8.0
+    },
+    "14": {
+      "precision": 0.23076923076923078,
+      "recall": 0.2727272727272727,
+      "f1-score": 0.25,
+      "support": 11.0
+    },
+    "15": {
+      "precision": 0.5576923076923077,
+      "recall": 0.6041666666666666,
+      "f1-score": 0.58,
+      "support": 96.0
+    },
+    "16": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "17": {
+      "precision": 0.8333333333333334,
+      "recall": 0.625,
+      "f1-score": 0.7142857142857143,
+      "support": 8.0
+    },
+    "19": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "2": {
+      "precision": 0.16666666666666666,
+      "recall": 0.3,
+      "f1-score": 0.21428571428571427,
+      "support": 10.0
+    },
+    "20": {
+      "precision": 0.47368421052631576,
+      "recall": 0.4411764705882353,
+      "f1-score": 0.45685279187817257,
+      "support": 102.0
+    },
+    "21": {
+      "precision": 0.5714285714285714,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6153846153846154,
+      "support": 12.0
+    },
+    "24": {
+      "precision": 0.4583333333333333,
+      "recall": 0.10377358490566038,
+      "f1-score": 0.16923076923076924,
+      "support": 106.0
+    },
+    "3": {
+      "precision": 0.5416666666666666,
+      "recall": 0.6753246753246753,
+      "f1-score": 0.6011560693641619,
+      "support": 77.0
+    },
+    "4": {
+      "precision": 0.7,
+      "recall": 0.7,
+      "f1-score": 0.7,
+      "support": 10.0
+    },
+    "5": {
+      "precision": 0.7692307692307693,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.7142857142857143,
+      "support": 15.0
+    },
+    "6": {
+      "precision": 0.7014925373134329,
+      "recall": 0.734375,
+      "f1-score": 0.7175572519083969,
+      "support": 64.0
+    },
+    "7": {
+      "precision": 0.5476190476190477,
+      "recall": 0.6216216216216216,
+      "f1-score": 0.5822784810126582,
+      "support": 37.0
+    },
+    "8": {
+      "precision": 0.3076923076923077,
+      "recall": 1.0,
+      "f1-score": 0.47058823529411764,
+      "support": 4.0
+    },
+    "accuracy": 0.5365853658536586,
+    "macro avg": {
+      "precision": 0.4711028881145082,
+      "recall": 0.5146836561925425,
+      "f1-score": 0.45798312410201514,
+      "support": 738.0
+    },
+    "weighted avg": {
+      "precision": 0.5433536766686036,
+      "recall": 0.5365853658536586,
+      "f1-score": 0.5078586130449012,
+      "support": 738.0
+    }
+  },
+  "limitations": [
+    "Title-only Florida input differs from Pennsylvania legislative descriptions.",
+    "The Florida codebook adapts Pennsylvania categories; their meanings are not guaranteed identical.",
+    "Duplicates and conflicting/invalid source codes were excluded, not silently corrected.",
+    "No training, calibration, or threshold tuning used Florida labels in this audit.",
+    "Single primary source labels do not establish absence of secondary policy topics.",
+    "This is not a representative all-state or current-session benchmark."
+  ]
+}

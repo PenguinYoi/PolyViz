@@ -1,0 +1,162 @@
+{
+  "taxonomy_version": "1",
+  "count": 12,
+  "methods": [
+    "local_hybrid"
+  ],
+  "models": [
+    "MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33"
+  ],
+  "thresholds": [
+    0.7
+  ],
+  "exact_matches": 11,
+  "micro_precision": 0.9230769230769231,
+  "micro_recall": 1.0,
+  "micro_f1": 0.96,
+  "results": [
+    {
+      "id": "CA-SYNTHETIC-HB1",
+      "expected": [
+        "housing"
+      ],
+      "predicted": [
+        "housing"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-SYNTHETIC-HB2",
+      "expected": [
+        "housing"
+      ],
+      "predicted": [
+        "housing",
+        "taxation"
+      ],
+      "missing": [],
+      "extra": [
+        "taxation"
+      ],
+      "exact_match": false
+    },
+    {
+      "id": "CA-SYNTHETIC-HB3",
+      "expected": [
+        "education",
+        "healthcare"
+      ],
+      "predicted": [
+        "education",
+        "healthcare"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-SYNTHETIC-HB4",
+      "expected": [
+        "energy",
+        "taxation"
+      ],
+      "predicted": [
+        "energy",
+        "taxation"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-SYNTHETIC-HB5",
+      "expected": [
+        "environment"
+      ],
+      "predicted": [
+        "environment"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-SYNTHETIC-HB6",
+      "expected": [
+        "labor"
+      ],
+      "predicted": [
+        "labor"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-SYNTHETIC-HB7",
+      "expected": [
+        "elections"
+      ],
+      "predicted": [
+        "elections"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-SYNTHETIC-HB8",
+      "expected": [
+        "transportation"
+      ],
+      "predicted": [
+        "transportation"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-SYNTHETIC-HB9",
+      "expected": [
+        "public_safety"
+      ],
+      "predicted": [
+        "public_safety"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-SYNTHETIC-HB10",
+      "expected": [
+        "healthcare"
+      ],
+      "predicted": [
+        "healthcare"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-SYNTHETIC-HB11",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    },
+    {
+      "id": "CA-SYNTHETIC-HB12",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true
+    }
+  ]
+}

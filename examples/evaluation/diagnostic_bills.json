@@ -1,0 +1,98 @@
+[
+  {
+    "state": "CA",
+    "session_id": "SYNTHETIC",
+    "bill_number": "HB1",
+    "title": "Rental advertising disclosure",
+    "summary": "Requires landlords to disclose digitally altered photographs in rental advertisements.",
+    "status": "unknown"
+  },
+  {
+    "state": "CA",
+    "session_id": "SYNTHETIC",
+    "bill_number": "HB2",
+    "title": "Housing appropriations",
+    "summary": "Funds affordable housing construction. No tax rates, credits, or exemptions are changed.",
+    "status": "unknown"
+  },
+  {
+    "state": "CA",
+    "session_id": "SYNTHETIC",
+    "bill_number": "HB3",
+    "title": "School medical staffing",
+    "summary": "Requires public schools to employ nurses and funds medical care for students.",
+    "status": "unknown"
+  },
+  {
+    "state": "CA",
+    "session_id": "SYNTHETIC",
+    "bill_number": "HB4",
+    "title": "Residential energy efficiency",
+    "summary": "Creates tax credits for installation of solar panels on residential buildings.",
+    "status": "unknown"
+  },
+  {
+    "state": "CA",
+    "session_id": "SYNTHETIC",
+    "bill_number": "HB5",
+    "title": "Pollution prevention",
+    "summary": "Limits industrial wastewater discharges and protects river ecosystems.",
+    "status": "unknown"
+  },
+  {
+    "state": "CA",
+    "session_id": "SYNTHETIC",
+    "bill_number": "HB6",
+    "title": "Workplace rights",
+    "summary": "Requires employers to provide paid family leave and protects employees against retaliation.",
+    "status": "unknown"
+  },
+  {
+    "state": "CA",
+    "session_id": "SYNTHETIC",
+    "bill_number": "HB7",
+    "title": "Electoral administration",
+    "summary": "Changes voter registration deadlines and requires accessible voting locations.",
+    "status": "unknown"
+  },
+  {
+    "state": "CA",
+    "session_id": "SYNTHETIC",
+    "bill_number": "HB8",
+    "title": "Rail infrastructure",
+    "summary": "Funds railway track improvements and expanded passenger train service.",
+    "status": "unknown"
+  },
+  {
+    "state": "CA",
+    "session_id": "SYNTHETIC",
+    "bill_number": "HB9",
+    "title": "Criminal sentencing",
+    "summary": "Changes prison sentences for firearm offenses.",
+    "status": "unknown"
+  },
+  {
+    "state": "CA",
+    "session_id": "SYNTHETIC",
+    "bill_number": "HB10",
+    "title": "Food labeling",
+    "summary": "Requires warning labels on foods containing specified ingredients to protect public health.",
+    "status": "unknown"
+  },
+  {
+    "state": "CA",
+    "session_id": "SYNTHETIC",
+    "bill_number": "HB11",
+    "title": "Commemorative designation",
+    "summary": "Names an official state gemstone. No other provisions. ",
+    "status": "unknown"
+  },
+  {
+    "state": "CA",
+    "session_id": "SYNTHETIC",
+    "bill_number": "HB12",
+    "title": "Insufficient description",
+    "summary": "Makes various statutory changes.",
+    "status": "unknown"
+  }
+]

@@ -1,0 +1,1008 @@
+{
+  "taxonomy_version": "1",
+  "reference_basis": "Assistant-assigned title/summary reference labels, frozen before model predictions. Not human-reviewed ground truth. Ambiguous secondary-topic and insufficient-text cases are identified before inference. Empty labels can mean outside taxonomy or insufficient information; see rationale.",
+  "methods": [
+    "keyword_rules"
+  ],
+  "models": [
+    "none"
+  ],
+  "thresholds": [],
+  "count": 52,
+  "exact_matches": 28,
+  "exact_match_rate": 0.5384615384615384,
+  "true_positive_labels": 26,
+  "extra_labels": 6,
+  "missed_labels": 21,
+  "micro_precision": 0.8125,
+  "micro_recall": 0.5531914893617021,
+  "micro_f1": 0.6582278481012658,
+  "per_topic": {
+    "education": {
+      "support": 2,
+      "predicted": 5,
+      "true_positive": 2,
+      "extra": 3,
+      "missed": 0,
+      "precision": 0.4,
+      "recall": 1.0,
+      "f1": 0.5714285714285714
+    },
+    "elections": {
+      "support": 8,
+      "predicted": 5,
+      "true_positive": 5,
+      "extra": 0,
+      "missed": 3,
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1": 0.7692307692307693
+    },
+    "energy": {
+      "support": 0,
+      "predicted": 0,
+      "true_positive": 0,
+      "extra": 0,
+      "missed": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "environment": {
+      "support": 3,
+      "predicted": 1,
+      "true_positive": 1,
+      "extra": 0,
+      "missed": 2,
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1": 0.5
+    },
+    "healthcare": {
+      "support": 3,
+      "predicted": 2,
+      "true_positive": 2,
+      "extra": 0,
+      "missed": 1,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8
+    },
+    "housing": {
+      "support": 4,
+      "predicted": 4,
+      "true_positive": 3,
+      "extra": 1,
+      "missed": 1,
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1": 0.75
+    },
+    "labor": {
+      "support": 4,
+      "predicted": 2,
+      "true_positive": 1,
+      "extra": 1,
+      "missed": 3,
+      "precision": 0.5,
+      "recall": 0.25,
+      "f1": 0.3333333333333333
+    },
+    "public_safety": {
+      "support": 9,
+      "predicted": 4,
+      "true_positive": 3,
+      "extra": 1,
+      "missed": 6,
+      "precision": 0.75,
+      "recall": 0.3333333333333333,
+      "f1": 0.46153846153846156
+    },
+    "taxation": {
+      "support": 8,
+      "predicted": 7,
+      "true_positive": 7,
+      "extra": 0,
+      "missed": 1,
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1": 0.9333333333333333
+    },
+    "transportation": {
+      "support": 6,
+      "predicted": 2,
+      "true_positive": 2,
+      "extra": 0,
+      "missed": 4,
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1": 0.5
+    }
+  },
+  "per_state": {
+    "CA": {
+      "count": 10,
+      "exact_matches": 7,
+      "exact_match_rate": 0.7,
+      "true_positive_labels": 6,
+      "extra_labels": 0,
+      "missed_labels": 3,
+      "micro_precision": 1.0,
+      "micro_recall": 0.6666666666666666,
+      "micro_f1": 0.8
+    },
+    "FL": {
+      "count": 10,
+      "exact_matches": 5,
+      "exact_match_rate": 0.5,
+      "true_positive_labels": 2,
+      "extra_labels": 2,
+      "missed_labels": 5,
+      "micro_precision": 0.5,
+      "micro_recall": 0.2857142857142857,
+      "micro_f1": 0.36363636363636365
+    },
+    "IL": {
+      "count": 5,
+      "exact_matches": 3,
+      "exact_match_rate": 0.6,
+      "true_positive_labels": 6,
+      "extra_labels": 2,
+      "missed_labels": 0,
+      "micro_precision": 0.75,
+      "micro_recall": 1.0,
+      "micro_f1": 0.8571428571428571
+    },
+    "NY": {
+      "count": 7,
+      "exact_matches": 1,
+      "exact_match_rate": 0.14285714285714285,
+      "true_positive_labels": 3,
+      "extra_labels": 2,
+      "missed_labels": 5,
+      "micro_precision": 0.6,
+      "micro_recall": 0.375,
+      "micro_f1": 0.46153846153846156
+    },
+    "TX": {
+      "count": 10,
+      "exact_matches": 5,
+      "exact_match_rate": 0.5,
+      "true_positive_labels": 3,
+      "extra_labels": 0,
+      "missed_labels": 5,
+      "micro_precision": 1.0,
+      "micro_recall": 0.375,
+      "micro_f1": 0.5454545454545454
+    },
+    "WA": {
+      "count": 10,
+      "exact_matches": 7,
+      "exact_match_rate": 0.7,
+      "true_positive_labels": 6,
+      "extra_labels": 0,
+      "missed_labels": 3,
+      "micro_precision": 1.0,
+      "micro_recall": 0.6666666666666666,
+      "micro_f1": 0.8
+    }
+  },
+  "subsets": {
+    "multiple_expected_topics": {
+      "count": 9,
+      "exact_matches": 5,
+      "exact_match_rate": 0.5555555555555556,
+      "true_positive_labels": 13,
+      "extra_labels": 1,
+      "missed_labels": 5,
+      "micro_precision": 0.9285714285714286,
+      "micro_recall": 0.7222222222222222,
+      "micro_f1": 0.8125
+    },
+    "no_expected_topic": {
+      "count": 14,
+      "exact_matches": 12,
+      "exact_match_rate": 0.8571428571428571,
+      "true_positive_labels": 0,
+      "extra_labels": 2,
+      "missed_labels": 0,
+      "micro_precision": 0.0,
+      "micro_recall": null,
+      "micro_f1": 0.0
+    },
+    "clear_reference": {
+      "count": 31,
+      "exact_matches": 20,
+      "exact_match_rate": 0.6451612903225806,
+      "true_positive_labels": 19,
+      "extra_labels": 3,
+      "missed_labels": 9,
+      "micro_precision": 0.8636363636363636,
+      "micro_recall": 0.6785714285714286,
+      "micro_f1": 0.76
+    },
+    "ambiguous_reference": {
+      "count": 21,
+      "exact_matches": 8,
+      "exact_match_rate": 0.38095238095238093,
+      "true_positive_labels": 7,
+      "extra_labels": 3,
+      "missed_labels": 12,
+      "micro_precision": 0.7,
+      "micro_recall": 0.3684210526315789,
+      "micro_f1": 0.4827586206896552
+    }
+  },
+  "results": [
+    {
+      "id": "CA-2025-2026-REGULAR-AB1987",
+      "state": "CA",
+      "expected": [
+        "environment"
+      ],
+      "predicted": [
+        "environment"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Wildlife-area and hunting management."
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB1414",
+      "state": "CA",
+      "expected": [
+        "elections"
+      ],
+      "predicted": [
+        "elections"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Redistricting commission."
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB2397",
+      "state": "CA",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": true,
+      "reference_rationale": "Local district financing; summary does not establish a tax or housing provision."
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB715",
+      "state": "CA",
+      "expected": [
+        "elections"
+      ],
+      "predicted": [
+        "elections"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Election law changes."
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB647",
+      "state": "CA",
+      "expected": [
+        "transportation"
+      ],
+      "predicted": [],
+      "missing": [
+        "transportation"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Abandoned vehicle regulation."
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB1267",
+      "state": "CA",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Marriage eligibility is outside the initial ten-topic taxonomy; Health Code citation alone is not healthcare."
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB1985",
+      "state": "CA",
+      "expected": [
+        "education",
+        "healthcare"
+      ],
+      "predicted": [
+        "education",
+        "healthcare"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Student health and mental-health training for coaches."
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB2437",
+      "state": "CA",
+      "expected": [
+        "transportation"
+      ],
+      "predicted": [],
+      "missing": [
+        "transportation"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Vehicle impoundment; no explicit criminal-law provision in supplied subject text."
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB1130",
+      "state": "CA",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": true,
+      "reference_rationale": "Recording-device privacy; no substantive criminal provision described beyond a Penal Code citation."
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB692",
+      "state": "CA",
+      "expected": [
+        "housing",
+        "transportation"
+      ],
+      "predicted": [
+        "housing"
+      ],
+      "missing": [
+        "transportation"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Vehicle regulation specifically concerning homelessness; secondary-topic scope is debatable."
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB762",
+      "state": "TX",
+      "expected": [
+        "labor"
+      ],
+      "predicted": [],
+      "missing": [
+        "labor"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Employee and contractor severance pay."
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB973",
+      "state": "TX",
+      "expected": [
+        "taxation"
+      ],
+      "predicted": [],
+      "missing": [
+        "taxation"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Appraisal district property reappraisal suggests property-tax administration; not explicit in summary."
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB2878",
+      "state": "TX",
+      "expected": [
+        "elections",
+        "public_safety"
+      ],
+      "predicted": [
+        "elections",
+        "public_safety"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Court security, warrants, youth diversion, criminal penalties, and election challenges."
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB4885",
+      "state": "TX",
+      "expected": [
+        "public_safety"
+      ],
+      "predicted": [],
+      "missing": [
+        "public_safety"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Juvenile records and assigned counsel."
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB1056",
+      "state": "TX",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Currency and legal tender; no taxation provision stated."
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-HB4325",
+      "state": "TX",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": true,
+      "reference_rationale": "Civil barratry liability; civil legal services are outside the current criminal-justice category."
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB1758",
+      "state": "TX",
+      "expected": [
+        "environment"
+      ],
+      "predicted": [],
+      "missing": [
+        "environment"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Industrial cement/aggregate operation siting; environmental purpose needs fuller text."
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB2206",
+      "state": "TX",
+      "expected": [
+        "taxation"
+      ],
+      "predicted": [
+        "taxation"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Franchise tax credit and sales/use tax treatment."
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB614",
+      "state": "TX",
+      "expected": [
+        "public_safety"
+      ],
+      "predicted": [],
+      "missing": [
+        "public_safety"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Forensic case review and capital writs."
+    },
+    {
+      "id": "TX-2025-2026-REGULAR-SB1968",
+      "state": "TX",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": true,
+      "reference_rationale": "Real-estate professional licensing, not explicitly residential housing or worker protections."
+    },
+    {
+      "id": "FL-2025-REGULAR-H5017",
+      "state": "FL",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "State debt and public-finance administration lack a matching category."
+    },
+    {
+      "id": "FL-2025-REGULAR-H4031",
+      "state": "FL",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Alcohol business licensing; no public-health provision stated."
+    },
+    {
+      "id": "FL-2025-REGULAR-H4051",
+      "state": "FL",
+      "expected": [
+        "elections"
+      ],
+      "predicted": [],
+      "missing": [
+        "elections"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Board candidate qualifications and geographical districts; mosquito-control context alone is not health policy."
+    },
+    {
+      "id": "FL-2025-REGULAR-H4033",
+      "state": "FL",
+      "expected": [
+        "elections"
+      ],
+      "predicted": [],
+      "missing": [
+        "elections"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Explicit referendum requirement; district water governance is otherwise outside the taxonomy."
+    },
+    {
+      "id": "FL-2025-REGULAR-H4009",
+      "state": "FL",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Ceremonial airport renaming does not substantively change transportation policy."
+    },
+    {
+      "id": "FL-2025-REGULAR-H4067",
+      "state": "FL",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Alcohol retail licenses; no healthcare provision described."
+    },
+    {
+      "id": "FL-2025-REGULAR-H4041",
+      "state": "FL",
+      "expected": [
+        "elections",
+        "taxation"
+      ],
+      "predicted": [
+        "elections",
+        "taxation"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": true,
+      "reference_rationale": "District election transition, referendum, and ad valorem tax powers; residential purchaser notice alone not housing supply or tenancy."
+    },
+    {
+      "id": "FL-2025-REGULAR-H4045",
+      "state": "FL",
+      "expected": [
+        "labor"
+      ],
+      "predicted": [
+        "public_safety"
+      ],
+      "missing": [
+        "labor"
+      ],
+      "extra": [
+        "public_safety"
+      ],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Occupational pension/deferred retirement conditions; officer occupation alone not policing policy."
+    },
+    {
+      "id": "FL-2025-REGULAR-H4035",
+      "state": "FL",
+      "expected": [
+        "elections",
+        "healthcare"
+      ],
+      "predicted": [],
+      "missing": [
+        "elections",
+        "healthcare"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Mosquito-control program restructuring and referendum; whether structural public-health governance counts is debatable."
+    },
+    {
+      "id": "FL-2025-REGULAR-H4023",
+      "state": "FL",
+      "expected": [],
+      "predicted": [
+        "labor"
+      ],
+      "missing": [],
+      "extra": [
+        "labor"
+      ],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Public-official conflict-of-interest ethics; employment mentioned but no worker-rights provision."
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A08695",
+      "state": "NY",
+      "expected": [
+        "public_safety"
+      ],
+      "predicted": [],
+      "missing": [
+        "public_safety"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Jury procedure is justice-related, but the supplied description does not identify criminal versus civil application."
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S06273",
+      "state": "NY",
+      "expected": [
+        "education"
+      ],
+      "predicted": [
+        "education"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Study of effects of caregiving on children's education."
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09866",
+      "state": "NY",
+      "expected": [
+        "environment",
+        "public_safety"
+      ],
+      "predicted": [],
+      "missing": [
+        "environment",
+        "public_safety"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Conviction registry for illegal dumping."
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09989",
+      "state": "NY",
+      "expected": [
+        "taxation"
+      ],
+      "predicted": [
+        "education",
+        "taxation"
+      ],
+      "missing": [],
+      "extra": [
+        "education"
+      ],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Property/school tax exemption; school-tax mention alone not education policy."
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A08388",
+      "state": "NY",
+      "expected": [
+        "elections"
+      ],
+      "predicted": [
+        "education",
+        "elections"
+      ],
+      "missing": [],
+      "extra": [
+        "education"
+      ],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Election staffing eligibility; students are the eligible group, not a separate education provision."
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-A10267",
+      "state": "NY",
+      "expected": [
+        "labor"
+      ],
+      "predicted": [],
+      "missing": [
+        "labor"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Workforce development board duties."
+    },
+    {
+      "id": "NY-2025-2026-REGULAR-S09758",
+      "state": "NY",
+      "expected": [
+        "public_safety"
+      ],
+      "predicted": [],
+      "missing": [
+        "public_safety"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Evidence admissibility in grand-jury proceedings."
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5827",
+      "state": "IL",
+      "expected": [
+        "labor",
+        "public_safety"
+      ],
+      "predicted": [
+        "education",
+        "labor",
+        "public_safety"
+      ],
+      "missing": [],
+      "extra": [
+        "education"
+      ],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Criminal-history check acceptance rules for employment/licensure; secondary labor scope requires agreement."
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5814",
+      "state": "IL",
+      "expected": [
+        "public_safety",
+        "taxation"
+      ],
+      "predicted": [
+        "public_safety",
+        "taxation"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Repeals wagering taxes and criminal gambling exceptions."
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5818",
+      "state": "IL",
+      "expected": [],
+      "predicted": [
+        "housing"
+      ],
+      "missing": [],
+      "extra": [
+        "housing"
+      ],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Industrial data-center siting; zoning alone does not establish housing or environmental protection."
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5811",
+      "state": "IL",
+      "expected": [
+        "taxation"
+      ],
+      "predicted": [
+        "taxation"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Repeal of wagering transaction tax."
+    },
+    {
+      "id": "IL-2025-2026-REGULAR-HB5813",
+      "state": "IL",
+      "expected": [
+        "housing"
+      ],
+      "predicted": [
+        "housing"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Rental nonpayment eviction procedures."
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2711",
+      "state": "WA",
+      "expected": [
+        "transportation"
+      ],
+      "predicted": [
+        "transportation"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Transportation resources."
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2487",
+      "state": "WA",
+      "expected": [
+        "taxation"
+      ],
+      "predicted": [
+        "taxation"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Insurer taxes; insurer type not specified as health."
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB1390",
+      "state": "WA",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": true,
+      "reference_rationale": "Program name does not establish its provisions; needs more text."
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB1345",
+      "state": "WA",
+      "expected": [
+        "housing"
+      ],
+      "predicted": [],
+      "missing": [
+        "housing"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": false,
+      "reference_rationale": "Accessory dwelling unit development limits."
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2156",
+      "state": "WA",
+      "expected": [
+        "public_safety"
+      ],
+      "predicted": [],
+      "missing": [
+        "public_safety"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Attorney-general investigation powers; criminal/civil scope not specified."
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB5998",
+      "state": "WA",
+      "expected": [],
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": true,
+      "reference_rationale": "General appropriations do not identify funded topics in supplied text."
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB5820",
+      "state": "WA",
+      "expected": [
+        "transportation"
+      ],
+      "predicted": [
+        "transportation"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Freight rail and transport planning."
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-HB2266",
+      "state": "WA",
+      "expected": [
+        "housing"
+      ],
+      "predicted": [
+        "housing"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": false,
+      "reference_rationale": "Supportive/transitional/emergency housing."
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB6228",
+      "state": "WA",
+      "expected": [
+        "healthcare",
+        "taxation"
+      ],
+      "predicted": [
+        "healthcare",
+        "taxation"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_match": true,
+      "ambiguous": true,
+      "reference_rationale": "Tax relief for drug distribution and pharmacies; secondary healthcare scope requires agreement."
+    },
+    {
+      "id": "WA-2025-2026-REGULAR-SB6002",
+      "state": "WA",
+      "expected": [
+        "transportation"
+      ],
+      "predicted": [],
+      "missing": [
+        "transportation"
+      ],
+      "extra": [],
+      "exact_match": false,
+      "ambiguous": true,
+      "reference_rationale": "Driver privacy protections; transport-administration versus general privacy scope is debatable."
+    }
+  ],
+  "file_hashes": {
+    "input": "15aa4fd3ebdcb519202457371dc7c19bfb9d1f8c68ff2e59895090fa799c81a4",
+    "reference": "466df476775d86a7f134239d559f5aabf2e6feb644b8f7a6ded6c61bb01d87da",
+    "taxonomy": "3179593783dd24a44ffb113adf39adaf0e08f189dcf570581a8118db25d2a9ac",
+    "predictions": "0f47526646700ba1e0d7b707ad4aa4ffb9542f7c832f46b5c7cdab688aef825c"
+  }
+}
