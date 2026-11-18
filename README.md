@@ -126,6 +126,6 @@ The two-state interactive prototype lives in `web/`. Run locally with:
 ```
 
 Open http://127.0.0.1:4173. It includes state/topic/issue filters, an enactment
-timeline, search, and bill details with official sources. The eight-bill 2025
+timeline, search, and bill details with official sources. The 17-bill 2025
 sample has proposed labels and is not a complete inventory or accuracy benchmark.
 See `web/README.md` for the data contract, tests and extension path.

@@ -8,24 +8,24 @@ test('sample contains distinct sourced enacted identities and valid taxonomy lab
  const taxonomy=JSON.parse(readFileSync(new URL('../dist/data/topics.json',import.meta.url)));
  const issues=JSON.parse(readFileSync(new URL('../dist/data/issues.json',import.meta.url)));
  assert.equal(new Set(bills.map(b=>b.id)).size,bills.length);
- assert.equal(bills.length,8);
+ assert.equal(bills.length,17);
  for(const b of bills){assert.equal(b.status,'enacted');assert.match(b.dates.enacted,/^2025-\d{2}-\d{2}$/);assert.deepEqual(b.topics,b.policy_topics);assert.equal(b.classification.review_status,'needs_review');assert.ok(b.sources.every(s=>safeUrl(s.url)));assert.ok(b.policy_topics.every(id=>taxonomy.topics.some(t=>t.id===id)));assert.ok(b.issue_tags.every(id=>issues.issue_tags.some(t=>t.id===id)));}
 });
 test('topics count each multi-label bill once and combine with issue filters',()=>{
- assert.equal(filteredBills(bills,{...filters,topic:'housing'}).length,3);
- assert.equal(filteredBills(bills,{...filters,issue:'data_centers'}).length,1);
+ assert.equal(filteredBills(bills,{...filters,topic:'housing'}).length,5);
+ assert.equal(filteredBills(bills,{...filters,issue:'data_centers'}).length,2);
  assert.equal(filteredBills(bills,{...filters,topic:'housing',issue:'data_centers'}).length,0);
- assert.equal(filteredBills(bills,filters).length,8);
+ assert.equal(filteredBills(bills,filters).length,17);
 });
 test('timeline is cumulative and uses enactment rather than effective date',()=>{
  assert.equal(filteredBills(bills,{...filters,date:monthEnd(4)}).length,0);
- assert.equal(filteredBills(bills,{...filters,date:monthEnd(5)}).length,6);
- assert.equal(filteredBills(bills,{...filters,date:monthEnd(8)}).length,7);
- assert.equal(filteredBills(bills,{...filters,date:monthEnd(9)}).length,8);
+ assert.equal(filteredBills(bills,{...filters,date:monthEnd(5)}).length,10);
+ assert.equal(filteredBills(bills,{...filters,date:monthEnd(8)}).length,14);
+ assert.equal(filteredBills(bills,{...filters,date:monthEnd(9)}).length,17);
 });
 test('state selection narrows the list but preserves cross-state comparison counts',()=>{
- assert.equal(filteredBills(bills,{...filters,state:'CA'}).length,4);
- assert.deepEqual(stateCounts(bills,{...filters,state:'CA'}),{CA:4,TX:4});
+ assert.equal(filteredBills(bills,{...filters,state:'CA'}).length,9);
+ assert.deepEqual(stateCounts(bills,{...filters,state:'CA'}),{CA:9,TX:8});
 });
 test('review-only does not promote assistant labels to verified',()=>{
  assert.equal(filteredBills(bills,{...filters,reviewed:true}).length,0);

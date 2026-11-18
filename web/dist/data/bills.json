@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "title": "2025 enactments \u00b7 California & Texas",
-  "coverage": "Curated sample, not a complete session inventory. Labels are assistant-proposed and unverified.",
+  "coverage": "Seventeen selected enactments, not a complete session inventory. Summaries have official-source traceability; topic labels remain proposed and unverified.",
   "snapshot_date": "2026-11-18",
   "states": [
     "CA",
@@ -61,8 +61,25 @@
       "status_verification": {
         "method": "official_source_checked",
         "checked_on": "2026-11-18",
-        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
-      }
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot.",
+        "source_url": "https://www.gov.ca.gov/2025/06/30/governor-newsom-signs-into-law-groundbreaking-reforms-to-build-more-housing-affordability/",
+        "event": "signed_by_governor",
+        "event_date": "2025-06-30"
+      },
+      "source_claims": [
+        {
+          "text": "Changes approvals for qualifying housing and exempts eligible infill housing projects from environmental review.",
+          "source_url": "https://www.gov.ca.gov/2025/06/30/governor-newsom-signs-into-law-groundbreaking-reforms-to-build-more-housing-affordability/",
+          "source_locator": "Bill-specific entry or enrolled summary; selected provisions",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Selected provisions only; the linked sources and bill text establish full scope and exceptions."
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive"
     },
     {
       "id": "CA-2025-2026-REGULAR-SB131",
@@ -116,8 +133,25 @@
       "status_verification": {
         "method": "official_source_checked",
         "checked_on": "2026-11-18",
-        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
-      }
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot.",
+        "source_url": "https://www.gov.ca.gov/2025/06/30/governor-newsom-signs-into-law-groundbreaking-reforms-to-build-more-housing-affordability/",
+        "event": "signed_by_governor",
+        "event_date": "2025-06-30"
+      },
+      "source_claims": [
+        {
+          "text": "Changes environmental review procedures and exemptions for selected development and infrastructure projects.",
+          "source_url": "https://www.gov.ca.gov/2025/06/30/governor-newsom-signs-into-law-groundbreaking-reforms-to-build-more-housing-affordability/",
+          "source_locator": "Bill-specific entry or enrolled summary; selected provisions",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Selected provisions only; the linked sources and bill text establish full scope and exceptions."
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive"
     },
     {
       "id": "CA-2025-2026-REGULAR-AB288",
@@ -169,8 +203,25 @@
       "status_verification": {
         "method": "official_source_checked",
         "checked_on": "2026-11-18",
-        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
-      }
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot.",
+        "source_url": "https://www.gov.ca.gov/2025/09/30/as-the-federal-government-turns-its-back-on-workers-governor-newsom-signs-landmark-bill-expanding-workers-rights/",
+        "event": "signed_by_governor",
+        "event_date": "2025-09-30"
+      },
+      "source_claims": [
+        {
+          "text": "Allows workers to petition the state Public Employment Relations Board when the federal labor board does not fulfill its duties.",
+          "source_url": "https://www.gov.ca.gov/2025/09/30/as-the-federal-government-turns-its-back-on-workers-governor-newsom-signs-landmark-bill-expanding-workers-rights/",
+          "source_locator": "Bill-specific entry or enrolled summary; selected provisions",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Selected provisions only; the linked sources and bill text establish full scope and exceptions."
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive"
     },
     {
       "id": "CA-2025-2026-REGULAR-SB79",
@@ -222,8 +273,25 @@
       "status_verification": {
         "method": "official_source_checked",
         "checked_on": "2026-11-18",
-        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
-      }
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot.",
+        "source_url": "https://www.gov.ca.gov/2025/10/10/governor-newsom-builds-on-this-years-historic-housing-reforms-signs-legislation-to-accelerate-housing-and-affordability/",
+        "event": "signed_by_governor",
+        "event_date": "2025-10-10"
+      },
+      "source_claims": [
+        {
+          "text": "Allows additional housing development near qualifying public transportation stops.",
+          "source_url": "https://www.gov.ca.gov/2025/10/10/governor-newsom-builds-on-this-years-historic-housing-reforms-signs-legislation-to-accelerate-housing-and-affordability/",
+          "source_locator": "Bill-specific entry or enrolled summary; selected provisions",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Selected provisions only; the linked sources and bill text establish full scope and exceptions."
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive"
     },
     {
       "id": "TX-89-REGULAR-HB2",
@@ -281,8 +349,25 @@
       "status_verification": {
         "method": "official_source_checked",
         "checked_on": "2026-11-18",
-        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
-      }
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot.",
+        "source_url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB2",
+        "event": "signed_by_governor",
+        "event_date": "2025-06-20"
+      },
+      "source_claims": [
+        {
+          "text": "Changes public school funding, teacher compensation, and educator preparation and certification programs.",
+          "source_url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=HB2&LegSess=89R",
+          "source_locator": "Bill-specific entry or enrolled summary; selected provisions",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Selected provisions only; the linked sources and bill text establish full scope and exceptions."
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive"
     },
     {
       "id": "TX-89-REGULAR-SB6",
@@ -346,8 +431,33 @@
       "status_verification": {
         "method": "official_source_checked",
         "checked_on": "2026-11-18",
-        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
-      }
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot.",
+        "source_url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB6",
+        "event": "signed_by_governor",
+        "event_date": "2025-06-20"
+      },
+      "source_claims": [
+        {
+          "text": "Changes grid planning, connection requirements and cost allocation for large electricity users, including data centers.",
+          "source_url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=SB6&LegSess=89R",
+          "source_locator": "Bill-specific entry or enrolled summary; selected provisions",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        },
+        {
+          "text": "Official committee minutes explicitly connect SB 6 implementation with data centers.",
+          "source_url": "https://capitol.texas.gov/tlodocs/89R/minutes/html/C4502026040910001.htm",
+          "source_locator": "Data Centers interim charge: SB 6 implementation",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Applies to defined large loads in ERCOT, including but not limited to data centers. The data-center connection is documented in the linked official committee minutes."
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive"
     },
     {
       "id": "TX-89-REGULAR-SB15",
@@ -403,8 +513,25 @@
       "status_verification": {
         "method": "official_source_checked",
         "checked_on": "2026-11-18",
-        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
-      }
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot.",
+        "source_url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB15",
+        "event": "signed_by_governor",
+        "event_date": "2025-06-20"
+      },
+      "source_claims": [
+        {
+          "text": "Limits certain municipal residential lot-size and density requirements.",
+          "source_url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=SB15&LegSess=89R",
+          "source_locator": "Bill-specific entry or enrolled summary; selected provisions",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Selected provisions only; the linked sources and bill text establish full scope and exceptions."
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive"
     },
     {
       "id": "TX-89-REGULAR-SB25",
@@ -464,8 +591,747 @@
       "status_verification": {
         "method": "official_source_checked",
         "checked_on": "2026-11-18",
-        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot."
-      }
+        "note": "Historical enactment only. Subsequent amendments, litigation and current enforceability are outside this snapshot.",
+        "source_url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB25",
+        "event": "signed_by_governor",
+        "event_date": "2025-06-22"
+      },
+      "source_claims": [
+        {
+          "text": "Changes health and nutrition standards, including food labeling and educational requirements.",
+          "source_url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=SB25&LegSess=89R",
+          "source_locator": "Bill-specific entry or enrolled summary; selected provisions",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Selected provisions only; the linked sources and bill text establish full scope and exceptions."
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive"
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB53",
+      "state": "CA",
+      "session_id": "2025-2026-REGULAR",
+      "bill_number": "SB53",
+      "origin_chamber": "upper",
+      "title": "Frontier artificial-intelligence transparency",
+      "summary": "Requires large frontier AI developers to publish safety frameworks and establishes safety-incident reporting and whistleblower protections.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-09-29",
+        "effective": null
+      },
+      "enacted_date": "2025-09-29",
+      "policy_topics": [
+        "technology",
+        "labor"
+      ],
+      "topics": [
+        "technology",
+        "labor"
+      ],
+      "issue_tags": [
+        "artificial_intelligence"
+      ],
+      "affected_sectors": [
+        "technology"
+      ],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/"
+      },
+      "sources": [
+        {
+          "label": "Official enactment source",
+          "url": "https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_source_based_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "Requires large frontier AI developers to publish safety frameworks and establishes safety-incident reporting and whistleblower protections.",
+            "source_field": "summary",
+            "note": "Label rationale uses a source-based paraphrase, not independent validation."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "source_url": "https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/",
+        "event": "signed_by_governor",
+        "event_date": "2025-09-29",
+        "checked_on": "2026-11-18",
+        "note": "Historical signature, not present enforceability."
+      },
+      "source_claims": [
+        {
+          "text": "Requires large frontier AI developers to publish safety frameworks and establishes safety-incident reporting and whistleblower protections.",
+          "source_url": "https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/",
+          "source_locator": "SB 53 requirements: transparency, safety and accountability",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Applies to defined frontier developers; this is not a blanket rule for every AI system."
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive"
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB489",
+      "state": "CA",
+      "session_id": "2025-2026-REGULAR",
+      "bill_number": "AB489",
+      "origin_chamber": "lower",
+      "title": "AI representations of licensed health professionals",
+      "summary": "Prohibits AI systems from implying that their care or advice comes from a licensed human health professional and authorizes licensing-board enforcement.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-10-11",
+        "effective": "2026-01-01"
+      },
+      "enacted_date": "2025-10-11",
+      "policy_topics": [
+        "healthcare",
+        "technology"
+      ],
+      "topics": [
+        "healthcare",
+        "technology"
+      ],
+      "issue_tags": [
+        "artificial_intelligence"
+      ],
+      "affected_sectors": [
+        "healthcare",
+        "technology"
+      ],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://www.gov.ca.gov/2025/10/11/governor-newsom-issues-legislative-update-10-11-25/"
+      },
+      "sources": [
+        {
+          "label": "Official enactment source",
+          "url": "https://www.gov.ca.gov/2025/10/11/governor-newsom-issues-legislative-update-10-11-25/"
+        },
+        {
+          "label": "Official policy description",
+          "url": "https://psychology.ca.gov/laws_regs/ab489_advisory.pdf"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_source_based_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "Prohibits AI systems from implying that their care or advice comes from a licensed human health professional and authorizes licensing-board enforcement.",
+            "source_field": "summary",
+            "note": "Label rationale uses a source-based paraphrase, not independent validation."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "source_url": "https://www.gov.ca.gov/2025/10/11/governor-newsom-issues-legislative-update-10-11-25/",
+        "event": "signed_by_governor",
+        "event_date": "2025-10-11",
+        "checked_on": "2026-11-18",
+        "note": "Historical signature, not present enforceability."
+      },
+      "source_claims": [
+        {
+          "text": "Prohibits AI systems from implying that their care or advice comes from a licensed human health professional and authorizes licensing-board enforcement.",
+          "source_url": "https://psychology.ca.gov/laws_regs/ab489_advisory.pdf",
+          "source_locator": "AB 489 advisory: prohibited representations and enforcement",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Targets misleading representations of professional licensure; it does not prohibit all medical uses of AI."
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive",
+      "effective_date_note": "Official Board of Psychology advisory states January 1, 2026 as the operative date."
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB254",
+      "state": "CA",
+      "session_id": "2025-2026-REGULAR",
+      "bill_number": "SB254",
+      "origin_chamber": "upper",
+      "title": "Electricity costs, utility safety and energy regulation",
+      "summary": "Changes electricity transmission financing, utility wildfire spending and liability, and permitting for clean-energy projects.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-09-19",
+        "effective": null
+      },
+      "enacted_date": "2025-09-19",
+      "policy_topics": [
+        "energy"
+      ],
+      "topics": [
+        "energy"
+      ],
+      "issue_tags": [
+        "electricity_rates"
+      ],
+      "affected_sectors": [
+        "energy"
+      ],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://www.gov.ca.gov/2025/09/19/governor-newsom-signs-historic-package-of-bipartisan-legislation-saving-billions-on-electric-bills-stabilizing-gas-market-and-cutting-pollution/"
+      },
+      "sources": [
+        {
+          "label": "Official enactment source",
+          "url": "https://www.gov.ca.gov/2025/09/19/governor-newsom-signs-historic-package-of-bipartisan-legislation-saving-billions-on-electric-bills-stabilizing-gas-market-and-cutting-pollution/"
+        },
+        {
+          "label": "Final California Senate digest",
+          "url": "https://sfa.senate.ca.gov/system/files/2025-12/digest_2025.pdf"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_source_based_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "Changes electricity transmission financing, utility wildfire spending and liability, and permitting for clean-energy projects.",
+            "source_field": "summary",
+            "note": "Label rationale uses a source-based paraphrase, not independent validation."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "source_url": "https://www.gov.ca.gov/2025/09/19/governor-newsom-signs-historic-package-of-bipartisan-legislation-saving-billions-on-electric-bills-stabilizing-gas-market-and-cutting-pollution/",
+        "event": "signed_by_governor",
+        "event_date": "2025-09-19",
+        "checked_on": "2026-11-18",
+        "note": "Historical signature, not present enforceability."
+      },
+      "source_claims": [
+        {
+          "text": "Changes electricity transmission financing, utility wildfire spending and liability, and permitting for clean-energy projects.",
+          "source_url": "https://sfa.senate.ca.gov/system/files/2025-12/digest_2025.pdf",
+          "source_locator": "Printed page 51: SB 254, Chapter 119",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Selected energy provisions only; projected bill savings are not treated as measured outcomes."
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive"
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-AB1207",
+      "state": "CA",
+      "session_id": "2025-2026-REGULAR",
+      "bill_number": "AB1207",
+      "origin_chamber": "lower",
+      "title": "Extension of the carbon-market program",
+      "summary": "Extends California\u2019s carbon-market program through 2045 and revises offsets, allocated allowances and compliance instruments.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-09-19",
+        "effective": null
+      },
+      "enacted_date": "2025-09-19",
+      "policy_topics": [
+        "environment"
+      ],
+      "topics": [
+        "environment"
+      ],
+      "issue_tags": [],
+      "affected_sectors": [
+        "energy"
+      ],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://www.gov.ca.gov/2025/09/19/governor-newsom-signs-historic-package-of-bipartisan-legislation-saving-billions-on-electric-bills-stabilizing-gas-market-and-cutting-pollution/"
+      },
+      "sources": [
+        {
+          "label": "Official enactment source",
+          "url": "https://www.gov.ca.gov/2025/09/19/governor-newsom-signs-historic-package-of-bipartisan-legislation-saving-billions-on-electric-bills-stabilizing-gas-market-and-cutting-pollution/"
+        },
+        {
+          "label": "Final California Senate digest",
+          "url": "https://sfa.senate.ca.gov/system/files/2025-12/digest_2025.pdf"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_source_based_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "Extends California\u2019s carbon-market program through 2045 and revises offsets, allocated allowances and compliance instruments.",
+            "source_field": "summary",
+            "note": "Label rationale uses a source-based paraphrase, not independent validation."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "source_url": "https://www.gov.ca.gov/2025/09/19/governor-newsom-signs-historic-package-of-bipartisan-legislation-saving-billions-on-electric-bills-stabilizing-gas-market-and-cutting-pollution/",
+        "event": "signed_by_governor",
+        "event_date": "2025-09-19",
+        "checked_on": "2026-11-18",
+        "note": "Historical signature, not present enforceability."
+      },
+      "source_claims": [
+        {
+          "text": "Extends California\u2019s carbon-market program through 2045 and revises offsets, allocated allowances and compliance instruments.",
+          "source_url": "https://sfa.senate.ca.gov/system/files/2025-12/digest_2025.pdf",
+          "source_locator": "Printed page 60: AB 1207, Chapter 117",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "The package includes multiple bills; this summary does not attribute all package effects to AB 1207 alone."
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive"
+    },
+    {
+      "id": "TX-89-REGULAR-HB149",
+      "state": "TX",
+      "session_id": "89-REGULAR",
+      "bill_number": "HB149",
+      "origin_chamber": "lower",
+      "title": "Artificial-intelligence governance",
+      "summary": "Creates AI-use prohibitions and disclosure duties for specified users, a regulatory sandbox, and a state AI council.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-06-22",
+        "effective": "2026-01-01"
+      },
+      "enacted_date": "2025-06-22",
+      "policy_topics": [
+        "technology",
+        "government_finance"
+      ],
+      "topics": [
+        "technology",
+        "government_finance"
+      ],
+      "issue_tags": [
+        "artificial_intelligence"
+      ],
+      "affected_sectors": [
+        "technology",
+        "government"
+      ],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=HB149&LegSess=89R"
+      },
+      "sources": [
+        {
+          "label": "Official enactment source",
+          "url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=HB149&LegSess=89R"
+        },
+        {
+          "label": "Official policy description",
+          "url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=HB149&LegSess=89R"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_source_based_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "Creates AI-use prohibitions and disclosure duties for specified users, a regulatory sandbox, and a state AI council.",
+            "source_field": "summary",
+            "note": "Label rationale uses a source-based paraphrase, not independent validation."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "source_url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=HB149&LegSess=89R",
+        "event": "signed_by_governor",
+        "event_date": "2025-06-22",
+        "checked_on": "2026-11-18",
+        "note": "Historical signature, not present enforceability."
+      },
+      "source_claims": [
+        {
+          "text": "Creates AI-use prohibitions and disclosure duties for specified users, a regulatory sandbox, and a state AI council.",
+          "source_url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=HB149&LegSess=89R",
+          "source_locator": "Enrolled Bill Summary: regulatory framework and listed provisions",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Disclosure duties and prohibitions have defined scopes; this is not a general ban on AI."
+      ],
+      "effective_date_note": "Effective date stated in the official enrolled summary; individual implementation obligations may have separate deadlines.",
+      "summary_scope": "selected_provisions_not_comprehensive"
+    },
+    {
+      "id": "TX-89-REGULAR-SB840",
+      "state": "TX",
+      "session_id": "89-REGULAR",
+      "bill_number": "SB840",
+      "origin_chamber": "upper",
+      "title": "Mixed-use housing and commercial-building conversions",
+      "summary": "Requires covered municipalities to allow specified mixed-use or multifamily housing in certain commercial zoning districts and limits conversion-related restrictions.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-06-20",
+        "effective": "2025-09-01"
+      },
+      "enacted_date": "2025-06-20",
+      "policy_topics": [
+        "housing"
+      ],
+      "topics": [
+        "housing"
+      ],
+      "issue_tags": [],
+      "affected_sectors": [
+        "housing"
+      ],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=SB840&LegSess=89R"
+      },
+      "sources": [
+        {
+          "label": "Official enactment source",
+          "url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=SB840&LegSess=89R"
+        },
+        {
+          "label": "Official policy description",
+          "url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=SB840&LegSess=89R"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_source_based_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "Requires covered municipalities to allow specified mixed-use or multifamily housing in certain commercial zoning districts and limits conversion-related restrictions.",
+            "source_field": "summary",
+            "note": "Label rationale uses a source-based paraphrase, not independent validation."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "source_url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=SB840&LegSess=89R",
+        "event": "signed_by_governor",
+        "event_date": "2025-06-20",
+        "checked_on": "2026-11-18",
+        "note": "Historical signature, not present enforceability."
+      },
+      "source_claims": [
+        {
+          "text": "Requires covered municipalities to allow specified mixed-use or multifamily housing in certain commercial zoning districts and limits conversion-related restrictions.",
+          "source_url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=SB840&LegSess=89R",
+          "source_locator": "Enrolled Bill Summary: covered municipalities and residential development",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Applies to qualifying municipalities and projects; it does not eliminate all local zoning requirements."
+      ],
+      "effective_date_note": "Effective date stated in the official enrolled summary; individual implementation obligations may have separate deadlines.",
+      "summary_scope": "selected_provisions_not_comprehensive"
+    },
+    {
+      "id": "TX-89-REGULAR-HB1481",
+      "state": "TX",
+      "session_id": "89-REGULAR",
+      "bill_number": "HB1481",
+      "origin_chamber": "lower",
+      "title": "Student communication devices during the school day",
+      "summary": "Requires public school districts and open-enrollment charter schools to adopt policies prohibiting student device use on school property during the school day, with specified disability, medical and safety exceptions.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-06-20",
+        "effective": "2025-06-20"
+      },
+      "enacted_date": "2025-06-20",
+      "policy_topics": [
+        "education"
+      ],
+      "topics": [
+        "education"
+      ],
+      "issue_tags": [],
+      "affected_sectors": [
+        "education"
+      ],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=HB1481&LegSess=89R"
+      },
+      "sources": [
+        {
+          "label": "Official enactment source",
+          "url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=HB1481&LegSess=89R"
+        },
+        {
+          "label": "Official policy description",
+          "url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=HB1481&LegSess=89R"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_source_based_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "Requires public school districts and open-enrollment charter schools to adopt policies prohibiting student device use on school property during the school day, with specified disability, medical and safety exceptions.",
+            "source_field": "summary",
+            "note": "Label rationale uses a source-based paraphrase, not independent validation."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "source_url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=HB1481&LegSess=89R",
+        "event": "signed_by_governor",
+        "event_date": "2025-06-20",
+        "checked_on": "2026-11-18",
+        "note": "Historical signature, not present enforceability."
+      },
+      "source_claims": [
+        {
+          "text": "Requires public school districts and open-enrollment charter schools to adopt policies prohibiting student device use on school property during the school day, with specified disability, medical and safety exceptions.",
+          "source_url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=HB1481&LegSess=89R",
+          "source_locator": "Enrolled Bill Summary: prohibition, exceptions and compliance options",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "The required policy includes exceptions; schools can use different compliant storage or possession policies."
+      ],
+      "effective_date_note": "Effective date stated in the official enrolled summary; individual implementation obligations may have separate deadlines.",
+      "summary_scope": "selected_provisions_not_comprehensive"
+    },
+    {
+      "id": "TX-89-REGULAR-SB38",
+      "state": "TX",
+      "session_id": "89-REGULAR",
+      "bill_number": "SB38",
+      "origin_chamber": "upper",
+      "title": "Eviction procedure and court administration",
+      "summary": "Changes eviction petitions, notice, hearings and appeals, and permits summary disposition without trial in specified forcible-entry cases.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-06-20",
+        "effective": null
+      },
+      "enacted_date": "2025-06-20",
+      "policy_topics": [
+        "housing"
+      ],
+      "topics": [
+        "housing"
+      ],
+      "issue_tags": [],
+      "affected_sectors": [
+        "housing"
+      ],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=SB38&LegSess=89R"
+      },
+      "sources": [
+        {
+          "label": "Official enactment source",
+          "url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=SB38&LegSess=89R"
+        },
+        {
+          "label": "Official policy description",
+          "url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=SB38&LegSess=89R"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_source_based_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "Changes eviction petitions, notice, hearings and appeals, and permits summary disposition without trial in specified forcible-entry cases.",
+            "source_field": "summary",
+            "note": "Label rationale uses a source-based paraphrase, not independent validation."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "source_url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=SB38&LegSess=89R",
+        "event": "signed_by_governor",
+        "event_date": "2025-06-20",
+        "checked_on": "2026-11-18",
+        "note": "Historical signature, not present enforceability."
+      },
+      "source_claims": [
+        {
+          "text": "Changes eviction petitions, notice, hearings and appeals, and permits summary disposition without trial in specified forcible-entry cases.",
+          "source_url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=SB38&LegSess=89R",
+          "source_locator": "Enrolled Bill Summary: eviction process and applicable conditions",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "Civil eviction procedure is not automatically criminal justice. Provisions have different effective dates."
+      ],
+      "effective_date_note": "Generally January 1, 2026; Section 16 takes effect September 1, 2025. No single effective date is assigned.",
+      "effective_date_events": [
+        {
+          "date": "2025-09-01",
+          "scope": "Section 16",
+          "source_url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=SB38&LegSess=89R"
+        },
+        {
+          "date": "2026-01-01",
+          "scope": "Other provisions, as specified in history remarks",
+          "source_url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=SB38&LegSess=89R"
+        }
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive"
+    },
+    {
+      "id": "CA-2025-2026-REGULAR-SB57",
+      "state": "CA",
+      "session_id": "2025-2026-REGULAR",
+      "bill_number": "SB57",
+      "origin_chamber": "upper",
+      "title": "Data-center electricity costs and rate impacts",
+      "summary": "Authorizes the Public Utilities Commission to assess whether new data-center loads shift electricity costs to other customers, with reporting requirements for a completed assessment.",
+      "summary_provenance": "PolyViz assistant-written paraphrase of linked official sources; not verbatim bill text.",
+      "status": "enacted",
+      "dates": {
+        "introduced": null,
+        "enacted": "2025-10-11",
+        "effective": null
+      },
+      "enacted_date": "2025-10-11",
+      "policy_topics": [
+        "energy"
+      ],
+      "topics": [
+        "energy"
+      ],
+      "issue_tags": [
+        "data_centers",
+        "electricity_rates"
+      ],
+      "affected_sectors": [
+        "data_center_industry",
+        "energy"
+      ],
+      "policy_actions": [],
+      "source": {
+        "provider": "official_state_source",
+        "url": "https://sd18.senate.ca.gov/news/legislation-protect-california-ratepayers-paying-data-centers-energy-costs-signed-law"
+      },
+      "sources": [
+        {
+          "label": "Official signing announcement",
+          "url": "https://sd18.senate.ca.gov/news/legislation-protect-california-ratepayers-paying-data-centers-energy-costs-signed-law"
+        },
+        {
+          "label": "Final California Senate digest",
+          "url": "https://sfa.senate.ca.gov/system/files/2025-12/digest_2025.pdf"
+        },
+        {
+          "label": "Senate final-amendment digest",
+          "url": "https://www.senate.ca.gov/dailyfile/publications/download/SEN_SUP_2025_R_20250912_2.PDF"
+        }
+      ],
+      "classification": {
+        "method": "assistant_proposed_source_based_labels",
+        "taxonomy_version": "2",
+        "review_status": "needs_review",
+        "evidence": [
+          {
+            "excerpt": "Authorizes the Public Utilities Commission to assess whether new data-center loads shift electricity costs to other customers, with reporting requirements for a completed assessment.",
+            "source_field": "summary",
+            "note": "Label rationale uses a source-based paraphrase, not independent validation."
+          }
+        ]
+      },
+      "status_verification": {
+        "method": "official_source_checked",
+        "source_url": "https://sd18.senate.ca.gov/news/legislation-protect-california-ratepayers-paying-data-centers-energy-costs-signed-law",
+        "event": "signed_by_governor",
+        "event_date": "2025-10-11",
+        "checked_on": "2026-11-18",
+        "note": "Historical signature, not present enforceability."
+      },
+      "source_claims": [
+        {
+          "text": "Authorizes the Public Utilities Commission to assess whether new data-center loads shift electricity costs to other customers, with reporting requirements for a completed assessment.",
+          "source_url": "https://www.senate.ca.gov/dailyfile/publications/download/SEN_SUP_2025_R_20250912_2.PDF",
+          "source_locator": "Printed page 121: SB 57, Legislative Counsel\u2019s Digest of Assembly Amendments; cross-checked with final digest page 51, Chapter 647",
+          "checked_on": "2026-11-18",
+          "check_method": "assistant_compared_with_official_source",
+          "independent_review": false
+        }
+      ],
+      "summary_limitations": [
+        "The enacted version authorizes a cost-shift assessment. It does not enact the special-tariff requirement proposed in an earlier version. Reporting is tied to an assessment completed under that authorization."
+      ],
+      "summary_scope": "selected_provisions_not_comprehensive"
     }
-  ]
+  ],
+  "sample_version": "2"
 }

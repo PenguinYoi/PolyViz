@@ -1,6 +1,6 @@
 # PolyViz map MVP
 
-A buildless, browser-only map of eight sourced 2025 enactments in California and
+A buildless, browser-only map of 17 sourced 2025 enactments in California and
 Texas. All assets and data are local; there are no API keys, runtime dependencies,
 remote fonts, paid inference calls or database services.
 
@@ -30,8 +30,7 @@ node --test web/tests/model.test.mjs
 ## Data contract and limitations
 
 `dist/data/bills.json` is an intentionally curated interface fixture, not a complete
-session export or a classifier accuracy benchmark. Four records per state were
-selected for varied topics. Official-source links substantiate historical enactment;
+session export or a classifier accuracy benchmark. Nine California and eight Texas records were selected for varied topics. Official-source links substantiate historical enactment;
 short summaries are assistant paraphrases. Topic, issue and sector labels are
 assistant proposals, not newly run classifier predictions or reviewed truth. The
 classifier and its frozen evaluation files are unchanged by this UI work.
@@ -42,8 +41,8 @@ zero matches have a separate fill. Comparisons retain both states' filter counts
 when a single state's list is selected. Topics can overlap; bills are deduplicated
 by their unique ID in the source fixture. Empty reviewed-only results are expected.
 Enactment dates are historical; later amendments, litigation and current legal
-force are outside this snapshot. Effective dates are intentionally null pending
-verification, rather than inferred from enactment. Session identities differ:
+force are outside this snapshot. Effective dates are populated only when checked in official sources. Staged
+provisions retain separate dated events; a single date is not inferred from enactment. Session identities differ:
 California's 2025–2026 regular session versus Texas's 89th regular session; this
 view is a **2025 enactment-year slice**, not two equivalent completed sessions.
 
@@ -79,3 +78,26 @@ Source: https://github.com/topojson/us-atlas. ISC license is retained in
 project is staged for publication; training data, model caches, credentials and
 other PolyViz repository history are excluded. Private preview access remains
 owner-only.
+
+
+## Source checks before expansion
+
+Run `.venv/bin/python -m polyviz.map_data web/dist/data/bills.json` from the repo
+root before publication. This checks identities, coverage, controlled labels,
+consistent dates, official state domains, signature-event metadata, claim-to-source
+links, scope notes and provenance for reviewed labels. It is an offline metadata
+gate, not a factual or semantic accuracy score. The checker currently admits the
+pilot's signed-by-governor events; other lawful enactment paths need explicit
+support before ingestion.
+
+Each record includes `source_claims` with the displayed summary, an official URL,
+a section/page locator, a check date and the checking method. Checks were performed
+by an AI assistant, not an independent legal expert. `summary_limitations` records
+important conditions. Bill details expose these notes and distinguish factual
+source checking from topic-label review. No label is marked independently reviewed.
+
+For example, CA SB 57 uses the final assessment authorization, not the earlier
+special-tariff proposal. TX HB 1481 retains the disability/medical/safety exceptions.
+TX SB 38 retains its staged effective dates. Projected benefits in government press
+releases are not presented as measured outcomes. This remains a selective sample,
+not a full statutory digest or a current-enforceability database.
