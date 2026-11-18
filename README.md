@@ -2,7 +2,7 @@
 
 **Explore what U.S. states are legislating about—by topic, place, and time.**
 
-PolyViz is a planned interactive U.S. map that organizes enacted state legislation into topics such as housing, healthcare, and education. Users will be able to explore geographic patterns, compare legislative activity, and inspect the bills behind the visualization.
+PolyViz is an interactive U.S. map MVP that organizes enacted state legislation by topic, place and time. The current private preview contains 17 selected 2025 enactments in California and Texas, with official sources, selective summaries and clearly marked proposed labels.
 
 ## Core question
 
@@ -10,22 +10,20 @@ What topics are state legislatures passing laws about, and how does that vary ac
 
 The initial audience is curious residents and students who want an accessible overview without searching individual legislative databases.
 
-## Planned first version
+## Current MVP
 
-- Interactive U.S. map with a consistent color scale and visible legend.
-- Topic and enactment-year filters.
-- Toggle between enacted bill counts and each topic's share of enacted bills.
-- State hover tooltips with key figures.
-- Clickable state panels with topic breakdowns, bill summaries, and source links.
-- State search and clear coverage notes.
+- Interactive map with California and Texas sample coverage.
+- State, topic and issue filters, including data centers.
+- Monthly cumulative enactment timeline and playback.
+- Bill search, source links, summary scope notes and review-status filters.
+- A static HTML/CSS/JavaScript frontend reading versioned JSON; no database or paid APIs.
+- Owner-private [hosted preview](https://polyviz-policy-atlas-jh.aridsong2.chatgpt.site).
 
-Start with one completed year and a limited, documented set of topics. Validate a small selection of states before expanding to all 50. State comparisons, historical animation, and an optional 3D view are later enhancements.
+This is a selected sample, not a complete inventory or an accuracy benchmark. Topic-share comparisons, nationwide coverage and 3D remain future work.
 
 ## Data approach
 
-Collect legislative records from a selected provider, preserve the originals, normalize one record per bill, assign consistent topic labels, and validate the results. Store canonical records as JSON grouped by state and session. Generate separate aggregate JSON files for the map.
-
-The first version is intended to be a static website reading prepared data files. Data collection and classification happen before publication, rather than while a visitor browses the map. The data provider, frontend stack, and hosting provider have not yet been selected.
+The map currently uses a curated, source-checked JSON snapshot. Local classification experiments run separately on saved bill inputs. A reproducible classifier-to-map export is the next integration step; unresolved candidates will remain distinct from assigned labels. See [the current workflow diagram](docs/WORKFLOW.md).
 
 ## Interpretation
 
@@ -37,7 +35,7 @@ The first version is intended to be a static website reading prepared data files
 
 ## Project status
 
-Planning stage. No application, production dataset, or hosting deployment has been implemented yet.
+A two-state map MVP is implemented, privately hosted and pushed to GitHub. Source descriptions have been checked by an AI assistant; topic labels are not independently reviewed. Automated ingestion, broader coverage and an independent classification benchmark remain planned.
 
 See [the workflow plan](docs/WORKFLOW.md) for architecture, data conventions, and milestones.
 
@@ -54,11 +52,11 @@ The example is fictional. You can replace it with your own bill JSON or a saved 
 
 For user-supplied records, provide `state`, `session_id`, `bill_number`, and a nonempty `title`; optionally include `summary`, `origin_chamber`, `status`, `enacted_date`, and `source_url`. Status defaults to `unknown`. Include a distinct identity for special sessions. For LegiScan records, the importer uses the provider's session ID. It leaves origin chamber unknown unless explicitly supplied rather than inferring it from the bill's current chamber.
 
-Classification uses title and summary/LegiScan description, not downloaded full text. Edit category definitions and terms in `data/topics.json`. Labels support multiple topics, and output records retain matching terms as evidence. Every matched result is unreviewed; unmatched results are unclassified and need review. There is no calibrated confidence score. This baseline cannot reliably interpret negation, incidental mentions, policy direction, or complex legal language. Do not use its labels for public conclusions before evaluating a manually labeled sample. Keep an input copy because output intentionally omits most provider fields.
+Classification uses title and summary/LegiScan description, not downloaded full text. Edit active category definitions and terms in `data/topics-v2.json`; retain `data/topics.json` for historical evaluations. Labels support multiple topics, and output records retain matching terms as evidence. Every matched result is unreviewed; unmatched results are unclassified and need review. There is no calibrated confidence score. This baseline cannot reliably interpret negation, incidental mentions, policy direction, or complex legal language. Do not use its labels for public conclusions before evaluating a manually labeled sample. Keep an input copy because output intentionally omits most provider fields.
 
 LegiScan's numeric status 4 is labeled “Passed” in its API manual. The importer conservatively preserves it as `source_status: 4` and sets normalized status to `unknown`, with a warning, until enactment is verified. It does not derive enactment dates from arbitrary action text. Unknown statuses must not be counted as failed or enacted. See the [LegiScan API manual](https://api.legiscan.com/dl/LegiScan_API_User_Manual.pdf).
 
-Generated output and raw downloads are ignored by Git. This classifier is implemented; the map, national data pipeline, classification evaluation, and deployment remain planned.
+Generated output and raw downloads are ignored by Git. The classifier, exploratory evaluations and map are implemented. Automated nationwide ingestion and pipeline-to-map export remain planned.
 
 ## Real-bill pilot
 
