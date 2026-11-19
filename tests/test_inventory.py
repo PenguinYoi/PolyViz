@@ -3,12 +3,17 @@ import sqlite3
 import unittest
 from pathlib import Path
 
-from polyviz.inventory import curated_keys, document, identity_key, passed_records, shorten
+from polyviz.inventory import curated_keys, document, identity_key, issue_labels, passed_records, shorten
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 class InventoryTests(unittest.TestCase):
+    def test_issue_phrases_stay_unreviewed_proposals(self):
+        taxonomy = {'version': '1', 'issue_tags': [{'id': 'data_centers', 'aliases': ['data center']}],
+                    'affected_sectors': [], 'policy_actions': []}
+        self.assertEqual(issue_labels('Data centers.', 'A data-center facility.', taxonomy), ['data_centers'])
+        self.assertEqual(issue_labels('Housing.', 'No matching phrase.', taxonomy), [])
     def test_shorten_keeps_short_text_and_cuts_on_a_word(self):
         self.assertEqual(shorten('Housing bill.'), 'Housing bill.')
         self.assertTrue(shorten('alpha beta gamma', 10).endswith('…'))
@@ -42,9 +47,12 @@ class InventoryTests(unittest.TestCase):
         self.assertEqual(records[0]['status'], 'passed')
         self.assertEqual(records[0]['dates'], {'status': '2025-03-02'})
         self.assertEqual(records[0]['policy_topics'], ['housing'])
+        self.assertEqual(records[0]['issue_tags'], [])
         self.assertEqual(records[0]['classification']['review_status'], 'unreviewed')
         self.assertTrue(records[0]['sources'][0]['url'].startswith('https://'))
         payload = document(records)
+        self.assertEqual(payload['bills'][0][-1], [])
+        self.assertEqual(payload['layout'], 'passed-bills-v2')
         self.assertEqual(payload['states'], ['CA'])
         self.assertIn('not verified', payload['coverage'])
 
@@ -52,7 +60,7 @@ class InventoryTests(unittest.TestCase):
         inventory_path = ROOT / 'web' / 'dist' / 'data' / 'inventory.json'
         inventory = json.loads(inventory_path.read_text())
         curated = json.loads((ROOT / 'web' / 'dist' / 'data' / 'bills.json').read_text())
-        self.assertEqual(inventory['layout'], 'passed-bills-v1')
+        self.assertEqual(inventory['layout'], 'passed-bills-v2')
         self.assertGreater(len(inventory['bills']), 1000)
         self.assertNotIn('US', inventory['states'])
         self.assertGreaterEqual(len(inventory['states']), 50)
@@ -60,8 +68,13 @@ class InventoryTests(unittest.TestCase):
         self.assertTrue(curated_keys().isdisjoint(keys))
         ids = [row[0] for row in inventory['bills']]
         self.assertEqual(len(ids), len(set(ids)))
-        bill_id, state, session_id, number, title, summary, status_date, topics, url = inventory['bills'][0]
+        bill_id, state, session_id, number, title, summary, status_date, topics, url, issues = inventory['bills'][0]
         self.assertTrue(status_date.startswith('2025-'))
         self.assertIsInstance(topics, list)
+        self.assertIsInstance(issues, list)
         self.assertTrue(bill_id and state and session_id and number and title and summary)
         self.assertTrue(url == '' or url.startswith('https://'))
+        allowed = {tag['id'] for tag in json.loads((ROOT / 'web/dist/data/issues.json').read_text())['issue_tags']}
+        tagged = [row for row in inventory['bills'] if row[9]]
+        self.assertGreater(len(tagged), 0)
+        self.assertTrue(all(tag in allowed for row in tagged for tag in row[9]))

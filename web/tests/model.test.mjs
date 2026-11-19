@@ -46,11 +46,12 @@ test('passed bills use the status date and undated rows stay hidden',()=>{
  assert.equal(stateCounts([passed],filters).NY,undefined);
 });
 test('compact inventory rows expand into passed bills',()=>{
- const [bill]=expandInventory({summary_provenance:'LegiScan description.',bills:[['NY-1-A1','NY','1','A1','Transit','Buses','2025-02-02',['transportation'],'https://nyassembly.gov/bill']]});
+ const [bill]=expandInventory({summary_provenance:'LegiScan description.',bills:[['NY-1-A1','NY','1','A1','Transit','Buses','2025-02-02',['transportation'],'https://nyassembly.gov/bill',['data_centers']]]});
  assert.equal(bill.status,'passed');
  assert.equal(bill.dates.status,'2025-02-02');
  assert.equal(bill.sources[0].url,'https://nyassembly.gov/bill');
- assert.equal(filteredBills([bill],filters).length,1);
+ assert.deepEqual(bill.issue_tags,['data_centers']);
+ assert.equal(filteredBills([bill],{...filters,issue:'data_centers'}).length,1);
 });
 test('source links only accept https',()=>{
  assert.equal(safeUrl('javascript:alert(1)'),null);assert.equal(safeUrl('data:text/html,test'),null);assert.equal(safeUrl('https://example.org/'),'https://example.org/');

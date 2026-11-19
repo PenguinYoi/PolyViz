@@ -8,9 +8,12 @@ import json
 import sqlite3
 from pathlib import Path
 
+from polyviz.schema import to_v2
+
 ROOT = Path(__file__).resolve().parents[1]
 CURATED = ROOT / 'web' / 'dist' / 'data' / 'bills.json'
 TOPICS = ROOT / 'web' / 'dist' / 'data' / 'topics.json'
+ISSUES = ROOT / 'web' / 'dist' / 'data' / 'issues.json'
 DEFAULT_DB = ROOT / 'data' / 'raw' / 'legiscan' / 'bills.sqlite'
 DEFAULT_OUT = ROOT / 'web' / 'dist' / 'data' / 'inventory.json'
 
@@ -37,7 +40,23 @@ def allowed_topics(path=TOPICS):
     return {topic['id'] for topic in document['topics']}
 
 
-def passed_records(connection, year='2025', skip=(), topics=None):
+def issue_taxonomy(path=ISSUES):
+    return json.loads(Path(path).read_text())
+
+
+def issue_labels(title, summary, taxonomy):
+    """Phrase matches from the controlled issue list. These stay unreviewed proposals."""
+    detected = to_v2(
+        {'title': title or '', 'summary': summary or '', 'policy_topics': []},
+        detect=True, taxonomy=taxonomy)
+    found = []
+    for candidate in detected['issue_classification']['candidates']:
+        if candidate['axis'] == 'issue_tags' and candidate['label'] not in found:
+            found.append(candidate['label'])
+    return found
+
+
+def passed_records(connection, year='2025', skip=(), topics=None, issues=None):
     """Return slim map records for non-Congress bills LegiScan marked passed."""
     skip = set(skip)
     allowed = None if topics is None else set(topics)
@@ -57,6 +76,7 @@ def passed_records(connection, year='2025', skip=(), topics=None):
         labels = [topic for topic in stored.get('policy_topics') or [] if isinstance(topic, str)]
         if allowed is not None:
             labels = [topic for topic in labels if topic in allowed]
+        tags = issue_labels(title, summary, issues) if issues else []
         record = {
             'id': bill_id,
             'state': state,
@@ -67,7 +87,7 @@ def passed_records(connection, year='2025', skip=(), topics=None):
             'status': 'passed',
             'dates': {'status': status_date},
             'policy_topics': labels,
-            'issue_tags': [],
+            'issue_tags': tags,
             'affected_sectors': [],
             'classification': {
                 'method': 'keyword_rules',
@@ -89,13 +109,13 @@ def document(records, year='2025'):
     provenance = records[0]['summary_provenance'] if records else ''
     return {
         'schema_version': 2,
-        'layout': 'passed-bills-v1',
+        'layout': 'passed-bills-v2',
         'title': f'{year} legislature-passed bills',
         'coverage': (
             'Bills LegiScan marked Passed with a status date in this year, excluding Congress '
             'and bills already in the source-checked enacted snapshot. Signature and chaptering '
             'are not verified. Each bill is [id, state, session_id, bill_number, title, summary, '
-            'status_date, policy_topics, source_url].'
+            'status_date, policy_topics, source_url, issue_tags]. Issue tags are unreviewed phrase matches.'
         ),
         'year': int(year),
         'states': sorted({record['state'] for record in records}),
@@ -104,6 +124,7 @@ def document(records, year='2025'):
             record['id'], record['state'], record['session_id'], record['bill_number'],
             record['title'], record['summary'], record['dates']['status'], record['policy_topics'],
             record['sources'][0]['url'] if record['sources'] else '',
+            record['issue_tags'],
         ] for record in records],
     }
 
@@ -117,12 +138,18 @@ def main():
     connection = sqlite3.connect(args.database)
     try:
         records = passed_records(
-            connection, args.year, skip=curated_keys(), topics=allowed_topics())
+            connection, args.year, skip=curated_keys(), topics=allowed_topics(),
+            issues=issue_taxonomy())
     finally:
         connection.close()
     payload = document(records, args.year)
     args.output.write_text(json.dumps(payload, separators=(',', ':'), ensure_ascii=False) + '\n')
-    print(json.dumps({'bills': len(records), 'states': len(payload['states']), 'output': str(args.output)}))
+    print(json.dumps({
+        'bills': len(records),
+        'states': len(payload['states']),
+        'with_issues': sum(bool(record['issue_tags']) for record in records),
+        'output': str(args.output),
+    }))
 
 
 if __name__ == '__main__':
