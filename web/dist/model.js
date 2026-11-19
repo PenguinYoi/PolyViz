@@ -11,12 +11,12 @@ export function billDate(bill) {
   return bill.status === 'passed' ? (dates.status || '') : (dates.enacted || '');
 }
 export function expandInventory(inventory) {
-  return inventory.bills.map(([id, state, sessionId, billNumber, title, summary, statusDate, topics, url]) => ({
+  return inventory.bills.map(([id, state, sessionId, billNumber, title, summary, statusDate, topics, url, issues]) => ({
     id, state, session_id: sessionId, bill_number: billNumber, title, summary,
     status: 'passed',
     dates: {status: statusDate},
     policy_topics: topics || [],
-    issue_tags: [],
+    issue_tags: issues || [],
     affected_sectors: [],
     classification: {
       method: 'keyword_rules',
