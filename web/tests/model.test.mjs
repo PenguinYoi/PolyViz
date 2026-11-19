@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {filteredBills,stateCounts,monthEnd,safeUrl} from '../dist/model.js';
+import {expandInventory,filteredBills,stateCounts,monthEnd,safeUrl} from '../dist/model.js';
 const {bills}=JSON.parse(readFileSync(new URL('../dist/data/bills.json',import.meta.url)));
 const filters={state:'all',topic:'all',issue:'all',date:'2025-12-31',search:'',reviewed:false};
 test('sample contains distinct sourced enacted identities and valid taxonomy labels',()=>{
@@ -37,6 +37,20 @@ test('unknown and undated statuses stay out of enacted counts',()=>{
 test('bill search is case-insensitive and respects other filters',()=>{
  assert.equal(filteredBills(bills,{...filters,search:'sb6'}).length,1);
  assert.equal(filteredBills(bills,{...filters,search:'SB6',state:'CA'}).length,0);
+});
+test('passed bills use the status date and undated rows stay hidden',()=>{
+ const passed={id:'NY-1-A1',state:'NY',session_id:'1',bill_number:'A1',title:'Transit',summary:'Buses',status:'passed',dates:{status:'2025-02-02'},policy_topics:['transportation'],issue_tags:[],classification:{review_status:'unreviewed'}};
+ assert.equal(filteredBills([passed],filters).length,1);
+ assert.equal(filteredBills([passed],{...filters,date:monthEnd(0)}).length,0);
+ assert.equal(filteredBills([{...passed,dates:{status:null}}],filters).length,0);
+ assert.equal(stateCounts([passed],filters).NY,undefined);
+});
+test('compact inventory rows expand into passed bills',()=>{
+ const [bill]=expandInventory({summary_provenance:'LegiScan description.',bills:[['NY-1-A1','NY','1','A1','Transit','Buses','2025-02-02',['transportation'],'https://nyassembly.gov/bill']]});
+ assert.equal(bill.status,'passed');
+ assert.equal(bill.dates.status,'2025-02-02');
+ assert.equal(bill.sources[0].url,'https://nyassembly.gov/bill');
+ assert.equal(filteredBills([bill],filters).length,1);
 });
 test('source links only accept https',()=>{
  assert.equal(safeUrl('javascript:alert(1)'),null);assert.equal(safeUrl('data:text/html,test'),null);assert.equal(safeUrl('https://example.org/'),'https://example.org/');
