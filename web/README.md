@@ -1,7 +1,9 @@
 # PolyViz map MVP
 
-A buildless, browser-only map of 17 sourced 2025 enactments in California and
-Texas. All assets and data are local; there are no API keys, runtime dependencies,
+A buildless, browser-only map of 2025 bills for the 50 states and the District
+of Columbia. Seventeen bills are source-checked enactments. The rest come from
+`dist/data/inventory.json`: legislature-passed bills whose signatures are not
+verified. All assets and data are local; there are no API keys, runtime dependencies,
 remote fonts, paid inference calls or database services.
 
 From the PolyViz repository root:

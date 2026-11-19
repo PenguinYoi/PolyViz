@@ -2,7 +2,7 @@
 
 **Explore what U.S. states are legislating about—by topic, place, and time.**
 
-PolyViz is an interactive U.S. map MVP that organizes enacted state legislation by topic, place and time. The current private preview contains 17 selected 2025 enactments in California and Texas, with official sources, selective summaries and clearly marked proposed labels.
+PolyViz is an interactive U.S. map MVP that organizes 2025 state legislation by topic, place and time. The public site shows bills from the 50 states and the District of Columbia. Seventeen of those bills are source-checked enactments. The rest are bills a legislature recorded as passed, and the governor's signature is not verified on those rows.
 
 ## Core question
 
@@ -12,22 +12,22 @@ The initial audience is curious residents and students who want an accessible ov
 
 ## Current MVP
 
-- Interactive map with California and Texas sample coverage.
+- Interactive map for the 50 states and the District of Columbia.
 - State, topic and issue filters, including data centers.
-- Monthly cumulative enactment timeline and playback.
-- Bill search, source links, summary scope notes and review-status filters.
-- A static HTML/CSS/JavaScript frontend reading versioned JSON; no database or paid APIs.
-- Owner-private [hosted preview](https://polyviz-policy-atlas-jh.aridsong2.chatgpt.site).
+- Monthly timeline and playback. Source-checked bills use the signature date; the wider inventory uses the legislature status date.
+- Bill search, source links, and review-status filters.
+- A static HTML/CSS/JavaScript frontend reading versioned JSON; no database or paid APIs in the browser.
+- Public site at https://penguinyoi.github.io/PolyViz/.
 
-This is a selected sample, not a complete inventory or an accuracy benchmark. Topic-share comparisons, nationwide coverage and 3D remain future work.
+This is not a complete session inventory or an accuracy benchmark. Topic labels are keyword proposals. Counts are not rankings of state priorities.
 
 ## Data approach
 
-The map currently uses a curated, source-checked JSON snapshot. Local classification experiments run separately on saved bill inputs. A reproducible classifier-to-map export is the next integration step; unresolved candidates will remain distinct from assigned labels. See [the current workflow diagram](docs/WORKFLOW.md).
+The map keeps 17 source-checked enactments in `web/dist/data/bills.json`. The wider 2025 inventory is `web/dist/data/inventory.json`, built from the local LegiScan database by `python -m polyviz.inventory`. Keyword topics on that inventory are proposals, not reviewed assignments. See [the current workflow diagram](docs/WORKFLOW.md).
 
 ## Interpretation
 
-- “Passed” means enacted into law, rather than passed by a single chamber.
+- On the map, “source-checked enactment” means a signature date was checked. “Passed by the legislature” means LegiScan recorded a pass, and the signature is not verified.
 - Bill counts describe legislative activity, not policy effectiveness, public opinion, or the importance of a law.
 - Bills may have multiple topics, so topic shares can sum to more than 100%.
 - Missing coverage must be distinguishable from zero activity.
@@ -35,7 +35,7 @@ The map currently uses a curated, source-checked JSON snapshot. Local classifica
 
 ## Project status
 
-A two-state map MVP is implemented, privately hosted and pushed to GitHub. Source descriptions have been checked by an AI assistant; topic labels are not independently reviewed. Automated ingestion, broader coverage and an independent classification benchmark remain planned.
+The map is published on GitHub Pages. Seventeen enactments have assistant-checked sources. The nationwide passed-bill inventory is not independently reviewed, and an independent classification benchmark remains planned.
 
 See [the workflow plan](docs/WORKFLOW.md) for architecture, data conventions, and milestones.
 
@@ -117,13 +117,15 @@ have not yet been accuracy-benchmarked.
 
 ## Map MVP
 
-The two-state interactive prototype lives in `web/`. Run locally with:
+The map lives in `web/`. Run locally with:
 
 ```sh
 .venv/bin/python -m http.server 4173 --bind 127.0.0.1 --directory web/dist
 ```
 
-Open http://127.0.0.1:4173. It includes state/topic/issue filters, an enactment
-timeline, search, and bill details with official sources. The 17-bill 2025
-sample has proposed labels and is not a complete inventory or accuracy benchmark.
+Open http://127.0.0.1:4173. The same folder is what GitHub Pages publishes at
+https://penguinyoi.github.io/PolyViz/. It includes state and topic filters, a
+2025 timeline, search, and bill details. Seventeen bills are source-checked
+enactments. The wider inventory is legislature-passed bills with unverified
+signatures and proposed topic labels.
 See `web/README.md` for the data contract, tests and extension path.
