@@ -1,4 +1,4 @@
-import {states, filteredBills, stateCounts, matches, monthEnd, safeUrl} from './model.mjs';
+import {states, filteredBills, stateCounts, matches, monthEnd, safeUrl} from './model.js';
 const $ = id => document.getElementById(id);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const shortDate = value => new Date(value+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'});

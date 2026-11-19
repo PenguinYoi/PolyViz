@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {filteredBills,stateCounts,monthEnd,safeUrl} from '../dist/model.mjs';
+import {filteredBills,stateCounts,monthEnd,safeUrl} from '../dist/model.js';
 const {bills}=JSON.parse(readFileSync(new URL('../dist/data/bills.json',import.meta.url)));
 const filters={state:'all',topic:'all',issue:'all',date:'2025-12-31',search:'',reviewed:false};
 test('sample contains distinct sourced enacted identities and valid taxonomy labels',()=>{

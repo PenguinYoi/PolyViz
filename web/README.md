@@ -11,7 +11,13 @@ From the PolyViz repository root:
 ```
 
 Open http://127.0.0.1:4173. Plain `python3` also works; serving over HTTP is required
-because the app fetches JSON. No npm install or build is needed. For frontend tests:
+because the app fetches JSON. No npm install or build is needed.
+
+GitHub Pages publishes this same `dist` folder. After the Pages workflow is on
+`main`, set the repository’s Pages source to **GitHub Actions**. The project site
+is served at `https://penguinyoi.github.io/PolyViz/`. Paths in the page are relative,
+so they keep working under that project path. Script files use `.js` because
+GitHub Pages does not reliably serve `.mjs` as JavaScript. For frontend tests:
 
 ```sh
 node --test web/tests/model.test.mjs
@@ -59,8 +65,8 @@ metadata used by the sample (`sources`, `summary_provenance`, and classification
 `evidence` with an exact `excerpt`). Keep bill IDs stable; deduplicate before
 export. Require verified enactment dates and retain provenance. Do not turn
 `issue_classification.candidates` into assigned labels without an explicit decision.
-The app currently supports CA and TX; add another state in `dist/model.mjs` and
-its label position in `dist/app.mjs`, then update coverage text and tests together.
+The app currently supports CA and TX; add another state in `dist/model.js` and
+its label position in `dist/app.js`, then update coverage text and tests together.
 The timeline is deliberately fixed to 2025 for this MVP.
 
 The next data step is a reproducible export from the classifier pipeline, with
