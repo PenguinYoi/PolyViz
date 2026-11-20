@@ -80,18 +80,63 @@ export function matchIssues(query, issueTags) {
   }
   return hits.sort((a, b) => b.score - a.score || a.name.localeCompare(b.name) || a.id.localeCompare(b.id));
 }
+function canonical(token) {
+  let best = token;
+  for (const form of variants(token)) if (form.length < best.length) best = form;
+  return best;
+}
+function phraseLine(text) {
+  const tokens = words(text).map(canonical);
+  return tokens.join(' ');
+}
+export function searchPlan(query, issueTags) {
+  const hits = matchIssues(query, issueTags);
+  const phrases = new Set();
+  const queryLine = phraseLine(query);
+  if (queryLine) phrases.add(queryLine);
+  for (const hit of hits) {
+    const issue = issueTags.find(item => item.id === hit.id);
+    if (!issue) continue;
+    for (const phrase of [issue.name, ...(issue.aliases || []), ...(issue.related || [])]) {
+      const line = phraseLine(phrase);
+      const tokens = line.split(' ').filter(Boolean);
+      const usable = tokens.length > 1 || (tokens.length === 1 && tokens[0].length >= 6 && !WEAK.has(tokens[0]));
+      if (usable) phrases.add(line);
+    }
+  }
+  return {hits, phrases: [...phrases]};
+}
+function searchLine(bill) {
+  if (!bill._searchLine) {
+    bill._searchLine = ` ${phraseLine(`${bill.bill_number || ''} ${bill.title || ''} ${bill.summary || ''}`)} `;
+  }
+  return bill._searchLine;
+}
+function matchesIssueQuery(bill, filters) {
+  if (filters.issueMatches == null && filters.issuePhrases == null) return true;
+  const tags = bill.issue_tags || [];
+  if (filters.issueMatches?.some(id => tags.includes(id))) return true;
+  const phrases = filters.issuePhrases;
+  if (!phrases?.length) return false;
+  const line = searchLine(bill);
+  return phrases.some(phrase => line.includes(` ${phrase} `));
+}
 export function matches(bill, filters, includeState = true) {
   const tags = bill.issue_tags || [];
   return (bill.status === 'enacted' || bill.status === 'passed') && !!billDate(bill) && billDate(bill) <= filters.date
     && (!includeState || filters.state === 'all' || bill.state === filters.state)
     && (filters.topic === 'all' || bill.policy_topics.includes(filters.topic))
     && (filters.issue === 'all' || tags.includes(filters.issue))
-    && (filters.issueMatches == null || tags.some(id => filters.issueMatches.includes(id)))
+    && matchesIssueQuery(bill, filters)
     && (!filters.reviewed || bill.classification.review_status === 'reviewed')
     && (!filters.search || `${bill.bill_number} ${bill.title} ${bill.summary}`.toLowerCase().includes(filters.search.toLowerCase().trim()));
 }
+function issueRank(bill, filters) {
+  if (!filters.issueMatches?.length) return 0;
+  return filters.issueMatches.some(id => (bill.issue_tags || []).includes(id)) ? 0 : 1;
+}
 export function filteredBills(bills, filters) {
-  return bills.filter(b => matches(b, filters)).sort((a,b) => billDate(b).localeCompare(billDate(a)) || a.id.localeCompare(b.id));
+  return bills.filter(b => matches(b, filters)).sort((a,b) => issueRank(a, filters) - issueRank(b, filters) || billDate(b).localeCompare(billDate(a)) || a.id.localeCompare(b.id));
 }
 export function stateCounts(bills, filters, stateCodes = Object.keys(states)) {
   const counts = Object.fromEntries(stateCodes.map(state => [state, 0]));

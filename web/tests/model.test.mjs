@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {expandInventory,filteredBills,stateCounts,monthEnd,safeUrl,matchIssues} from '../dist/model.js';
+import {expandInventory,filteredBills,stateCounts,monthEnd,safeUrl,matchIssues,searchPlan} from '../dist/model.js';
 const {bills}=JSON.parse(readFileSync(new URL('../dist/data/bills.json',import.meta.url)));
 const filters={state:'all',topic:'all',issue:'all',date:'2025-12-31',search:'',reviewed:false};
 test('sample contains distinct sourced enacted identities and valid taxonomy labels',()=>{
@@ -69,6 +69,17 @@ test('issue search matches related wording and still respects the issue bar',()=
  assert.equal(filteredBills([bill],{...filters,issue:'opioids',issueMatches:['electricity_rates']}).length,0);
  assert.equal(filteredBills([bill],{...filters,issue:'electricity_rates',issueMatches:['electricity_rates']}).length,1);
  assert.equal(filteredBills([bill],{...filters,issueMatches:[]}).length,0);
+ const plan=searchPlan('power bill',issueTags);
+ const worded={id:'TX-1-HB2',state:'TX',session_id:'1',bill_number:'HB2',title:'Utility bill relief',summary:'Lowers a power bill for households',status:'passed',dates:{status:'2025-08-01'},policy_topics:[],issue_tags:[],classification:{review_status:'unreviewed'}};
+ const other={id:'TX-1-HB3',state:'TX',session_id:'1',bill_number:'HB3',title:'Schools',summary:'Teachers and classrooms',status:'passed',dates:{status:'2025-08-02'},policy_topics:[],issue_tags:[],classification:{review_status:'unreviewed'}};
+ const older={...bill,dates:{status:'2025-01-01'}};
+ const view={...filters,issueMatches:plan.hits.map(hit=>hit.id),issuePhrases:plan.phrases};
+ const found=filteredBills([worded,other,older],view);
+ assert.deepEqual(found.map(item=>item.id),[older.id,worded.id]);
+ const plain=searchPlan('classroom size',issueTags);
+ assert.equal(plain.hits.length,0);
+ const sized={id:'CA-1-AB9',state:'CA',session_id:'1',bill_number:'AB9',title:'Maximum classroom size',summary:'Limits class size',status:'passed',dates:{status:'2025-03-01'},policy_topics:[],issue_tags:[],classification:{review_status:'unreviewed'}};
+ assert.equal(filteredBills([sized,other],{...filters,issueMatches:[],issuePhrases:plain.phrases}).length,1);
 });
 test('source links only accept https',()=>{
  assert.equal(safeUrl('javascript:alert(1)'),null);assert.equal(safeUrl('data:text/html,test'),null);assert.equal(safeUrl('https://example.org/'),'https://example.org/');
