@@ -792,7 +792,8 @@
         "energy"
       ],
       "issue_tags": [
-        "electricity_rates"
+        "electricity_rates",
+        "wildfire"
       ],
       "affected_sectors": [
         "energy"

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {expandInventory,filteredBills,stateCounts,monthEnd,safeUrl} from '../dist/model.js';
+import {expandInventory,filteredBills,stateCounts,monthEnd,safeUrl,matchIssues} from '../dist/model.js';
 const {bills}=JSON.parse(readFileSync(new URL('../dist/data/bills.json',import.meta.url)));
 const filters={state:'all',topic:'all',issue:'all',date:'2025-12-31',search:'',reviewed:false};
 test('sample contains distinct sourced enacted identities and valid taxonomy labels',()=>{
@@ -52,6 +52,23 @@ test('compact inventory rows expand into passed bills',()=>{
  assert.equal(bill.sources[0].url,'https://nyassembly.gov/bill');
  assert.deepEqual(bill.issue_tags,['data_centers']);
  assert.equal(filteredBills([bill],{...filters,issue:'data_centers'}).length,1);
+});
+test('issue search matches related wording and still respects the issue bar',()=>{
+ const issueTags=JSON.parse(readFileSync(new URL('../dist/data/issues.json',import.meta.url))).issue_tags;
+ const ids=query=>matchIssues(query,issueTags).map(hit=>hit.id);
+ assert.ok(ids('power bill').includes('electricity_rates'));
+ assert.ok(ids('server farms').includes('data_centers'));
+ assert.ok(ids('fentanyl').includes('opioids'));
+ assert.ok(ids('daycare').includes('child_care'));
+ assert.ok(ids('property tax').includes('property_tax'));
+ assert.equal(ids('property tax').includes('tax_incentives'),false);
+ assert.deepEqual(ids('zzzz'),[]);
+ assert.equal(ids('rates').includes('electricity_rates'),false);
+ const bill={id:'TX-1-HB1',state:'TX',session_id:'1',bill_number:'HB1',title:'Grid planning',summary:'Large users',status:'passed',dates:{status:'2025-06-01'},policy_topics:[],issue_tags:['electricity_rates'],classification:{review_status:'unreviewed'}};
+ assert.equal(filteredBills([bill],{...filters,issueMatches:['electricity_rates']}).length,1);
+ assert.equal(filteredBills([bill],{...filters,issue:'opioids',issueMatches:['electricity_rates']}).length,0);
+ assert.equal(filteredBills([bill],{...filters,issue:'electricity_rates',issueMatches:['electricity_rates']}).length,1);
+ assert.equal(filteredBills([bill],{...filters,issueMatches:[]}).length,0);
 });
 test('source links only accept https',()=>{
  assert.equal(safeUrl('javascript:alert(1)'),null);assert.equal(safeUrl('data:text/html,test'),null);assert.equal(safeUrl('https://example.org/'),'https://example.org/');

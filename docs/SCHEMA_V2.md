@@ -27,10 +27,13 @@ display names can change independently. This is an expanded starter vocabulary,
 not exhaustive coverage of legislation (civil law, immigration and other domains
 may still need additions).
 
-`data/issue-taxonomy.json` separately defines issue, sector and action IDs. Initial
-issue tags are data centers, water use, artificial intelligence, electricity rates,
-and tax incentives. Actions cover reporting obligations, creation of tax incentives,
-and development restrictions. This vocabulary is intentionally small and extensible.
+`data/issue-taxonomy.json` separately defines issue, sector and action IDs. Issue
+tags are a controlled phrase list. It includes data centers, water use, artificial
+intelligence, electricity rates, and tax incentives, plus other specific subjects
+such as mental health, Medicaid, and property tax. A tag's `related` phrases are
+used only to look up that issue. They are not assignments. Actions cover reporting
+obligations, creation of tax incentives, and development restrictions. A phrase
+match is a candidate, not a reviewed legal finding.
 
 The classifier defaults to the new topic taxonomy. Original `data/topics.json`
 and the frozen historical benchmark remain unchanged. Old results must be reproduced
