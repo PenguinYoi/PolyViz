@@ -1,22 +1,30 @@
 {
-  "version": "1",
+  "version": "2",
   "status": "candidate_detection_unvalidated",
   "rules": [
     "Use only controlled identifiers; never generate labels dynamically.",
     "Lexical matches are candidates, not confirmed legal changes.",
     "A sector or issue does not automatically imply a policy topic.",
-    "No candidate means unresolved, not absent."
+    "No candidate means unresolved, not absent.",
+    "Related phrases are for issue search only. They are not assigned labels."
   ],
   "issue_tags": [
     {
       "id": "data_centers",
       "name": "Data centers",
-      "description": "Measures explicitly concerning data-center facilities.",
+      "description": "Measures that explicitly mention data-center facilities.",
       "aliases": [
         "data center",
         "data centers",
         "data centre",
         "data centres"
+      ],
+      "related": [
+        "server farm",
+        "server farms",
+        "hyperscale",
+        "colocation",
+        "data facility"
       ],
       "exclude": [
         "A generic database or mention of data alone"
@@ -25,25 +33,45 @@
     {
       "id": "water_use",
       "name": "Water use",
-      "description": "Water consumption, withdrawal, reuse or reporting.",
+      "description": "Water consumption, withdrawal, supply, or water rights.",
       "aliases": [
         "water use",
         "water usage",
         "water consumption",
         "water withdrawal",
-        "water reuse"
+        "water reuse",
+        "groundwater",
+        "ground water",
+        "water supply",
+        "water rights"
+      ],
+      "related": [
+        "aquifer",
+        "irrigation",
+        "drought"
       ],
       "exclude": [
-        "Water quality alone without a use provision"
+        "Water quality alone, without a use, supply, or rights phrase"
       ]
     },
     {
       "id": "artificial_intelligence",
       "name": "Artificial intelligence",
-      "description": "Explicit AI systems or governance.",
+      "description": "Explicit AI systems, machine learning, or AI governance.",
       "aliases": [
         "artificial intelligence",
-        "generative AI"
+        "generative AI",
+        "machine learning",
+        "large language model",
+        "large language models"
+      ],
+      "related": [
+        "ai",
+        "chatbot",
+        "deep learning",
+        "automated decision",
+        "generative model",
+        "llm"
       ],
       "exclude": [
         "Do not infer AI from a data-center reference"
@@ -55,8 +83,23 @@
       "description": "Electricity pricing and allocation of ratepayer costs.",
       "aliases": [
         "electricity rates",
+        "electricity rate",
         "electric rates",
-        "ratepayer costs"
+        "electric rate",
+        "ratepayer costs",
+        "ratepayer cost",
+        "utility rates",
+        "utility rate"
+      ],
+      "related": [
+        "power bill",
+        "electric bill",
+        "utility bill",
+        "energy price",
+        "electricity price",
+        "kilowatt",
+        "ratepayer",
+        "power rate"
       ],
       "exclude": [
         "Energy use alone"
@@ -65,17 +108,418 @@
     {
       "id": "tax_incentives",
       "name": "Tax incentives",
-      "description": "Tax credits, exemptions or other explicit tax incentives.",
+      "description": "Tax credits, exemptions, abatements, or other explicit tax incentives.",
       "aliases": [
         "tax incentives",
         "tax incentive",
         "tax credits",
         "tax credit",
         "tax exemptions",
-        "tax exemption"
+        "tax exemption",
+        "tax abatement",
+        "tax abatements"
+      ],
+      "related": [
+        "tax break",
+        "tax holiday"
       ],
       "exclude": [
         "General grants or subsidies without a tax instrument"
+      ]
+    },
+    {
+      "id": "affordable_housing",
+      "name": "Affordable housing",
+      "description": "Affordable housing, rent control, or rent stabilization.",
+      "aliases": [
+        "affordable housing",
+        "rent control",
+        "rent stabilization",
+        "low-income housing",
+        "workforce housing"
+      ],
+      "related": [
+        "rent",
+        "housing affordability",
+        "affordable rent"
+      ]
+    },
+    {
+      "id": "broadband",
+      "name": "Broadband",
+      "description": "Broadband or high-speed internet service.",
+      "aliases": [
+        "broadband",
+        "high-speed internet"
+      ],
+      "related": [
+        "internet access",
+        "rural broadband"
+      ]
+    },
+    {
+      "id": "cannabis",
+      "name": "Cannabis",
+      "description": "Cannabis or marijuana regulation.",
+      "aliases": [
+        "cannabis",
+        "marijuana"
+      ],
+      "related": [
+        "medical marijuana"
+      ]
+    },
+    {
+      "id": "charter_schools",
+      "name": "Charter schools",
+      "description": "Charter schools.",
+      "aliases": [
+        "charter school",
+        "charter schools"
+      ],
+      "related": [
+        "school choice"
+      ]
+    },
+    {
+      "id": "child_care",
+      "name": "Child care",
+      "description": "Child care or day care.",
+      "aliases": [
+        "child care",
+        "childcare",
+        "day care",
+        "daycare"
+      ],
+      "related": [
+        "day care center"
+      ]
+    },
+    {
+      "id": "child_welfare",
+      "name": "Child welfare",
+      "description": "Foster care or child-welfare services.",
+      "aliases": [
+        "foster care",
+        "child welfare"
+      ],
+      "related": [
+        "foster child",
+        "child protective"
+      ]
+    },
+    {
+      "id": "climate",
+      "name": "Climate",
+      "description": "Greenhouse gas or climate-change measures.",
+      "aliases": [
+        "greenhouse gas",
+        "greenhouse gases",
+        "climate change"
+      ],
+      "related": [
+        "carbon emission",
+        "global warming",
+        "clean energy"
+      ]
+    },
+    {
+      "id": "collective_bargaining",
+      "name": "Collective bargaining",
+      "description": "Collective bargaining.",
+      "aliases": [
+        "collective bargaining"
+      ],
+      "related": [
+        "labor union",
+        "union contract"
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "description": "Cybersecurity or data-breach measures.",
+      "aliases": [
+        "cybersecurity",
+        "cyber security",
+        "data breach"
+      ],
+      "related": [
+        "ransomware"
+      ]
+    },
+    {
+      "id": "data_privacy",
+      "name": "Data privacy",
+      "description": "Consumer, biometric, or personal-data privacy.",
+      "aliases": [
+        "data privacy",
+        "consumer privacy",
+        "biometric privacy"
+      ],
+      "related": [
+        "personal data",
+        "data protection"
+      ]
+    },
+    {
+      "id": "electric_vehicles",
+      "name": "Electric vehicles",
+      "description": "Electric vehicles or vehicle charging.",
+      "aliases": [
+        "electric vehicle",
+        "electric vehicles",
+        "ev charging"
+      ],
+      "related": [
+        "ev",
+        "zero emission vehicle",
+        "vehicle charging"
+      ]
+    },
+    {
+      "id": "firearms",
+      "name": "Firearms",
+      "description": "Firearms, handguns, rifles, or shotguns.",
+      "aliases": [
+        "firearm",
+        "firearms",
+        "handgun",
+        "handguns",
+        "rifle",
+        "rifles",
+        "shotgun",
+        "shotguns"
+      ],
+      "related": [
+        "gun",
+        "guns"
+      ]
+    },
+    {
+      "id": "homelessness",
+      "name": "Homelessness",
+      "description": "Homelessness or unsheltered housing.",
+      "aliases": [
+        "homelessness",
+        "homeless",
+        "unsheltered"
+      ],
+      "related": [
+        "unhoused",
+        "homeless shelter",
+        "encampment"
+      ]
+    },
+    {
+      "id": "immigration",
+      "name": "Immigration",
+      "description": "Immigration or undocumented status.",
+      "aliases": [
+        "immigration",
+        "undocumented"
+      ],
+      "related": [
+        "noncitizen",
+        "migrant worker"
+      ]
+    },
+    {
+      "id": "medicaid",
+      "name": "Medicaid",
+      "description": "Medicaid.",
+      "aliases": [
+        "medicaid"
+      ],
+      "related": [
+        "medical assistance"
+      ]
+    },
+    {
+      "id": "mental_health",
+      "name": "Mental health",
+      "description": "Mental health or behavioral health.",
+      "aliases": [
+        "mental health",
+        "behavioral health"
+      ],
+      "related": [
+        "mental illness",
+        "psychiatric",
+        "psychiatry"
+      ]
+    },
+    {
+      "id": "minimum_wage",
+      "name": "Minimum wage",
+      "description": "Minimum wage.",
+      "aliases": [
+        "minimum wage"
+      ],
+      "related": [
+        "living wage",
+        "wage floor"
+      ]
+    },
+    {
+      "id": "opioids",
+      "name": "Opioids",
+      "description": "Opioids or fentanyl.",
+      "aliases": [
+        "opioid",
+        "opioids",
+        "fentanyl"
+      ],
+      "related": [
+        "naloxone",
+        "narcan"
+      ]
+    },
+    {
+      "id": "paid_leave",
+      "name": "Paid leave",
+      "description": "Paid leave, family leave, or parental leave.",
+      "aliases": [
+        "paid leave",
+        "family leave",
+        "paid sick",
+        "parental leave"
+      ],
+      "related": [
+        "sick leave",
+        "maternity leave"
+      ]
+    },
+    {
+      "id": "pensions",
+      "name": "Pensions",
+      "description": "Pensions or public retirement systems.",
+      "aliases": [
+        "pension",
+        "pensions",
+        "retirement system",
+        "retirement systems"
+      ],
+      "related": [
+        "retirement benefit"
+      ]
+    },
+    {
+      "id": "prekindergarten",
+      "name": "Prekindergarten",
+      "description": "Prekindergarten or preschool.",
+      "aliases": [
+        "prekindergarten",
+        "pre-kindergarten",
+        "pre-k",
+        "preschool"
+      ],
+      "related": [
+        "prek",
+        "nursery school"
+      ]
+    },
+    {
+      "id": "prescription_drugs",
+      "name": "Prescription drugs",
+      "description": "Prescription drugs or pharmacy benefits.",
+      "aliases": [
+        "prescription drug",
+        "prescription drugs",
+        "pharmacy benefit"
+      ],
+      "related": [
+        "drug price",
+        "medication cost"
+      ]
+    },
+    {
+      "id": "property_tax",
+      "name": "Property tax",
+      "description": "Property tax.",
+      "aliases": [
+        "property tax",
+        "property taxes"
+      ],
+      "related": [
+        "millage",
+        "ad valorem"
+      ]
+    },
+    {
+      "id": "renewable_energy",
+      "name": "Renewable energy",
+      "description": "Renewable, solar, or wind energy.",
+      "aliases": [
+        "renewable energy",
+        "solar energy",
+        "solar panel",
+        "solar panels",
+        "wind energy",
+        "wind power"
+      ],
+      "related": [
+        "solar",
+        "wind farm",
+        "clean energy",
+        "photovoltaic"
+      ]
+    },
+    {
+      "id": "reproductive_health",
+      "name": "Reproductive health",
+      "description": "Abortion, contraception, or reproductive health.",
+      "aliases": [
+        "abortion",
+        "reproductive health",
+        "contraception"
+      ],
+      "related": [
+        "reproductive care",
+        "pregnancy termination"
+      ]
+    },
+    {
+      "id": "telehealth",
+      "name": "Telehealth",
+      "description": "Telehealth or telemedicine.",
+      "aliases": [
+        "telehealth",
+        "telemedicine"
+      ],
+      "related": [
+        "virtual visit",
+        "remote care"
+      ]
+    },
+    {
+      "id": "voting_access",
+      "name": "Voting access",
+      "description": "Mail voting, voter identification, or early voting.",
+      "aliases": [
+        "absentee ballot",
+        "absentee ballots",
+        "vote by mail",
+        "voter identification",
+        "early voting"
+      ],
+      "related": [
+        "mail ballot",
+        "voter id",
+        "ballot access"
+      ]
+    },
+    {
+      "id": "wildfire",
+      "name": "Wildfire",
+      "description": "Wildfire.",
+      "aliases": [
+        "wildfire",
+        "wildfires"
+      ],
+      "related": [
+        "forest fire",
+        "brush fire"
       ]
     }
   ],

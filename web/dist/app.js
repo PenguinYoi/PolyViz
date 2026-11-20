@@ -1,27 +1,37 @@
-import {fipsToCode, expandInventory, filteredBills, stateCounts, matches, monthEnd, safeUrl, billDate} from './model.js';
+import {fipsToCode, expandInventory, filteredBills, stateCounts, matches, monthEnd, safeUrl, billDate, matchIssues} from './model.js';
 const $ = id => document.getElementById(id);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const shortDate = value => new Date(value+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'});
 const colors = ['#6b9490','#8eaa84','#7190ab','#c5a576','#8a9b6e','#c1a76a','#9a88af','#9e8c85','#be8c7f','#a5a1bb','#9bafbb','#8c9caa','#739ca1','#a6a384','#9fae7c','#ab8fa2'];
 const pageSize = 40;
 let data, taxonomy, issues, geography, playing = null, states = {}, listLimit = pageSize;
-let filters = {state:'all',topic:'all',issue:'all',date:'2025-12-31',search:'',reviewed:false};
+let filters = {state:'all',topic:'all',issue:'all',date:'2025-12-31',search:'',issueQuery:'',reviewed:false};
 let month = 11;
 function stop(){if(playing)clearInterval(playing);playing=null;$('play').innerHTML='<span aria-hidden="true">▶</span> Play';$('play').setAttribute('aria-label','Play timeline');}
 function selectState(state){listLimit=pageSize;filters.state=filters.state===state?'all':state;render();}
-function setUrl(){const params = new URLSearchParams();for(const key of ['state','topic','issue'])if(filters[key]!=='all')params.set(key,filters[key]);if(month!==11)params.set('month',month);if(filters.search)params.set('q',filters.search);if(filters.reviewed)params.set('reviewed','1');history.replaceState(null,'',`${location.pathname}${params.size?'?'+params:''}`);}
+function setUrl(){const params = new URLSearchParams();for(const key of ['state','topic','issue'])if(filters[key]!=='all')params.set(key,filters[key]);if(month!==11)params.set('month',month);if(filters.search)params.set('q',filters.search);if(filters.issueQuery.trim())params.set('iq',filters.issueQuery);if(filters.reviewed)params.set('reviewed','1');history.replaceState(null,'',`${location.pathname}${params.size?'?'+params:''}`);}
+function issueSearchNote(hits){
+ const query = filters.issueQuery.trim();
+ if(!query)return 'Related words select issues. Bills still use unreviewed phrase labels.';
+ if(!hits.length)return 'No related issue for that wording. This is a word list, not a legal reading.';
+ const names = hits.map(hit=>hit.name);
+ const shown = names.length<=3?names.join(', '):`${names.slice(0,3).join(', ')} and ${names.length-3} more`;
+ return `Related issues: ${shown}. Phrase labels, not reviewed findings.`;
+}
 function topicName(id){return taxonomy.topics.find(t=>t.id===id)?.name ?? id;}
 function issueName(id){return issues.issue_tags.find(t=>t.id===id)?.name ?? id;}
 function topicTags(bill){return (bill.policy_topics??[]).map(t=>`<span class="tag">${esc(topicName(t))}</span>`).join('') + (bill.issue_tags??[]).map(t=>`<span class="tag issue">${esc(issueName(t))}</span>`).join('');}
 function billLabel(number){return number.replace(/([A-Za-z]+)0*(\d+)/,'$1 $2');}
 function render(){
- const bills=filteredBills(data.bills,filters), counts=stateCounts(data.bills,filters,Object.keys(states)), max=Math.max(1,...Object.values(counts));
+ const issueHits=matchIssues(filters.issueQuery,issues.issue_tags);
+ const view={...filters,issueMatches:filters.issueQuery.trim()?issueHits.map(hit=>hit.id):null};
+ const bills=filteredBills(data.bills,view), counts=stateCounts(data.bills,view,Object.keys(states)), max=Math.max(1,...Object.values(counts));
  const date=new Date(filters.date+'T12:00:00Z').toLocaleDateString('en-US',{month:'long',year:'numeric',timeZone:'UTC'});
  const shown=bills.slice(0,listLimit);
  $('total-count').textContent=bills.length;$('bill-count').textContent=bills.length;$('through-label').textContent=`through ${date}`;$('timeline-date').textContent=date;
  $('map-title').textContent=filters.topic==='all'?'All policy topics':topicName(filters.topic);
  $('bill-geography').textContent=filters.state==='all'?'ALL STATES':states[filters.state].name.toUpperCase();
- $('state-filter').value=filters.state;$('issue-filter').value=filters.issue;$('reviewed').checked=filters.reviewed;$('timeline').value=month;
+ $('state-filter').value=filters.state;$('issue-filter').value=filters.issue;$('issue-search-note').textContent=issueSearchNote(issueHits);$('reviewed').checked=filters.reviewed;$('timeline').value=month;
  document.querySelectorAll('.topic-button').forEach(el=>{const active=el.dataset.topic===filters.topic;el.classList.toggle('active',active);el.setAttribute('aria-pressed',active);});
  for(const [code,info] of Object.entries(states)){
   const path=$('state-'+info.fips), count=counts[code];
@@ -31,10 +41,11 @@ function render(){
  }
  $('legend-range').textContent=max===1?'1 match':`1–${max} matches`;
  $('state-comparison').innerHTML=Object.entries(states).sort((a,b)=>a[1].name.localeCompare(b[1].name)).map(([code,info])=>`<button class="state-card ${filters.state===code?'active':''}" data-state="${code}" aria-pressed="${filters.state===code}"><span>${info.name}<small>Bills</small></span><strong>${counts[code]}</strong></button>`).join('');
- $('bill-list').innerHTML=shown.length?shown.map(bill=>`<article class="bill-item"><div class="bill-meta"><span class="bill-id"><span class="state-abbr">${bill.state}</span>${esc(billLabel(bill.bill_number))}</span><time datetime="${billDate(bill)}">${shortDate(billDate(bill))}</time></div><button class="bill-title" data-bill="${esc(bill.id)}">${esc(bill.title)}</button><p class="bill-summary">${esc(bill.summary)}</p><div class="tags">${topicTags(bill)}</div><span class="proposed">${bill.status==='enacted'?'Source-checked enactment · labels still need review':'Passed by the legislature · signature not verified'}</span></article>`).join(''):`<div class="empty"><strong>No matching bills</strong>${filters.reviewed?'Nothing in this snapshot has an independently reviewed topic label. Turn off “Reviewed labels only” to explore proposed labels.':'Try another topic, clear your search, or move the timeline forward.'}</div>`;
+ const empty=filters.reviewed?'Nothing in this snapshot has an independently reviewed topic label. Turn off “Reviewed labels only” to explore proposed labels.':filters.issueQuery.trim()&&!issueHits.length?'No issue in this list is related to that wording. Try the issue menu or the bill search.':'Try another topic, clear your search, or move the timeline forward.';
+ $('bill-list').innerHTML=shown.length?shown.map(bill=>`<article class="bill-item"><div class="bill-meta"><span class="bill-id"><span class="state-abbr">${bill.state}</span>${esc(billLabel(bill.bill_number))}</span><time datetime="${billDate(bill)}">${shortDate(billDate(bill))}</time></div><button class="bill-title" data-bill="${esc(bill.id)}">${esc(bill.title)}</button><p class="bill-summary">${esc(bill.summary)}</p><div class="tags">${topicTags(bill)}</div><span class="proposed">${bill.status==='enacted'?'Source-checked enactment · labels still need review':'Passed by the legislature · signature not verified'}</span></article>`).join(''):`<div class="empty"><strong>No matching bills</strong>${empty}</div>`;
  $('show-more').hidden=bills.length<=shown.length;
  $('show-more').textContent=`Show more bills (${Math.max(0,bills.length-shown.length)} remaining)`;
- const months=Array.from({length:12},(_,i)=>data.bills.filter(b=>matches(b,{...filters,date:'2025-12-31'})&&Number(billDate(b).slice(5,7))-1===i).length), peak=Math.max(1,...months);
+ const months=Array.from({length:12},(_,i)=>data.bills.filter(b=>matches(b,{...view,date:'2025-12-31'})&&Number(billDate(b).slice(5,7))-1===i).length), peak=Math.max(1,...months);
  $('timeline-chart').innerHTML=months.map((count,i)=>`<div class="chart-bar ${i>month?'future':''}" style="height:${Math.max(2,count/peak*38)}px"></div>`).join('');
  $('timeline').setAttribute('aria-valuetext',date);
  $('announcement').textContent=`${bills.length} matching bills through ${date}.`;
@@ -64,7 +75,7 @@ async function init(){
  if(taxonomy.topics.some(t=>t.id===params.get('topic')))filters.topic=params.get('topic');
  if(issues.issue_tags.some(t=>t.id===params.get('issue')))filters.issue=params.get('issue');
  if(params.has('month')&&/^\d+$/.test(params.get('month'))&&Number(params.get('month'))<=11)month=Number(params.get('month'));
- filters.date=monthEnd(month);filters.search=params.get('q')??'';filters.reviewed=params.get('reviewed')==='1';$('search').value=filters.search;
+ filters.date=monthEnd(month);filters.search=params.get('q')??'';filters.issueQuery=params.get('iq')??'';filters.reviewed=params.get('reviewed')==='1';$('search').value=filters.search;$('issue-search').value=filters.issueQuery;
  $('sample-count').textContent=data.bills.length.toLocaleString('en-US');
  $('enacted-count').textContent=curated.bills.length;
  $('state-filter').innerHTML='<option value="all">All states</option>'+Object.entries(states).sort((a,b)=>a[1].name.localeCompare(b[1].name)).map(([code,info])=>`<option value="${code}">${esc(info.name)}</option>`).join('');
@@ -81,11 +92,12 @@ async function init(){
  $('state-comparison').addEventListener('click',event=>{const button=event.target.closest('[data-state]');if(button)selectState(button.dataset.state);});
  $('state-filter').addEventListener('change',event=>{listLimit=pageSize;filters.state=event.target.value;render();});
  $('issue-filter').addEventListener('change',event=>{listLimit=pageSize;filters.issue=event.target.value;render();});
+ $('issue-search').addEventListener('input',event=>{listLimit=pageSize;filters.issueQuery=event.target.value;render();});
  $('reviewed').addEventListener('change',event=>{listLimit=pageSize;filters.reviewed=event.target.checked;render();});
  $('search').addEventListener('input',event=>{listLimit=pageSize;filters.search=event.target.value;render();});
  $('timeline').addEventListener('input',event=>{stop();listLimit=pageSize;month=Number(event.target.value);filters.date=monthEnd(month);render();});
  $('play').addEventListener('click',()=>{if(playing){stop();return;}if(month===11)month=-1;playing=setInterval(()=>{month++;filters.date=monthEnd(month);render();if(month===11)stop();},900);$('play').innerHTML='<span aria-hidden="true">Ⅱ</span> Pause';$('play').setAttribute('aria-label','Pause timeline');});
- $('reset').addEventListener('click',()=>{stop();listLimit=pageSize;filters={state:'all',topic:'all',issue:'all',date:'2025-12-31',search:'',reviewed:false};month=11;$('search').value='';render();});
+ $('reset').addEventListener('click',()=>{stop();listLimit=pageSize;filters={state:'all',topic:'all',issue:'all',date:'2025-12-31',search:'',issueQuery:'',reviewed:false};month=11;$('search').value='';$('issue-search').value='';render();});
  $('show-more').addEventListener('click',()=>{listLimit+=pageSize;render();});
  $('bill-list').addEventListener('click',event=>{const button=event.target.closest('[data-bill]');if(button)showBill(button.dataset.bill);});
  for(const id of ['about-button','methodology-button'])$(id).addEventListener('click',()=>{stop();$('about-dialog').showModal();});

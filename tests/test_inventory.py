@@ -14,6 +14,15 @@ class InventoryTests(unittest.TestCase):
                     'affected_sectors': [], 'policy_actions': []}
         self.assertEqual(issue_labels('Data centers.', 'A data-center facility.', taxonomy), ['data_centers'])
         self.assertEqual(issue_labels('Housing.', 'No matching phrase.', taxonomy), [])
+
+    def test_related_phrases_do_not_become_labels(self):
+        taxonomy = json.loads((ROOT / 'data/issue-taxonomy.json').read_text())
+        published = json.loads((ROOT / 'web/dist/data/issues.json').read_text())
+        self.assertEqual([tag['id'] for tag in taxonomy['issue_tags']], [tag['id'] for tag in published['issue_tags']])
+        self.assertGreaterEqual(len(taxonomy['issue_tags']), 20)
+        self.assertEqual(issue_labels('Power bills.', 'A utility bill for a server farm.', taxonomy), [])
+        self.assertEqual(issue_labels('Rates.', 'Changes electric rates for customers.', taxonomy), ['electricity_rates'])
+        self.assertIn('mental_health', issue_labels('Care.', 'Funds behavioral health services.', taxonomy))
     def test_shorten_keeps_short_text_and_cuts_on_a_word(self):
         self.assertEqual(shorten('Housing bill.'), 'Housing bill.')
         self.assertTrue(shorten('alpha beta gamma', 10).endswith('…'))
@@ -78,3 +87,6 @@ class InventoryTests(unittest.TestCase):
         tagged = [row for row in inventory['bills'] if row[9]]
         self.assertGreater(len(tagged), 0)
         self.assertTrue(all(tag in allowed for row in tagged for tag in row[9]))
+        found = {tag for row in inventory['bills'] for tag in row[9]}
+        for tag in ('data_centers', 'mental_health', 'medicaid', 'child_care', 'property_tax'):
+            self.assertIn(tag, found)

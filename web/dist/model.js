@@ -27,11 +27,66 @@ export function expandInventory(inventory) {
     summary_provenance: inventory.summary_provenance,
   }));
 }
+const STOP = new Set(['a','an','the','of','and','or','for','to','in','on','by','with','about','from','that','this','into','over','under','per','its','their','new']);
+const WEAK = new Set(['bill','bills','act','acts','law','laws','state','states','program','programs','public','cost','costs','use','uses','rate','rates']);
+const SHORT_PHRASES = new Set(['ai','ev']);
+
+function variants(token) {
+  const forms = new Set([token]);
+  if (token.length > 3 && token.endsWith('s') && !token.endsWith('ss')) forms.add(token.slice(0, -1));
+  if (token.length > 4 && token.endsWith('es') && !token.endsWith('ses')) forms.add(token.slice(0, -2));
+  return forms;
+}
+function words(text) {
+  return String(text || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().split(/\s+/).filter(token => token && !STOP.has(token));
+}
+function tokenMatch(left, right) {
+  for (const form of variants(left)) if (variants(right).has(form)) return true;
+  return false;
+}
+function containsPhrase(queryTokens, phraseTokens) {
+  if (!phraseTokens.length || phraseTokens.length > queryTokens.length) return false;
+  if (phraseTokens.length === 1 && WEAK.has(phraseTokens[0])) return false;
+  if (phraseTokens.length === 1 && phraseTokens[0].length < 3 && !SHORT_PHRASES.has(phraseTokens[0])) return false;
+  for (let start = 0; start <= queryTokens.length - phraseTokens.length; start += 1) {
+    if (phraseTokens.every((token, index) => tokenMatch(token, queryTokens[start + index]))) return true;
+  }
+  return false;
+}
+export function matchIssues(query, issueTags) {
+  const queryTokens = words(query);
+  if (!queryTokens.length) return [];
+  const items = issueTags.map(issue => {
+    const phrases = [issue.name, ...(issue.aliases || []), ...(issue.related || [])].map(words).filter(tokens => tokens.length);
+    return {issue, phrases, vocab: phrases.flat(), nameTokens: words(issue.name)};
+  });
+  const frequency = new Map();
+  for (const item of items) {
+    const seen = new Set(item.vocab.flatMap(token => [...variants(token)]));
+    for (const token of seen) frequency.set(token, (frequency.get(token) || 0) + 1);
+  }
+  const hits = [];
+  for (const item of items) {
+    let score = 0;
+    if (item.phrases.some(phrase => containsPhrase(queryTokens, phrase))) score = 1;
+    else if (queryTokens.length === 1 && queryTokens[0].length < 3) score = 0;
+    else if (queryTokens.every(token => item.vocab.some(known => tokenMatch(token, known)))) {
+      const distinctive = queryTokens.some(token => !WEAK.has(token) && [...variants(token)].some(form => (frequency.get(form) || 9) <= 2));
+      if (distinctive) score = 0.8;
+    } else if (queryTokens.length === 1 && !WEAK.has(queryTokens[0]) && item.nameTokens.some(token => tokenMatch(token, queryTokens[0]))) {
+      score = 0.75;
+    }
+    if (score) hits.push({id: item.issue.id, name: item.issue.name, score});
+  }
+  return hits.sort((a, b) => b.score - a.score || a.name.localeCompare(b.name) || a.id.localeCompare(b.id));
+}
 export function matches(bill, filters, includeState = true) {
+  const tags = bill.issue_tags || [];
   return (bill.status === 'enacted' || bill.status === 'passed') && !!billDate(bill) && billDate(bill) <= filters.date
     && (!includeState || filters.state === 'all' || bill.state === filters.state)
     && (filters.topic === 'all' || bill.policy_topics.includes(filters.topic))
-    && (filters.issue === 'all' || bill.issue_tags.includes(filters.issue))
+    && (filters.issue === 'all' || tags.includes(filters.issue))
+    && (filters.issueMatches == null || tags.some(id => filters.issueMatches.includes(id)))
     && (!filters.reviewed || bill.classification.review_status === 'reviewed')
     && (!filters.search || `${bill.bill_number} ${bill.title} ${bill.summary}`.toLowerCase().includes(filters.search.toLowerCase().trim()));
 }

@@ -5,10 +5,9 @@ keeps that fact and does not treat it as a verified enactment.
 """
 import argparse
 import json
+import re
 import sqlite3
 from pathlib import Path
-
-from polyviz.schema import to_v2
 
 ROOT = Path(__file__).resolve().parents[1]
 CURATED = ROOT / 'web' / 'dist' / 'data' / 'bills.json'
@@ -45,14 +44,20 @@ def issue_taxonomy(path=ISSUES):
 
 
 def issue_labels(title, summary, taxonomy):
-    """Phrase matches from the controlled issue list. These stay unreviewed proposals."""
-    detected = to_v2(
-        {'title': title or '', 'summary': summary or '', 'policy_topics': []},
-        detect=True, taxonomy=taxonomy)
+    """Phrase matches from the controlled issue list. These stay unreviewed proposals.
+
+    `related` phrases are for search only and are not assigned. Alias boundaries
+    match the candidate detector: spaces may be hyphens, and the phrase must
+    start and end on a word boundary.
+    """
+    text = f"{title or ''}\n{summary or ''}"
     found = []
-    for candidate in detected['issue_classification']['candidates']:
-        if candidate['axis'] == 'issue_tags' and candidate['label'] not in found:
-            found.append(candidate['label'])
+    for label in taxonomy.get('issue_tags', []):
+        for alias in label.get('aliases', []):
+            pattern = r'(?<!\w)' + re.escape(alias).replace(r'\ ', r'[\s-]+') + r'(?!\w)'
+            if re.search(pattern, text, re.I):
+                found.append(label['id'])
+                break
     return found
 
 
