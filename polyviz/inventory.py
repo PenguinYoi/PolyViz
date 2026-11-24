@@ -43,22 +43,31 @@ def issue_taxonomy(path=ISSUES):
     return json.loads(Path(path).read_text())
 
 
-def issue_labels(title, summary, taxonomy):
-    """Phrase matches from the controlled issue list. These stay unreviewed proposals.
+def _alias_pattern(alias):
+    return r'(?<!\w)' + re.escape(alias).replace(r'\ ', r'[\s-]+') + r'(?!\w)'
+
+
+def issue_label_matches(title, summary, taxonomy):
+    """Return each issue id with the aliases that selected it.
 
     `related` phrases are for search only and are not assigned. Alias boundaries
     match the candidate detector: spaces may be hyphens, and the phrase must
-    start and end on a word boundary.
+    start and end on a word boundary. Matching uses the full title and summary,
+    before the public summary is shortened.
     """
     text = f"{title or ''}\n{summary or ''}"
     found = []
     for label in taxonomy.get('issue_tags', []):
-        for alias in label.get('aliases', []):
-            pattern = r'(?<!\w)' + re.escape(alias).replace(r'\ ', r'[\s-]+') + r'(?!\w)'
-            if re.search(pattern, text, re.I):
-                found.append(label['id'])
-                break
+        matched = [alias for alias in label.get('aliases', [])
+                   if re.search(_alias_pattern(alias), text, re.I)]
+        if matched:
+            found.append((label['id'], matched[:6]))
     return found
+
+
+def issue_labels(title, summary, taxonomy):
+    """Issue ids selected by alias phrases. Related phrases are not labels."""
+    return [label_id for label_id, _matched in issue_label_matches(title, summary, taxonomy)]
 
 
 def passed_records(connection, year='2025', skip=(), topics=None, issues=None):
@@ -81,7 +90,16 @@ def passed_records(connection, year='2025', skip=(), topics=None, issues=None):
         labels = [topic for topic in stored.get('policy_topics') or [] if isinstance(topic, str)]
         if allowed is not None:
             labels = [topic for topic in labels if topic in allowed]
-        tags = issue_labels(title, summary, issues) if issues else []
+        matches = issue_label_matches(title, summary, issues) if issues else []
+        tags = [label_id for label_id, _matched in matches]
+        evidence = (stored.get('classification') or {}).get('evidence')
+        topic_hits = []
+        for topic in labels:
+            hits = evidence.get(topic) if isinstance(evidence, dict) else None
+            if isinstance(hits, list):
+                topic_hits.append([hit for hit in hits if isinstance(hit, str)][:6])
+            else:
+                topic_hits.append(None)
         record = {
             'id': bill_id,
             'state': state,
@@ -92,7 +110,9 @@ def passed_records(connection, year='2025', skip=(), topics=None, issues=None):
             'status': 'passed',
             'dates': {'status': status_date},
             'policy_topics': labels,
+            'topic_hits': topic_hits,
             'issue_tags': tags,
+            'issue_hits': [matched for _label_id, matched in matches],
             'affected_sectors': [],
             'classification': {
                 'method': 'keyword_rules',
@@ -120,7 +140,8 @@ def document(records, year='2025'):
             'Bills LegiScan marked Passed with a status date in this year, excluding Congress '
             'and bills already in the source-checked enacted snapshot. Signature and chaptering '
             'are not verified. Each bill is [id, state, session_id, bill_number, title, summary, '
-            'status_date, policy_topics, source_url, issue_tags]. Issue tags are unreviewed phrase matches.'
+            'status_date, policy_topics, source_url, issue_tags, topic_hits, issue_hits]. '
+            'Topic and issue hits are the phrases that selected each label.'
         ),
         'year': int(year),
         'states': sorted({record['state'] for record in records}),
@@ -129,7 +150,7 @@ def document(records, year='2025'):
             record['id'], record['state'], record['session_id'], record['bill_number'],
             record['title'], record['summary'], record['dates']['status'], record['policy_topics'],
             record['sources'][0]['url'] if record['sources'] else '',
-            record['issue_tags'],
+            record['issue_tags'], record['topic_hits'], record['issue_hits'],
         ] for record in records],
     }
 

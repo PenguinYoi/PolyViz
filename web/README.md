@@ -28,7 +28,7 @@ node --test web/tests/model.test.mjs
 ## Included
 
 - Clickable, keyboard-accessible California and Texas state shapes on a US map.
-- All 16 topic filters, a specific-issue menu, related-word issue search, state selection, title/bill-number search, and a flat or raised map.
+- All 16 topic filters, a specific-issue menu, related-word issue search, state selection, title/bill-number search, and a flat or raised map. Bars under the map show the largest state, topic, and issue counts in the current view and can be selected. Month bars move the timeline. Each bill shows its session id and the words that selected a phrase label or a wording match.
 - Cumulative monthly enactment slider and play/pause.
 - Sourced bill details, topic rationale and clear proposed-label status.
 - Reviewed-only empty state; no machine or assistant label is silently verified.
