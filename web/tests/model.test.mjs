@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {expandInventory,filteredBills,stateCounts,monthEnd,safeUrl,matchIssues,searchPlan} from '../dist/model.js';
+import {expandInventory,filteredBills,stateCounts,monthEnd,safeUrl,matchIssues,searchPlan,labelMix,topStates,matchReason} from '../dist/model.js';
 const {bills}=JSON.parse(readFileSync(new URL('../dist/data/bills.json',import.meta.url)));
 const filters={state:'all',topic:'all',issue:'all',date:'2025-12-31',search:'',reviewed:false};
 test('sample contains distinct sourced enacted identities and valid taxonomy labels',()=>{
@@ -80,6 +80,17 @@ test('issue search matches related wording and still respects the issue bar',()=
  assert.equal(plain.hits.length,0);
  const sized={id:'CA-1-AB9',state:'CA',session_id:'1',bill_number:'AB9',title:'Maximum classroom size',summary:'Limits class size',status:'passed',dates:{status:'2025-03-01'},policy_topics:[],issue_tags:[],classification:{review_status:'unreviewed'}};
  assert.equal(filteredBills([sized,other],{...filters,issueMatches:[],issuePhrases:plain.phrases}).length,1);
+});
+test('label mix counts a bill in each of its labels and leaves unlabeled bills out of the bars',()=>{
+ const rows=[{policy_topics:['housing','energy'],issue_tags:['medicaid']},{policy_topics:['housing'],issue_tags:[]},{policy_topics:[],issue_tags:['medicaid']}];
+ const topics=labelMix(rows,'policy_topics');
+ assert.deepEqual(topics.ranked,[['housing',2],['energy',1]]);
+ assert.equal(topics.unlabeled,1);
+ assert.deepEqual(labelMix(rows,'issue_tags').ranked,[['medicaid',2]]);
+ assert.deepEqual(topStates({TX:4,CA:9,NY:0,AL:4},2),[['CA',9],['AL',4]]);
+ assert.equal(matchReason({issue_tags:['medicaid']},{issueMatches:['medicaid'],issuePhrases:['medicaid']}),'label');
+ assert.equal(matchReason({issue_tags:[]},{issueMatches:['medicaid'],issuePhrases:['medicaid']}),'wording');
+ assert.equal(matchReason({issue_tags:['medicaid']},{}),'');
 });
 test('source links only accept https',()=>{
  assert.equal(safeUrl('javascript:alert(1)'),null);assert.equal(safeUrl('data:text/html,test'),null);assert.equal(safeUrl('https://example.org/'),'https://example.org/');

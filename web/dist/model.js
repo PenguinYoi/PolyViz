@@ -138,6 +138,23 @@ function issueRank(bill, filters) {
 export function filteredBills(bills, filters) {
   return bills.filter(b => matches(b, filters)).sort((a,b) => issueRank(a, filters) - issueRank(b, filters) || billDate(b).localeCompare(billDate(a)) || a.id.localeCompare(b.id));
 }
+export function labelMix(bills, key) {
+  const counts = new Map();
+  let unlabeled = 0;
+  for (const bill of bills) {
+    const labels = bill[key] || [];
+    if (!labels.length) unlabeled += 1;
+    for (const id of labels) counts.set(id, (counts.get(id) || 0) + 1);
+  }
+  return {ranked: [...counts.entries()].sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]))), unlabeled};
+}
+export function topStates(counts, limit = 8) {
+  return Object.entries(counts).filter(([, count]) => count > 0).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, limit);
+}
+export function matchReason(bill, filters) {
+  if (filters.issueMatches == null && filters.issuePhrases == null) return '';
+  return (filters.issueMatches || []).some(id => (bill.issue_tags || []).includes(id)) ? 'label' : 'wording';
+}
 export function stateCounts(bills, filters, stateCodes = Object.keys(states)) {
   const counts = Object.fromEntries(stateCodes.map(state => [state, 0]));
   for (const bill of bills) {
