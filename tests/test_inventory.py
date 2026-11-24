@@ -35,7 +35,8 @@ class InventoryTests(unittest.TestCase):
             summary TEXT, status_date TEXT, source_status TEXT, record_json TEXT)''')
         rows = [
             ('CA-1-AB1', 'CA', '1', 'AB1', 'Keep', 'A housing bill.', '2025-03-02', '4',
-             {'source': {'url': 'https://leginfo.legislature.ca.gov/bill'}, 'policy_topics': ['housing', 'invented']}),
+             {'source': {'url': 'https://leginfo.legislature.ca.gov/bill'}, 'policy_topics': ['housing', 'invented'],
+              'classification': {'evidence': {'housing': ['housing']}}}),
             ('CA-1-AB130', 'CA', '1', 'AB130', 'Curated duplicate', 'Already on the map.', '2025-06-01', '4',
              {'source': {'url': 'https://leginfo.legislature.ca.gov/other'}, 'policy_topics': ['housing']}),
             ('US-1-HR1', 'US', '1', 'HR1', 'Congress', 'Not a state.', '2025-03-02', '4',
@@ -57,10 +58,12 @@ class InventoryTests(unittest.TestCase):
         self.assertEqual(records[0]['dates'], {'status': '2025-03-02'})
         self.assertEqual(records[0]['policy_topics'], ['housing'])
         self.assertEqual(records[0]['issue_tags'], [])
+        self.assertEqual(records[0]['topic_hits'], [['housing']])
+        self.assertEqual(records[0]['issue_hits'], [])
         self.assertEqual(records[0]['classification']['review_status'], 'unreviewed')
         self.assertTrue(records[0]['sources'][0]['url'].startswith('https://'))
         payload = document(records)
-        self.assertEqual(payload['bills'][0][-1], [])
+        self.assertEqual(payload['bills'][0][9:], [[], [['housing']], []])
         self.assertEqual(payload['layout'], 'passed-bills-v2')
         self.assertEqual(payload['states'], ['CA'])
         self.assertIn('not verified', payload['coverage'])
@@ -77,7 +80,9 @@ class InventoryTests(unittest.TestCase):
         self.assertTrue(curated_keys().isdisjoint(keys))
         ids = [row[0] for row in inventory['bills']]
         self.assertEqual(len(ids), len(set(ids)))
-        bill_id, state, session_id, number, title, summary, status_date, topics, url, issues = inventory['bills'][0]
+        bill_id, state, session_id, number, title, summary, status_date, topics, url, issues, topic_hits, issue_hits = inventory['bills'][0]
+        self.assertEqual(len(topic_hits), len(topics))
+        self.assertEqual(len(issue_hits), len(issues))
         self.assertTrue(status_date.startswith('2025-'))
         self.assertIsInstance(topics, list)
         self.assertIsInstance(issues, list)

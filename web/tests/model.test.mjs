@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {expandInventory,filteredBills,stateCounts,monthEnd,safeUrl,matchIssues,searchPlan,labelMix,topStates,matchReason} from '../dist/model.js';
+import {expandInventory,filteredBills,stateCounts,monthEnd,safeUrl,matchIssues,searchPlan,labelMix,topStates,matchReason,labelEvidence,textHasPhrase} from '../dist/model.js';
 const {bills}=JSON.parse(readFileSync(new URL('../dist/data/bills.json',import.meta.url)));
 const filters={state:'all',topic:'all',issue:'all',date:'2025-12-31',search:'',reviewed:false};
 test('sample contains distinct sourced enacted identities and valid taxonomy labels',()=>{
@@ -91,6 +91,35 @@ test('label mix counts a bill in each of its labels and leaves unlabeled bills o
  assert.equal(matchReason({issue_tags:['medicaid']},{issueMatches:['medicaid'],issuePhrases:['medicaid']}),'label');
  assert.equal(matchReason({issue_tags:[]},{issueMatches:['medicaid'],issuePhrases:['medicaid']}),'wording');
  assert.equal(matchReason({issue_tags:['medicaid']},{}),'');
+});
+test('label evidence names the phrase and distinguishes a wording match',()=>{
+ const topics=[{id:'housing',name:'Housing',terms:['tenant','school district']}];
+ const issueTags=[{id:'electricity_rates',name:'Electricity rates',aliases:['electric rates']}];
+ const labeled={title:'Tenant protection',summary:'Limits eviction for a tenant.',policy_topics:['housing'],issue_tags:['electricity_rates']};
+ const housing=labelEvidence(labeled,topics,issueTags).find(reason=>reason.id==='housing');
+ assert.equal(housing.kind,'phrase');
+ assert.deepEqual(housing.phrases,['tenant']);
+ assert.equal(textHasPhrase('Funds school districts.','school district'),true);
+ assert.equal(textHasPhrase('A database.','data'),false);
+ const rates=labelEvidence({...labeled,summary:'Changes electric-rates for customers.'},topics,issueTags).find(reason=>reason.id==='electricity_rates');
+ assert.deepEqual(rates.phrases,['electric rates']);
+ const worded={title:'Utility relief',summary:'Lowers a power bill.',policy_topics:[],issue_tags:[]};
+ const wording=labelEvidence(worded,topics,issueTags,{issueMatches:['electricity_rates'],issuePhrases:['power bill','electric rates']});
+ assert.equal(wording.length,1);
+ assert.equal(wording[0].kind,'wording');
+ assert.deepEqual(wording[0].phrases,['power bill']);
+ const taggedSearch=labelEvidence(labeled,topics,issueTags,{issueMatches:['electricity_rates'],issuePhrases:['power bill']});
+ assert.equal(taggedSearch.some(reason=>reason.kind==='wording'),false);
+});
+test('stored label hits survive a shortened summary',()=>{
+ const [bill]=expandInventory({summary_provenance:'x',bills:[['NY-1-A1','NY','1','A1','Care','Short.','2025-02-02',['healthcare'],'',['mental_health'],[['mental health']],[['behavioral health']]]]});
+ const reasons=labelEvidence(bill,[{id:'healthcare',name:'Healthcare',terms:['hospital']}],[{id:'mental_health',name:'Mental health',aliases:['mental health']}]);
+ assert.deepEqual(reasons.map(reason=>reason.phrases),[['mental health'],['behavioral health']]);
+});
+test('a saved excerpt explains a label when the short text has no listed phrase',()=>{
+ const bill={title:'Grid costs',summary:'Large users.',policy_topics:[],issue_tags:['electricity_rates'],classification:{evidence:[{excerpt:'large electricity users'}]}};
+ const [reason]=labelEvidence(bill,[],[{id:'electricity_rates',name:'Electricity rates',aliases:['electric rates']}]);
+ assert.deepEqual(reason.phrases,['large electricity users']);
 });
 test('source links only accept https',()=>{
  assert.equal(safeUrl('javascript:alert(1)'),null);assert.equal(safeUrl('data:text/html,test'),null);assert.equal(safeUrl('https://example.org/'),'https://example.org/');

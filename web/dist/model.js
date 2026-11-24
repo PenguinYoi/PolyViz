@@ -11,12 +11,14 @@ export function billDate(bill) {
   return bill.status === 'passed' ? (dates.status || '') : (dates.enacted || '');
 }
 export function expandInventory(inventory) {
-  return inventory.bills.map(([id, state, sessionId, billNumber, title, summary, statusDate, topics, url, issues]) => ({
+  return inventory.bills.map(([id, state, sessionId, billNumber, title, summary, statusDate, topics, url, issues, topicHits, issueHits]) => ({
     id, state, session_id: sessionId, bill_number: billNumber, title, summary,
     status: 'passed',
     dates: {status: statusDate},
     policy_topics: topics || [],
+    topic_hits: topicHits || [],
     issue_tags: issues || [],
+    issue_hits: issueHits || [],
     affected_sectors: [],
     classification: {
       method: 'keyword_rules',
@@ -154,6 +156,49 @@ export function topStates(counts, limit = 8) {
 export function matchReason(bill, filters) {
   if (filters.issueMatches == null && filters.issuePhrases == null) return '';
   return (filters.issueMatches || []).some(id => (bill.issue_tags || []).includes(id)) ? 'label' : 'wording';
+}
+export function termVariants(term) {
+  const base = String(term || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  const parts = base.split(' ').filter(Boolean);
+  if (parts.length < 2 || parts[parts.length - 1].endsWith('s')) return parts.length ? [parts.join(' ')] : [];
+  const last = parts[parts.length - 1];
+  const plural = /(ch|sh|x|z)$/.test(last) ? `${last}es`
+    : last.length > 1 && last.endsWith('y') && !'aeiou'.includes(last[last.length - 2]) ? `${last.slice(0, -1)}ies`
+    : `${last}s`;
+  return [parts.join(' '), [...parts.slice(0, -1), plural].join(' ')];
+}
+export function textHasPhrase(text, phrase) {
+  const normalized = ` ${String(text || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()} `;
+  return termVariants(phrase).some(variant => normalized.includes(` ${variant} `));
+}
+export function labelEvidence(bill, topicList = [], issueList = [], filters = {}) {
+  const text = `${bill.title || ''} ${bill.summary || ''}`;
+  const topics = new Map(topicList.map(item => [item.id, item]));
+  const issueTags = new Map(issueList.map(item => [item.id, item]));
+  const reasons = [];
+  const excerpt = Array.isArray(bill.classification?.evidence) ? bill.classification.evidence.map(item => item?.excerpt).filter(phrase => typeof phrase === 'string' && phrase).slice(0, 1) : [];
+  const storedOrScan = (stored, index, catalog) => {
+    const saved = Array.isArray(stored?.[index]) ? stored[index].filter(phrase => typeof phrase === 'string' && phrase) : catalog.filter(phrase => textHasPhrase(text, phrase));
+    return saved.length ? saved : excerpt;
+  };
+  (bill.policy_topics || []).forEach((id, index) => {
+    const topic = topics.get(id);
+    reasons.push({kind: 'phrase', axis: 'topic', id, name: topic?.name || id, phrases: storedOrScan(bill.topic_hits, index, topic?.terms || [])});
+  });
+  (bill.issue_tags || []).forEach((id, index) => {
+    const issue = issueTags.get(id);
+    reasons.push({kind: 'phrase', axis: 'issue', id, name: issue?.name || id, phrases: storedOrScan(bill.issue_hits, index, issue?.aliases || [])});
+  });
+  const searching = filters.issueMatches != null || filters.issuePhrases != null;
+  const taggedHit = (filters.issueMatches || []).some(id => (bill.issue_tags || []).includes(id));
+  if (searching && !taggedHit) {
+    const phrases = [...new Set((filters.issuePhrases || []).filter(phrase => textHasPhrase(text, phrase)))];
+    if (phrases.length) {
+      const names = (filters.issueMatches || []).map(id => issueTags.get(id)?.name || id);
+      reasons.push({kind: 'wording', axis: 'issue', id: (filters.issueMatches || [])[0] || '', name: names.join(', ') || 'Related wording', phrases});
+    }
+  }
+  return reasons;
 }
 export function stateCounts(bills, filters, stateCodes = Object.keys(states)) {
   const counts = Object.fromEntries(stateCodes.map(state => [state, 0]));
